@@ -46,6 +46,11 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
         // GET: HelpOnline/AdminLevel3/Create
         public ActionResult Create()
         {
+            makeParentList();
+            return View();
+        }
+        private void makeParentList()
+        {
             List<SelectListItem> parentList = new List<SelectListItem>();
             foreach (HelpLevel2 item in helpLevel2DB.ListAll())
             {
@@ -53,9 +58,7 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
             }
 
             ViewBag.ParentList = new SelectList(parentList, "Value", "Text");
-            return View();
         }
-
         // POST: HelpOnline/AdminLevel3/Create
         [HttpPost]
         public ActionResult Create(HelpLevel3 helpLevel3)
@@ -78,8 +81,9 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
                 
 
                 helpLevel3DB.InsertLevel3(helpLevel3);
-                return RedirectToAction("Index");
+                return RedirectToAction("Index/" + helpLevel3.ParentId);
             }
+            makeParentList();
             return View();
         }
 
@@ -122,9 +126,9 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
                     helpLevel3.URLObj.SaveAs(Server.MapPath(uploadPath + fileName));
                 }
                 helpLevel3DB.UpdateLevel3(helpLevel3);
-                return RedirectToAction("Index");
+                return RedirectToAction("Index/" + helpLevel3.ParentId);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index/" + helpLevel3.ParentId);
         }
 
         // GET: HelpOnline/AdminLevel3/Delete/5
@@ -147,8 +151,9 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            HelpLevel3 helpLevel3 = helpLevel3DB.GetHelpLevel3ById(id);
             helpLevel3DB.DeleleLevel3(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index/" + helpLevel3.ParentId);
         }
     }
 }

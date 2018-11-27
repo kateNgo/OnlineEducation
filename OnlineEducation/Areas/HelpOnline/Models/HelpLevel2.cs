@@ -12,6 +12,7 @@ namespace OnlineEducation.Areas.HelpOnline.Models
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string Title { get; set; }
         public string ImageFile { get; set; }
         public int Index { get; set; }

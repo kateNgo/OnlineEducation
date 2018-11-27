@@ -42,13 +42,7 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
         // GET: HelpOnline/AdminLevel2/Create
         public ActionResult Create()
         {
-            List<SelectListItem> parentList = new List<SelectListItem>();
-            foreach(HelpLevel1 item in helpLevel1DB.ListAll())
-            {
-                parentList.Add(new SelectListItem { Text = item.Title, Value =  item.Id.ToString() });
-            }
-            
-            ViewBag.ParentList = new SelectList(parentList, "Value", "Text");
+            makeParentList();
             return View();
         }
 
@@ -61,9 +55,19 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
                 helpLevel2DB.InsertLevel2(helpLevel2);
                 return RedirectToAction("Index/" + helpLevel2.ParentId);
             }
+            makeParentList();
             return View();
         }
+        private void makeParentList()
+        {
+            List<SelectListItem> parentList = new List<SelectListItem>();
+            foreach (HelpLevel1 item in helpLevel1DB.ListAll())
+            {
+                parentList.Add(new SelectListItem { Text = item.Title, Value = item.Id.ToString() });
+            }
 
+            ViewBag.ParentList = new SelectList(parentList, "Value", "Text");
+        }
         // GET: HelpOnline/AdminLevel2/Edit/5
         public ActionResult Edit(int id)
         {
@@ -84,6 +88,7 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
                 return HttpNotFound();
             }
             helpLevel2.ParentTopic = helpLevel1;
+            
             return View(helpLevel2);
         }
 
@@ -94,9 +99,9 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
             if (ModelState.IsValid)
             {
                 helpLevel2DB.UpdateLevel2(helpLevel2);
-                return RedirectToAction("Index");
+                return RedirectToAction("Index/" + helpLevel2.ParentId);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index/" + helpLevel2.ParentId);
         }
         // GET: HelpOnline/AdminLevel2/Delete/5
         public ActionResult Delete(int id)
@@ -110,7 +115,9 @@ namespace OnlineEducation.Areas.HelpOnline.Controllers
             {
                 return HttpNotFound();
             }
-            //helpLevel2DB.DeleleLevel2(id);
+
+
+            TempData["parentId"] = helpLevel2.ParentId;
             return View(helpLevel2);
         }
 

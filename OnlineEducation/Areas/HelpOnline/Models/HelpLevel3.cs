@@ -11,9 +11,11 @@ namespace OnlineEducation.Areas.HelpOnline.Models
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string Title { get; set; }
         public int Index { get; set; }
         public string URL { get; set; }
+        [Required]
         public int ParentId { get; set; }
         [DisplayName("Parent Level 2")]
         public HelpLevel2 ParentTopic { get; set; }

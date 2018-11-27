@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="no-js hasSidebar hasPageActions hasBreadcrumb conceptual" lang="en-us" dir="ltr" data-authenticated="false" data-target="docs">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="Strings (C# Programming Guide)" />
+	<meta property="og:image" content="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/microsoft-header.png" />
+
+
+		<meta name="ms.devlang" content="csharp" />
+<meta name="author" content="BillWagner" />
+<meta name="ms.author" content="wiwagn" />
+<meta name="breadcrumb_path" content="/dotnet/breadcrumb/toc.json" />
+<meta name="apiPlatform" content="dotnet" />
+<meta name="ms.topic" content="conceptual" />
+<meta name="ms.prod" content="dotnet-csharp" />
+<meta name="uhfHeaderId" content="MSDocsHeader-DotNet" />
+<meta name="ms.assetid" content="21580405-cb25-4541-89d5-037846a38b07" />
+<meta name="ms.date" content="07/20/2015" />
+<meta name="search.ms_sitename" content="Docs" />
+<meta name="search.ms_docsetname" content="core-docs" />
+<meta name="locale" content="en-us" />
+<meta name="site_name" content="Docs" />
+<meta name="search.ms_product" content="VS" />
+<meta name="depot_name" content="VS.core-docs" />
+<meta name="updated_at" content="2018-09-22 04:32 AM" />
+<meta name="gitcommit" content="https://github.com/dotnet/docs/blob/d13bb98c179be5580ff05212e48fc400b58c030a/docs/csharp/programming-guide/strings/index.md" />
+<meta name="original_content_git_url" content="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/index.md" />
+<meta name="document_id" content="c7aa6134-64e2-28a7-f7d0-d0c1512f4520" />
+<meta name="document_version_independent_id" content="3317fd4a-9cd3-57cd-66f7-abb271e302e8" />
+<meta name="page_type" content="conceptual" />
+<meta name="toc_rel" content="toc.json" />
+<meta name="pdf_url_template" content="https://docs.microsoft.com/pdfstore/en-us/VS.core-docs/{branchName}{pdfName}" />
+<meta name="search.mshattr.devlang" content="csharp" />
+<meta name="word_count" content="2294" />
+
+	<meta name="scope" content=".NET" />
+<link href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/" rel="canonical">
+	<title>Strings (C# Programming Guide) | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/css/b3687bf5.site-ltr.css ">
+
+	<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/css/e562b38f.conceptual.css ">
+
+
+	<script>
+	var msDocs = {
+		data:{
+			azureHeaderLocale: 'en-us',
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			context: {
+
+			},
+			hasComments: true,
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'dotnet/docs',
+			feedbackProductUrl: 'https://developercommunity.visualstudio.com/spaces/61/index.html',
+			contentGitUrl: 'https://github.com/dotnet/docs/blob/master/docs/csharp/programming-guide/strings/index.md',
+			forceVersionPicker:false		},
+		functions:{},
+		settings:{
+			extendBreadcrumb: false,
+			enableUHFPPE: true
+		}
+	};
+	if (!('Promise' in window && 'resolve' in window.Promise && 'reject' in window.Promise && 'all' in window.Promise && 'race' in window.Promise)) {
+		document.write('<script src="/_themes/docs.theme/master/en-us/_themes/global/js/6ee34c01.bluebird.min.js"><\/script>');
+	}
+	if (typeof fetch !== 'function') {
+		document.write('<script src="/_themes/docs.theme/master/en-us/_themes/global/js/d9fc435c.fetch.min.js"><\/script>');
+	}
+	</script>
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+	<script src="/_themes/docs.theme/master/en-us/_themes/global/js/de980046.localized-strings.js"></script>
+	<script src="/_themes/docs.theme/master/en-us/_themes/global/js/79987ada.global.min.js"></script>
+
+</head>
+
+<body lang="en-us" dir="ltr">
+<div class="header-holder">
+		<div id="headerAreaHolder" data-bi-name="header">
+			<div id="uhf-placeholder"></div>
+		</div>
+	<div class="content-header uhf-container has-padding" data-bi-name="content-header">
+		<nav class="has-padding-none-mobile" data-bi-name="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="Breadcrumb">
+		<ul class="breadcrumbs">
+		</ul>
+		</nav>
+		<div class="content-header-controls exit-focus">
+			<button type="button" class="ap-collapse-behavior ap-expanded button" data-bi-name="ap-collapse">
+				<span class="icon"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit focus mode</span>
+			</button>
+			
+		</div>
+		<div class="content-header-controls">
+			<button type="button" class="contents-button button" data-bi-name="contents-expand">
+				<span class="icon"><span class="docon docon-menu"></span></span>
+				<span>Contents</span>
+			</button>
+		</div>
+		<div class="action-bar">
+			<ul class="action-list">
+						<li>
+							<a href="#feedback" class="button is-text is-size-7 is-icon-only-touch" data-bi-name="comments">
+								<span class="icon">
+									<span class="docon docon-comment-lines" aria-hidden="true"></span>
+								</span>
+								<span class="action-item-text">Feedback</span>
+							</a>
+						</li>
+							<li id="contenteditbtn">
+									<a href="https://github.com/dotnet/docs/blob/master/docs/csharp/programming-guide/strings/index.md" class="button is-text is-icon-only-touch is-size-7" title="Edit This Document" data-bi-name="edit" data-original_content_git_url="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/index.md">
+									<span class="icon"> 
+										<span class="docon docon-edit-outline" aria-hidden="true"></span>
+									</span>
+									<span class="action-item-text">Edit</span>
+								</a>
+							</li>
+				<li>
+					<div class="sharing dropdown has-caret" auto-align>
+						<a href="#" class="dropdown-trigger button is-text is-size-7 is-icon-only-touch" aria-haspopup="true" aria-controls="sharing-menu" aria-expanded="false" title="Share This Document" data-bi-name="share">
+							<span class="icon">
+								<span class="docon docon-sharing" aria-hidden="true"></span>
+							</span>
+							<span class="action-item-text">Share</span>
+						</a>
+						<div class="dropdown-menu" id="sharing-menu" role="menu">
+							<ul data-bi-name="share-links">
+								<li><a class="share-twitter" data-bi-name="twitter">
+									<span class="icon">
+										<span class="docon docon-brand-twitter" aria-hidden="true"></span>
+									</span>
+									<span>Twitter</span></a></li>
+								<li><a class="share-linkedin" data-bi-name="linkedin">
+									<span class="icon">
+										<span class="docon docon-brand-linkedin" aria-hidden="true"></span>
+									</span>
+									<span>LinkedIn</span></a></li>
+								<li><a class="share-facebook" data-bi-name="facebook">
+									<span class="icon">
+										<span class="docon docon-brand-facebook" aria-hidden="true"></span>
+									</span>
+									<span>Facebook</span></a></li>
+								<li><a class="share-email" data-bi-name="email">
+									<span class="icon">
+										<span class="docon docon-mail-message-fill" aria-hidden="true"></span>
+									</span>
+									<span>Email</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button class="toggle-theme button is-text is-size-7 is-icon-only-touch" aria-label="toggle-theme" data-bi-name="select-theme">
+						<span class="icon">
+							<span class="docon docon-sun"></span>
+						</span>
+						<span class="action-item-text">Theme</span>
+					</button>
+				</li>
+				<li class="is-unstyled-action-list-item">
+					<a class="docs-sign-in not-authenticated button is-text has-text-primary is-size-7" href="#">Sign in</a>
+					<div class="dropdown has-caret authenticated" auto-align>
+						<button class="dropdown-trigger button is-text is-radiusless" aria-label="Your Account" aria-haspopup="true" aria-controls="user-menu" aria-expanded="false">
+							<span class="image icon is-hidden-mobile" aria-hidden="true">
+								<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+							</span>
+							<span class="is-size-7 is-truncated is-hidden-mobile" data-profile-property="userName"></span>
+							<span class="image icon is-hidden-tablet has-margin-none" aria-hidden="true">
+								<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+							</span>
+						</button>
+						<div class="dropdown-menu box" id="user-menu" role="menu">
+							<div class="media is-user-dir">
+								<div class="media-left">
+									<span class="image is-64x64" aria-hidden="true">
+										<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+									</span>
+								</div>
+								<div class="media-content">
+									<p class="title has-margin-top-small">
+										<span class="is-truncated" style="max-width: 200px" data-profile-property="userName"></span>
+									</p>
+									<p class="subtitle">
+										<span class="is-truncated" style="max-width: 200px" data-profile-property="upn"></span>
+									</p>
+								</div>
+							</div>
+							<ul class="is-unstyled has-margin-none">
+								<li><a href="/profile" data-profile-property="profileUrl">Profile</a></li>
+								<li><a class="docs-sign-out" href="#">Sign out</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<button type="button" class="contents-button" aria-label="Contents" data-bi-name="contents-expand-">
+				<span class="docon docon-editor-list-bullet"></span><span>Contents</span>
+			</button>
+		</div>
+	</div>
+	<div id="disclaimer-holder" class="disclaimer-holder"></div>
+	</div>
+
+	<div class="mainContainer uhf-container  has-top-padding " data-bi-name="body">
+		
+		<div class="columns ">
+
+			<section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+				<div class="columns ">
+
+					<div id="page-actions" class="right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only" data-bi-name="pageactions" role="complementary" aria-label="Page Actions">
+							<nav id="side-doc-outline" class="doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="On page navigation">
+								<h3>In this article</h3>
+							</nav>
+					</div>
+
+
+				<div id="main-column" class="column  is-full is-four-fifths-desktop ">
+					
+					<main id="main" role="main" class="content" data-bi-name="content" lang="en-us" dir="ltr">
+
+
+
+						<h1 id="strings-c-programming-guide" sourcefile="docs/csharp/programming-guide/strings/index.md" sourcestartlinenumber="9" sourceendlinenumber="9">Strings (C# Programming Guide)</h1>
+
+						<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+							<li class="displayDate loading">
+								<span aria-hidden="true" class="docon docon-calendar"></span>
+								<time role="presentation" datetime="2015-07-20T00:00:00.000Z" data-article-date-source="ms.date">07/20/2015</time>
+							</li>
+								<li class="readingTime">
+									<span aria-hidden="true" class="docon docon-clock"></span>
+									11 minutes to read
+								</li>
+							<li class="contributors-holder">
+								<span class="contributors-text">Contributors</span>
+								<ul class="contributors" data-bi-name="contributors">
+											<li><a href="https://github.com/BillWagner" title="Bill Wagner" data-bi-name="contributorprofile"><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/BillWagner.png?size=32" alt="Bill Wagner"></a></li>
+											<li><a href="https://github.com/B13rg" title="Brendan Byers" data-bi-name="contributorprofile"><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/B13rg.png?size=32" alt="Brendan Byers"></a></li>
+											<li><a href="https://github.com/mairaw" title="Maira Wenzel" data-bi-name="contributorprofile"><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/mairaw.png?size=32" alt="Maira Wenzel"></a></li>
+											<li><a href="https://github.com/pkulikov" title="pkulikov" data-bi-name="contributorprofile"><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/pkulikov.png?size=32" alt="pkulikov"></a></li>
+											<li><a href="https://github.com/mikeblome" title="Mike B" data-bi-name="contributorprofile"><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/mikeblome.png?size=32" alt="Mike B"></a></li>
+											<li><a href="https://github.com/dotnet/docs/blob/master/docs/csharp/programming-guide/strings/index.md" title="all 8 contributors" data-bi-name="contributorshowall"><span aria-hidden="true">all</span></a></li>
+								</ul>
+							</li>
+
+						</ul>
+
+						<nav id="center-doc-outline" class="doc-outline is-hidden-desktop" data-bi-name="intopic toc" role="navigation" aria-label="On page navigation">
+							<h3>In this article</h3>
+						</nav>
+
+
+
+						<!-- <content> -->
+							
+<p>A string is an object of type <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">String</a> whose value is text. Internally, the text is stored as a sequential read-only collection of <a class="xref" href="/en-us/dotnet/api/system.char" data-linktype="absolute-path">Char</a> objects. There is no null-terminating character at the end of a C# string; therefore a C# string can contain any number of embedded null characters (&#39;\0&#39;). The <a class="xref" href="/en-us/dotnet/api/system.string.length" data-linktype="absolute-path">Length</a> property of a string represents the number of <code>Char</code> objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <a class="xref" href="/en-us/dotnet/api/system.globalization.stringinfo" data-linktype="absolute-path">StringInfo</a> object.  </p>
+<h2 id="string-vs-systemstring">string vs. System.String</h2>
+<p> In C#, the <code>string</code> keyword is an alias for <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">String</a>. Therefore, <code>String</code> and <code>string</code> are equivalent, and you can use whichever naming convention you prefer. The <code>String</code> class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see <a href="../../language-reference/keywords/string" data-linktype="relative-path">string</a>. For more information about the type and its methods, see <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">String</a>.  </p>
+<h2 id="declaring-and-initializing-strings">Declaring and Initializing Strings</h2>
+<p> You can declare and initialize strings in various ways, as shown in the following example:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_1.cs" name="csProgGuideStrings#1">// Declare without initializing.
+string message1;
+
+// Initialize to null.
+string message2 = null;
+
+// Initialize as an empty string.
+// Use the Empty constant instead of the literal &quot;&quot;.
+string message3 = System.String.Empty;
+
+//Initialize with a regular string literal.
+string oldPath = &quot;c:\\Program Files\\Microsoft Visual Studio 8.0&quot;;
+
+// Initialize with a verbatim string literal.
+string newPath = @&quot;c:\Program Files\Microsoft Visual Studio 9.0&quot;;
+
+// Use System.String if you prefer.
+System.String greeting = &quot;Hello World!&quot;;
+
+// In local variables (i.e. within a method body)
+// you can use implicit typing.
+var temp = &quot;I&#39;m still a strongly-typed System.String!&quot;;
+
+// Use a const string to prevent &#39;message4&#39; from
+// being used to store another string value.
+const string message4 = &quot;You can&#39;t get rid of me!&quot;;
+
+// Use the String constructor only when creating
+// a string from a char*, char[], or sbyte*. See
+// System.String documentation for details.
+char[] letters = { &#39;A&#39;, &#39;B&#39;, &#39;C&#39; };
+string alphabet = new string(letters);
+</code></pre><p> Note that you do not use the <a href="../../language-reference/keywords/new-operator" data-linktype="relative-path">new</a> operator to create a string object except when initializing the string with an array of chars.  </p>
+<p> Initialize a string with the <a class="xref" href="/en-us/dotnet/api/system.string.empty" data-linktype="absolute-path">Empty</a> constant value to create a new <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">String</a> object whose string is of zero length. The string literal representation of a zero-length string is &quot;&quot;. By initializing strings with the <a class="xref" href="/en-us/dotnet/api/system.string.empty" data-linktype="absolute-path">Empty</a> value instead of <a href="../../language-reference/keywords/null" data-linktype="relative-path">null</a>, you can reduce the chances of a <a class="xref" href="/en-us/dotnet/api/system.nullreferenceexception" data-linktype="absolute-path">NullReferenceException</a> occurring. Use the static <a class="xref" href="/en-us/dotnet/api/system.string.isnullorempty#System_String_IsNullOrEmpty_System_String_" data-linktype="absolute-path">IsNullOrEmpty(String)</a> method to verify the value of a string before you try to access it.  </p>
+<h2 id="immutability-of-string-objects">Immutability of String Objects</h2>
+<p> String objects are <em>immutable</em>: they cannot be changed after they have been created. All of the <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">String</a> methods and C# operators that appear to modify a string actually return the results in a new string object. In the following example, when the contents of <code>s1</code> and <code>s2</code> are concatenated to form a single string, the two original strings are unmodified. The <code>+=</code> operator creates a new string that contains the combined contents. That new object is assigned to the variable <code>s1</code>, and the original object that was assigned to <code>s1</code> is released for garbage collection because no other variable holds a reference to it.  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_2.cs" name="csProgGuideStrings#2">string s1 = &quot;A string is more &quot;;
+string s2 = &quot;than the sum of its chars.&quot;;
+
+// Concatenate s1 and s2. This actually creates a new
+// string object and stores it in s1, releasing the
+// reference to the original object.
+s1 += s2;
+
+System.Console.WriteLine(s1);
+// Output: A string is more than the sum of its chars.
+</code></pre><p> Because a string &quot;modification&quot; is actually a new string creation, you must use caution when you create references to strings. If you create a reference to a string, and then &quot;modify&quot; the original string, the reference will continue to point to the original object instead of the new object that was created when the string was modified. The following code illustrates this behavior:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_3.cs" name="csProgGuideStrings#25">string s1 = &quot;Hello &quot;;
+string s2 = s1;
+s1 += &quot;World&quot;;
+
+System.Console.WriteLine(s2);
+//Output: Hello
+</code></pre><p> For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see <a href="../../how-to/modify-string-contents" data-linktype="relative-path">How to: Modify String Contents</a>.  </p>
+<h2 id="regular-and-verbatim-string-literals">Regular and Verbatim String Literals</h2>
+<p> Use regular string literals when you must embed escape characters provided by C#, as shown in the following example:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_4.cs" name="csProgGuideStrings#3">string columns = &quot;Column 1\tColumn 2\tColumn 3&quot;;
+//Output: Column 1        Column 2        Column 3
+
+string rows = &quot;Row 1\r\nRow 2\r\nRow 3&quot;;
+/* Output:
+  Row 1
+  Row 2
+  Row 3
+*/
+
+string title = &quot;\&quot;The \u00C6olean Harp\&quot;, by Samuel Taylor Coleridge&quot;;
+//Output: &quot;The &#198;olean Harp&quot;, by Samuel Taylor Coleridge
+</code></pre><p> Use verbatim strings for convenience and better readability when the string text contains backslash characters, for example in file paths. Because verbatim strings preserve new line characters as part of the string text, they can be used to initialize multiline strings. Use double quotation marks to embed a quotation mark inside a verbatim string. The following example shows some common uses for verbatim strings:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_5.cs" name="csProgGuideStrings#4">string filePath = @&quot;C:\Users\scoleridge\Documents\&quot;;
+//Output: C:\Users\scoleridge\Documents\
+
+string text = @&quot;My pensive SARA ! thy soft cheek reclined
+    Thus on mine arm, most soothing sweet it is
+    To sit beside our Cot,...&quot;;
+/* Output:
+My pensive SARA ! thy soft cheek reclined
+   Thus on mine arm, most soothing sweet it is
+   To sit beside our Cot,... 
+*/
+
+string quote = @&quot;Her name was &quot;&quot;Sara.&quot;&quot;&quot;;
+//Output: Her name was &quot;Sara.&quot;
+</code></pre><h2 id="string-escape-sequences">String Escape Sequences</h2>
+<table>
+<thead>
+<tr>
+<th>Escape sequence</th>
+<th>Character name</th>
+<th>Unicode encoding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\&#39;</td>
+<td>Single quote</td>
+<td>0x0027</td>
+</tr>
+<tr>
+<td>\&quot;</td>
+<td>Double quote</td>
+<td>0x0022</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>Backslash</td>
+<td>0x005C</td>
+</tr>
+<tr>
+<td>\0</td>
+<td>Null</td>
+<td>0x0000</td>
+</tr>
+<tr>
+<td>\a</td>
+<td>Alert</td>
+<td>0x0007</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>Backspace</td>
+<td>0x0008</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>Form feed</td>
+<td>0x000C</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>New line</td>
+<td>0x000A</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>Carriage return</td>
+<td>0x000D</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>Horizontal tab</td>
+<td>0x0009</td>
+</tr>
+<tr>
+<td>\U</td>
+<td>Unicode escape sequence for surrogate pairs.</td>
+<td>\Unnnnnnnn</td>
+</tr>
+<tr>
+<td>\u</td>
+<td>Unicode escape sequence</td>
+<td>\u0041 = &quot;A&quot;</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>Vertical tab</td>
+<td>0x000B</td>
+</tr>
+<tr>
+<td>\x</td>
+<td>Unicode escape sequence similar to &quot;\u&quot; except with variable length.</td>
+<td>\x0041 or \x41 = &quot;A&quot;</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE"><p>Note</p><p> At compile time, verbatim strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim version from your source code. For example, the verbatim string @&quot;C:\files.txt&quot; will appear in the watch window as &quot;C:\\files.txt&quot;.  </p>
+</div>
+<h2 id="format-strings">Format Strings</h2>
+<p> A format string is a string whose contents can be determined dynamically at runtime. You create a format string by using the static <a class="xref" href="/en-us/dotnet/api/system.string.format" data-linktype="absolute-path">Format</a> method and embedding placeholders in braces that will be replaced by other values at runtime. The following example uses a format string to output the result of each iteration of a loop:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_6.cs" name="csProgGuideStrings#26">class FormatString
+{
+    static void Main()
+    {
+        // Get user input.
+        System.Console.WriteLine(&quot;Enter a number&quot;);
+        string input = System.Console.ReadLine();
+
+        // Convert the input string to an int.
+        int j;
+        System.Int32.TryParse(input, out j);
+
+        // Write a different string each iteration.
+        string s;
+        for (int i = 0; i &lt; 10; i++)
+        {
+            // A simple format string with no alignment formatting.
+            s = System.String.Format(&quot;{0} times {1} = {2}&quot;, i, j, (i * j));
+            System.Console.WriteLine(s);
+        }
+
+        //Keep the console window open in debug mode.
+        System.Console.ReadKey();
+    }
+}
+</code></pre><p> One overload of the <a class="xref" href="/en-us/dotnet/api/system.console.writeline" data-linktype="absolute-path">WriteLine</a> method takes a format string as a parameter. Therefore, you can just embed a format string literal without an explicit call to the method. However, if you use the <a class="xref" href="/en-us/dotnet/api/system.diagnostics.trace.writeline" data-linktype="absolute-path">WriteLine</a> method to display debug output in the Visual Studio <strong>Output</strong> window, you have to explicitly call the <a class="xref" href="/en-us/dotnet/api/system.string.format" data-linktype="absolute-path">Format</a> method because <a class="xref" href="/en-us/dotnet/api/system.diagnostics.trace.writeline" data-linktype="absolute-path">WriteLine</a> only accepts a string, not a format string. For more information about format strings, see <a href="../../../standard/base-types/formatting-types" data-linktype="relative-path">Formatting Types</a>.  </p>
+<h2 id="substrings">Substrings</h2>
+<p> A substring is any sequence of characters that is contained in a string. Use the <a class="xref" href="/en-us/dotnet/api/system.string.substring" data-linktype="absolute-path">Substring</a> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <a class="xref" href="/en-us/dotnet/api/system.string.indexof" data-linktype="absolute-path">IndexOf</a> method. Use the <a class="xref" href="/en-us/dotnet/api/system.string.replace" data-linktype="absolute-path">Replace</a> method to replace all occurrences of a specified substring with a new string. Like the <a class="xref" href="/en-us/dotnet/api/system.string.substring" data-linktype="absolute-path">Substring</a> method, <a class="xref" href="/en-us/dotnet/api/system.string.replace" data-linktype="absolute-path">Replace</a> actually returns a new string and does not modify the original string. For more information, see <a href="../../how-to/search-strings" data-linktype="relative-path">How to: search strings</a> and <a href="../../how-to/modify-string-contents" data-linktype="relative-path">How to: Modify String Contents</a>.  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_7.cs" name="csProgGuideStrings#7">string s3 = &quot;Visual C# Express&quot;;
+System.Console.WriteLine(s3.Substring(7, 2));
+// Output: &quot;C#&quot;
+
+System.Console.WriteLine(s3.Replace(&quot;C#&quot;, &quot;Basic&quot;));
+// Output: &quot;Visual Basic Express&quot;
+
+// Index values are zero-based
+int index = s3.IndexOf(&quot;C&quot;);
+// index = 7
+</code></pre><h2 id="accessing-individual-characters">Accessing Individual Characters</h2>
+<p> You can use array notation with an index value to acquire read-only access to individual characters, as in the following example:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_8.cs" name="csProgGuideStrings#9">string s5 = &quot;Printing backwards&quot;;
+
+for (int i = 0; i &lt; s5.Length; i++)
+{
+    System.Console.Write(s5[s5.Length - i - 1]);
+}
+// Output: &quot;sdrawkcab gnitnirP&quot;
+</code></pre><p> If the <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">String</a> methods do not provide the functionality that you must have to modify individual characters in a string, you can use a <a class="xref" href="/en-us/dotnet/api/system.text.stringbuilder" data-linktype="absolute-path">StringBuilder</a> object to modify the individual chars &quot;in-place&quot;, and then create a new string to store the results by using the <a class="xref" href="/en-us/dotnet/api/system.text.stringbuilder" data-linktype="absolute-path">StringBuilder</a> methods. In the following example, assume that you must modify the original string in a particular way and then store the results for future use:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_9.cs" name="csProgGuideStrings#8">string question = &quot;hOW DOES mICROSOFT wORD DEAL WITH THE cAPS lOCK KEY?&quot;;
+System.Text.StringBuilder sb = new System.Text.StringBuilder(question);
+
+for (int j = 0; j &lt; sb.Length; j++)
+{
+    if (System.Char.IsLower(sb[j]) == true)
+        sb[j] = System.Char.ToUpper(sb[j]);
+    else if (System.Char.IsUpper(sb[j]) == true)
+        sb[j] = System.Char.ToLower(sb[j]);
+}
+// Store the new string.
+string corrected = sb.ToString();
+System.Console.WriteLine(corrected);
+// Output: How does Microsoft Word deal with the Caps Lock key?            
+</code></pre><h2 id="null-strings-and-empty-strings">Null Strings and Empty Strings</h2>
+<p> An empty string is an instance of a <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">System.String</a> object that contains zero characters. Empty strings are used often in various programming scenarios to represent a blank text field. You can call methods on empty strings because they are valid <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">System.String</a> objects. Empty strings are initialized as follows:  </p>
+<pre><code>string s = String.Empty;  
+</code></pre><p> By contrast, a null string does not refer to an instance of a <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">System.String</a> object and any attempt to call a method on a null string causes a <a class="xref" href="/en-us/dotnet/api/system.nullreferenceexception" data-linktype="absolute-path">NullReferenceException</a>. However, you can use null strings in concatenation and comparison operations with other strings. The following examples illustrate some cases in which a reference to a null string does and does not cause an exception to be thrown:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_10.cs" name="csProgGuideStrings#27">static void Main()
+{
+    string str = &quot;hello&quot;;
+    string nullStr = null;
+    string emptyStr = String.Empty;
+
+    string tempStr = str + nullStr;
+    // Output of the following line: hello
+    Console.WriteLine(tempStr);
+
+    bool b = (emptyStr == nullStr);
+    // Output of the following line: False
+    Console.WriteLine(b);
+
+    // The following line creates a new empty string.
+    string newStr = emptyStr + nullStr;
+
+    // Null strings and empty strings behave differently. The following
+    // two lines display 0.
+    Console.WriteLine(emptyStr.Length);
+    Console.WriteLine(newStr.Length);
+    // The following line raises a NullReferenceException.
+    //Console.WriteLine(nullStr.Length);
+
+    // The null character can be displayed and counted, like other chars.
+    string s1 = &quot;\x0&quot; + &quot;abc&quot;;
+    string s2 = &quot;abc&quot; + &quot;\x0&quot;;
+    // Output of the following line: * abc*
+    Console.WriteLine(&quot;*&quot; + s1 + &quot;*&quot;);
+    // Output of the following line: *abc *
+    Console.WriteLine(&quot;*&quot; + s2 + &quot;*&quot;);
+    // Output of the following line: 4
+    Console.WriteLine(s2.Length);
+}
+</code></pre><h2 id="using-stringbuilder-for-fast-string-creation">Using StringBuilder for Fast String Creation</h2>
+<p> String operations in .NET are highly optimized and in most cases do not significantly impact performance. However, in some scenarios such as tight loops that are executing many hundreds or thousands of times, string operations can affect performance. The <a class="xref" href="/en-us/dotnet/api/system.text.stringbuilder" data-linktype="absolute-path">StringBuilder</a> class creates a string buffer that offers better performance if your program performs many string manipulations. The <a class="xref" href="/en-us/dotnet/api/system.text.stringbuilder" data-linktype="absolute-path">StringBuilder</a> string also enables you to reassign individual characters, something the built-in string data type does not support. This code, for example, changes the content of a string without creating a new string:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_11.cs" name="csProgGuideStrings#20">System.Text.StringBuilder sb = new System.Text.StringBuilder(&quot;Rat: the ideal pet&quot;);
+sb[0] = &#39;C&#39;;
+System.Console.WriteLine(sb.ToString());
+System.Console.ReadLine();
+
+//Outputs Cat: the ideal pet
+</code></pre><p> In this example, a <a class="xref" href="/en-us/dotnet/api/system.text.stringbuilder" data-linktype="absolute-path">StringBuilder</a> object is used to create a string from a set of numeric types:  </p>
+<pre><code class="lang-csharp" data-src="https://github.com/dotnet/docs/blob/live/docs/csharp/programming-guide/strings/codesnippet/CSharp/index_12.cs" name="csProgGuideStrings#15">class TestStringBuilder
+{
+    static void Main()
+    {
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        // Create a string composed of numbers 0 - 9
+        for (int i = 0; i &lt; 10; i++)
+        {
+            sb.Append(i.ToString());
+        }
+        System.Console.WriteLine(sb);  // displays 0123456789
+
+        // Copy one character of the string (not possible with a System.String)
+        sb[0] = sb[9];
+
+        System.Console.WriteLine(sb);  // displays 9123456789
+    }
+}
+</code></pre><h2 id="strings-extension-methods-and-linq">Strings, Extension Methods and LINQ</h2>
+<p> Because the <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">String</a> type implements <a class="xref" href="/en-us/dotnet/api/system.collections.generic.ienumerable-1" data-linktype="absolute-path">IEnumerable&lt;T&gt;</a>, you can use the extension methods defined in the <a class="xref" href="/en-us/dotnet/api/system.linq.enumerable" data-linktype="absolute-path">Enumerable</a> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">String</a> type, but they are available nevertheless. You can also use LINQ query expressions on strings. For more information, see <a href="../concepts/linq/linq-and-strings" data-linktype="relative-path">LINQ and Strings</a>.  </p>
+<h2 id="related-topics">Related Topics</h2>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../how-to/modify-string-contents" data-linktype="relative-path">How to: Modify String Contents</a></td>
+<td>Illustrates techniques to transform strings and modify the contents of strings.</td>
+</tr>
+<tr>
+<td><a href="../../how-to/compare-strings" data-linktype="relative-path">How to: Compare Strings</a></td>
+<td>Shows how to perform ordinal and culture specific comparisons of strings.</td>
+</tr>
+<tr>
+<td><a href="../../how-to/concatenate-multiple-strings" data-linktype="relative-path">How to: Concatenate Multiple Strings</a></td>
+<td>Demonstrates various ways to join multiple strings into one.</td>
+</tr>
+<tr>
+<td><a href="../../how-to/parse-strings-using-split" data-linktype="relative-path">How to: Parse Strings Using String.Split </a></td>
+<td>Contains code examples that illustrate how to use the <code>String.Split</code> method to parse strings.</td>
+</tr>
+<tr>
+<td><a href="../../how-to/search-strings" data-linktype="relative-path">How to: Search Strings</a></td>
+<td>Explains how to use search for specific text or patterns in strings.</td>
+</tr>
+<tr>
+<td><a href="how-to-determine-whether-a-string-represents-a-numeric-value" data-linktype="relative-path">How to: Determine Whether a String Represents a Numeric Value</a></td>
+<td>Shows how to safely parse a string to see whether it has a valid numeric value.</td>
+</tr>
+<tr>
+<td><a href="../../language-reference/tokens/interpolated" data-linktype="relative-path">String interpolation</a></td>
+<td>Describes the string interpolation feature that provides a convenient syntax to format strings.</td>
+</tr>
+<tr>
+<td><a href="../../../standard/base-types/basic-string-operations" data-linktype="relative-path">Basic String Operations</a></td>
+<td>Provides links to topics that use <a class="xref" href="/en-us/dotnet/api/system.string" data-linktype="absolute-path">System.String</a> and <a class="xref" href="/en-us/dotnet/api/system.text.stringbuilder" data-linktype="absolute-path">System.Text.StringBuilder</a> methods to perform basic string operations.</td>
+</tr>
+<tr>
+<td><a href="../../../standard/base-types/parsing-strings" data-linktype="relative-path">Parsing Strings</a></td>
+<td>Describes how to convert string representations of .NET base types to instances of the corresponding types.</td>
+</tr>
+<tr>
+<td><a href="../../../standard/base-types/parsing-datetime" data-linktype="relative-path">Parsing Date and Time Strings in .NET</a></td>
+<td>Shows how to convert a string such as &quot;01/24/2008&quot; to a <a class="xref" href="/en-us/dotnet/api/system.datetime" data-linktype="absolute-path">System.DateTime</a> object.</td>
+</tr>
+<tr>
+<td><a href="../../../standard/base-types/comparing" data-linktype="relative-path">Comparing Strings</a></td>
+<td>Includes information about how to compare strings and provides examples in C# and Visual Basic.</td>
+</tr>
+<tr>
+<td><a href="../../../standard/base-types/stringbuilder" data-linktype="relative-path">Using the StringBuilder Class</a></td>
+<td>Describes how to create and modify dynamic string objects by using the <a class="xref" href="/en-us/dotnet/api/system.text.stringbuilder" data-linktype="absolute-path">StringBuilder</a> class.</td>
+</tr>
+<tr>
+<td><a href="../concepts/linq/linq-and-strings" data-linktype="relative-path">LINQ and Strings</a></td>
+<td>Provides information about how to perform various string operations by using LINQ queries.</td>
+</tr>
+<tr>
+<td><a href="../index" data-linktype="relative-path">C# Programming Guide</a></td>
+<td>Provides links to topics that explain programming constructs in C#.</td>
+</tr>
+</tbody>
+</table>
+
+						<!-- </content> -->
+							
+						</main>
+
+						<!-- feedback section -->
+
+
+				
+<section class="feedback-section" data-bi-name="feedback-section">
+	<h2 id="feedback">Feedback</h2>
+
+	<div class="alert choose-feedback-type">
+		<p>
+We'd love to hear your thoughts. Choose the type you'd like to provide:		</p>
+
+		<div class="choose-feedback-buttons">
+			<a class="button feedback-type-product has-margin-bottom-small" href="https://developercommunity.visualstudio.com/spaces/61/index.html" data-bi-name="product-feedback">
+				<span>Product feedback</span>
+				<span class="icon docon docon-navigate-external" aria-hidden="true"></span>
+			</a>
+
+			<div class="field has-addons is-inline-flex has-margin-bottom-small">
+				<div class="control has-margin-top-none has-margin-bottom-none">
+					<button class="button feedback-sign-in-button has-text-wrap" data-bi-name="feedback-sign-in">
+						<span class="icon docon docon-brand-github" aria-hidden="true"></span>
+						<span>
+							Sign in to give documentation feedback						</span>
+					</button>
+				</div>
+				<div class="control dropdown has-caret has-margin-top-none has-margin-bottom-none" auto-align>
+					<button class="button dropdown-trigger has-text-wrap" aria-haspopup="true" aria-expanded="false" aria-controls="fbm0"
+						aria-label="Expand documentation feedback menu" data-bi-name="documentation-feedback-menu">
+						<span class="icon docon docon-chevron-down-light" aria-hidden="true"></span>
+					</button>
+					<div class="dropdown-menu documentation-feedback-menu" id="fbm0" role="menu">
+						You may also leave feedback <a data-bi-name="create-issue-on-github" href="{0}">directly on GitHub <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.					</div>
+				</div>
+			</div>
+
+			<div class="field has-addons is-inline-flex has-margin-bottom-small" hidden>
+				<div class="control has-margin-top-none has-margin-bottom-none">
+					<button class="button feedback-form-toggle" aria-expanded="false" aria-controls="feedback-form"
+						data-bi-name="documentation-feedback">
+Content feedback					</button>
+				</div>
+				<div class="control dropdown has-caret has-margin-top-none has-margin-bottom-none" auto-align>
+					<button class="button dropdown-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="fbm1"
+						aria-label="Expand documentation feedback menu" data-bi-name="documentation-feedback-menu">
+						<span class="icon docon docon-chevron-down-light" aria-hidden="true"></span>
+					</button>
+					<div class="dropdown-menu documentation-feedback-menu" id="fbm1" role="menu">
+						You may also leave feedback <a data-bi-name="create-issue-on-github" href="{0}">directly on GitHub <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.					</div>
+				</div>
+			</div>
+		</div>
+		<p class="has-margin-top-none"><small>Our new feedback system is built on GitHub Issues. Read about this change in <a href="https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs">our blog post</a>.</small></p>
+	</div>
+
+	<form class="feedback-form" id="feedback-form" accept-charset="UTF-8" autocomplete="off" action="javascript:" hidden>
+		<h3 class="feedback-form-heading current-user">
+			<img class="avatar" alt="Avatar" width="36" height="36" aria-hidden="true">
+			<span class="username" aria-hidden="true"></span>
+			<span class="visually-hidden">Liquid error: Can't find the localized string giveDocumentationFeedback for template Conceptual.</span>
+		</h3>
+
+		<label>
+			<span class="visually-hidden">Title</span>
+			<input name="title" type="text" placeholder="Title" required pattern=".*\w.*">
+		</label>
+		<label>
+			<span class="visually-hidden">Leave a comment</span>
+			<textarea name="body" placeholder="Leave a comment" required></textarea>
+		</label>
+
+		<div class="action-container">
+			<button class="button is-primary" type="submit" name="submit">Submit feedback</button>
+		</div>
+	</form>
+
+	<div class="feedback-status alert is-loading" role="alert">
+		<p>Loading feedback...</p>
+	</div>
+
+	<div class="feedback-tab-group tabGroup" data-tab-group-independent hidden>
+		<ul role="tablist">
+			<li role="presentation">
+				<a href="#tabpanel-issues-open" role="tab" aria-controls="tabpanel-issues-open" data-tab="issues-open" aria-label="Open Issues"></a>
+			</li>
+			<li role="presentation">
+				<a href="#tabpanel-issues-closed" role="tab" aria-controls="tabpanel-issues-closed" data-tab="issues-closed"
+				 aria-label="Closed Issues"></a>
+			</li>
+		</ul>
+		<section id="tabpanel-issues-open" role="tabpanel" data-tab="issues-open">
+			<div class="no-issues-placeholder">There are no open issues</div>
+			<ul class="github-issues-list" aria-label="Open Issues"></ul>
+		</section>
+		<section id="tabpanel-issues-closed" role="tabpanel" data-tab="issues-closed">
+			<div class="no-issues-placeholder">There are no closed issues</div>
+			<ul class="github-issues-list" aria-label="Closed Issues"></ul>
+		</section>
+	</div>
+	<div class="action-container">
+		<a class="view-on-github" href="https://github.com/dotnet/docs/issues" data-bi-name="view-on-github"
+		 hidden>
+			<span class="docon docon-brand-github" aria-hidden="true"></span>
+			<span>View on GitHub</span>
+			<span class="docon docon-navigate-external" aria-hidden="true"></span>
+		</a>
+	</div>
+</section>						<!-- end feedback section -->
+
+						<div class="footerContainer is-visible-interactive ">
+<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="#" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small"></span><span class="local-selector-link-text"></span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Site Feedback</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+    </ul>
+</footer>						</div>
+					</div>
+
+					<!--end of div.columns -->
+
+				</div>
+			
+			<!--end of .primary-holder -->
+			</section>
+
+				<div id="left-container" class="left-container column is-one-third-tablet is-one-quarter-desktop">
+					<nav class="sidebar" id="sidebar" data-bi-name="left toc" role="navigation" aria-label="Main Navigation">
+						<button class="sidebar-header" type="button" aria-label="Close" data-bi-name="contents-collapse">
+							<span>Contents</span>
+							<span class="docon docon-navigate-close" aria-hidden="true"></span>
+						</button>
+						<div id="sidebarContent">
+							<div class="filterHolder">
+							</div>
+							<nav class="toc"></nav>
+							<div class="pdfDownloadHolder"></div>
+						</div>
+					</nav>
+				</div>
+
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+		</div>
+
+		<!--end of .mainContainer -->
+	</div>
+
+	<div id="openFeedbackContainer" class="openfeedback-container"></div>
+
+	<div class="footerContainer is-hidden-interactive ">
+<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="#" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small"></span><span class="local-selector-link-text"></span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Site Feedback</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+    </ul>
+</footer>	</div>
+
+	<div class="action-panel"></div>
+</body>
+</html>
