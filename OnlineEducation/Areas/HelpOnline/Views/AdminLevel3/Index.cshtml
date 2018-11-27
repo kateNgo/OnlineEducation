@@ -1,0 +1,46 @@
+﻿@model IEnumerable<OnlineEducation.Areas.HelpOnline.Models.HelpLevel3>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/HelpOnline/Views/Shared/_Layout.cshtml";
+    var backLink = "../AdminLevel2/Index/" + TempData["parentId"];
+}
+<h4>Help Online Level 3 from @TempData["parentTitle"]</h4>
+<p>
+    @Html.ActionLink("Create New", "Create") | @Html.ActionLink("List Level 2", backLink)
+    
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.URL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Index)
+        </th>
+        <th> Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.URL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Index)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<OnlineEducation.Areas.HelpOnline.Models.HelpLevel1>
+@{
+    ViewBag.Title = "Index";
+    var imagePath = System.Configuration.ConfigurationManager.AppSettings["HelpOnlineImagePath"] + "HelpOnlineLevel1/";
+    Layout = "~/Areas/HelpOnline/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Help Online Level 1</h4>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+           Image Icon
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Index)
+        </th>
+        <th> Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                <img src="@imagePath@item.ImageFile" alt="@item.Title" width="50" height="50" style="margin: 5px;" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Index)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }) | 
+                @Html.ActionLink("List Level 2", "../AdminLevel2/Index", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

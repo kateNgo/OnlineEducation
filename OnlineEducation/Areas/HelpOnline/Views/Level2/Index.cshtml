@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/HelpOnline/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<OnlineEducation.Areas.HelpOnline.Models.HelpLevel2>
+@{
+    var htmlStr = "<tr>";
+    var i = 1;
+    var cols = 5;
+
+    foreach (var item in Model)
+    {
+        htmlStr += "<td ><a id='" + item.Id + "' href='" + "/HelpOnline/Level3/Index/" + item.Id +
+            "' alt='" + item.Title + "' class='UnderLink'>" +
+            " <label>" + item.Title + "</label></a></td>";
+        if (i % cols == 0)
+        {
+            htmlStr += "</tr><tr> ";
+        }
+        i++;
+
+    }
+}
+<div class="row">
+    <div class="col-sm-12">
+        <a class="backLink" href="/HelpOnline/Level1/Index"><span class="oi oi-arrow-thick-left"></span>Back</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12" style="margin-top:1%">
+        <table class="HelpLevel2Table" ID="HelpLevel2Table" BorderStyle="None"> @Html.Raw(htmlStr)</table>
+    </div>
+</div>
+

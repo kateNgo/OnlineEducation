@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/HelpOnline/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<OnlineEducation.Areas.HelpOnline.Models.HelpLevel3>
+@{ 
+    var parentId = ViewBag.parentId ;
+    var htmlStr = "";
+    var theFirstSRC = "/html/" + Model.First().URL;
+    foreach (var item in Model)
+    {
+        htmlStr += "<tr> <td><a id='" + item.Id + "' class='UnderLink' href='/html/" + item.URL + "' target='rightFrame'>" + item.Title + "</a></td></tr>";
+        
+    }
+}
+<div class="row">
+    <div class="col-sm-12">
+        <a class="backLink" href="/HelpOnline/Level2/Index/@ViewBag.level1Id"><span class="oi oi-arrow-thick-left"></span>Back</a>
+    </div>
+</div>
+<div class="row row-eq-height">
+    <div class="col-sm-12 " style="margin-top:1%">
+        <div class="col-sm-3 ">
+            <table class="HelpLevel3Table">@Html.Raw(htmlStr)</table>
+            
+        </div>
+        <div class="col-sm-9 ">
+            <iframe  id="the_iFrame" name="rightFrame" src="@theFirstSRC" class="the_iFrame">
+
+            </iframe>
+        </div>
+
+    </div>
+</div>

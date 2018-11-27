@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Index";
+    var imagePath = System.Configuration.ConfigurationManager.AppSettings["HelpOnlineImagePath"] + "HelpOnlineLevel1/";
+}
+@model IEnumerable<OnlineEducation.Areas.HelpOnline.Models.HelpLevel1>
+@{
+    var htmlStr = "<tr>";
+    var i = 1;
+    var cols = 5;
+
+    foreach (var item in Model)
+    {
+        htmlStr += "<td ><a id='" + item.Id + "' href='" + "/HelpOnline/Level2/Index/" + item.Id +
+            "' alt='" + item.Title + "' class='UnderLink'>" +
+            " <img width='70' height='70' src='" + imagePath + item.ImageFile + "'/><br/><label>" + item.Title + "</label></a></td>";
+        if (i % cols == 0)
+        {
+            htmlStr += "</tr><tr> ";
+        }
+        i++;
+
+    }
+}
+<table class="HelpLevel1Table"> @Html.Raw(htmlStr)</table>
+
