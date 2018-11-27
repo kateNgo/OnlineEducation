@@ -63,14 +63,7 @@ CREATE TABLE [HelpOnlineLevel3](
 GO
 
 
-CREATE TABLE [FAQ](
-	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	[Title] [varchar](200) NOT NULL,
-	[Description] [varchar](5000) NULL,
-	[URL] [varchar](100) NULL
-) ON [PRIMARY]
 
-GO
 CREATE TABLE [Video](
 	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
 	[Title] [varchar](200) NOT NULL,
@@ -112,3 +105,30 @@ BEGIN
 	return @NewId
 END
 GO
+
+CREATE TABLE [dbo].[AMWinUsers](
+	[CustCode] [nvarchar](50) NULL,
+	[Name] [nvarchar](100) NULL,
+	[Password] [nvarchar](100) NULL,
+	[ExpiryDate] [date] NULL
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[FAQLevel1](
+	[Id] [int]  PRIMARY KEY IDENTITY(1,1) NOT NULL ,
+	[Title] [varchar](100) NOT NULL,
+	[IndexTopic] [int] NULL
+	)
+
+GO
+CREATE TABLE [dbo].[FAQ](
+	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[Title] [varchar](200) NOT NULL,
+	[URL] [varchar](100) NOT NULL,
+	[FAQLevel1] [int] NOT NULL FOREIGN KEY REFERENCES [FAQLevel1] ([Id]) 
+    ON DELETE CASCADE ON UPDATE CASCADE
+) ON [PRIMARY]
+
+GO
+
