@@ -2,18 +2,21 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Areas/HelpOnline/Views/Shared/_Layout.cshtml";
+
 }
 @model IEnumerable<OnlineEducation.Areas.HelpOnline.Models.HelpLevel3>
-@{ 
-    var parentId = ViewBag.parentId ;
+@{
+    var parentId = ViewBag.parentId;
     var htmlStr = "";
-    var theFirstSRC = "/html/" + Model.First().URL;
+    var theFirstSRC = ViewBag.HtmlPath + Model.First().URL;
+    var theFirstLink = "/HelpOnline/Level3/ToPDFContent?id=" + Model.First().Id;
     foreach (var item in Model)
     {
-        htmlStr += "<tr> <td><a id='" + item.Id + "' class='UnderLink' href='/html/" + item.URL + "' target='rightFrame'>" + item.Title + "</a></td></tr>";
-        
+        htmlStr += "<tr> <td><a id='Level3_" + item.Id + "' onclick='IDClick(" + item.Id + ")' class='UnderLink' href='" + ViewBag.HtmlPath + item.URL + "' target='rightFrame' >" + item.Title + "</a></td></tr>";
+
     }
 }
+@Html.Hidden("SelectedLevel3Id");
 <div class="row">
     <div class="col-sm-12">
         <a class="backLink" href="/HelpOnline/Level2/Index/@ViewBag.level1Id"><span class="oi oi-arrow-thick-left"></span>Back</a>
@@ -23,13 +26,17 @@
     <div class="col-sm-12 " style="margin-top:1%">
         <div class="col-sm-3 ">
             <table class="HelpLevel3Table">@Html.Raw(htmlStr)</table>
-            
         </div>
         <div class="col-sm-9 ">
-            <iframe  id="the_iFrame" name="rightFrame" src="@theFirstSRC" class="the_iFrame">
-
-            </iframe>
+            <div class="row floatRight">
+                <a id="ToPDFContent" href="@theFirstLink">Email</a> |
+                <a id="ToPDFContent" href="@theFirstLink">PDF</a> |
+                <a id="ToPDFContent" href="@theFirstLink">Print</a> 
+               
+            </div>
+            <div class="row">
+                <iframe id="the_iFrame" name="rightFrame" src="@theFirstSRC" class="the_iFrame"></iframe>
+            </div>
         </div>
-
     </div>
 </div>

@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Stock Data Tools</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "20.4.0_10";
+</script>
+ <meta name="brsprev" value="Version_9_Features/New_Modules/Stocktake_Module.htm">
+ <meta name="brsnext" value="Version_9_Features/New_Modules/Customer_Orders.htm">
+ <meta name="topic-breadcrumbs" content="Version 9 Features > New Modules" />
+</head>
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>Stock Data Tools</h1>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:center;"><font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Stock Data Tools</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Block_Text" style="margin-left:5.75pt;text-align:justify;"><font style="font-family:'Arial';">The AM-Win Stock Data Tools module is a power tool which allows you to manipulate your stock file in a variety of ways. From setting prices, changing descriptions, moving parts between and in and out of stock groups and sub groups, changing preferred suppliers to many other features. This tool provides a great deal of power for you to make your stock file much more efficient and for it to start working for you rather than against you.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Stock Data Tool is not a standard AM-Win module and can be purchased through your local AM-Win distributor or agent.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:bold; font-style:italic;">Rules</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:red;">There are several rules and limitations associated with the Stock Data Tool that must be understood in order to obtain the most benefits from it and also to ensure that you ask it to do things that adhere to both the accounting and general data integrity of AM-Win.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Firstly, there are a number of changes that can only be made when the stock on hand quantity is zero. In this case, if some of the stock in your batch is zero on hand and others have a quantity on hand other than zero then only the zero on hand items will be changed when you process your request. Such limitations are as follows:</font></p>
+<p style="text-align:justify;">&#160;</p>
+<ol>
+<li>
+<p style="margin-top:0.00pt;text-align:justify;"><font style="font-size:12pt;">You cannot change the stock class of a stock item whilst there is stock on hand. This is because Stock items carry a value in the ledger whereas non-stock and revenue items don. If the system allowed these changes to be made then the accounting integrity of the stock ledgers would be adversely effected. The stock value in the ledger would not represent the value of stock in the stock file.</font></p>
+</li>
+</ol>
+<p style="margin-top:0.00pt;text-align:justify;">&#160;</p>
+<ol start="2">
+<li>
+<p style="margin-top:0.00pt;text-align:justify;"><font style="font-size:12pt;">Similarly to limitation 1, you cannot change the quantity on hand for a stock item but you can for a non stock item.</font></p>
+</li>
+</ol>
+<p style="text-align:justify;">&#160;</p>
+<ol start="3">
+<li>
+<p style="margin-top:0.00pt;text-align:justify;"><font style="font-size:12pt;">You are not able to change the GST flag from GST to no GST or vice versa while you have stock on hand.</font></p>
+</li>
+</ol>
+<p style="text-align:justify;">&#160;</p>
+<ol start="4">
+<li>
+<p style="margin-top:0.00pt;text-align:justify;"><font style="font-size:12pt;">You are not able to change the is serialised option for stock when there is stock on hand.</font></p>
+</li>
+</ol>
+<p style="text-align:justify;">&#160;</p>
+<ol start="5">
+<li>
+<p style="margin-top:0.00pt;text-align:justify;"><font style="font-size:12pt;">You are not able to change the Asset GL Code for stock when there is stock on hand.</font></p>
+</li>
+</ol>
+<p style="text-align:justify;">&#160;</p>
+<ol start="6">
+<li>
+<p style="margin-top:0.00pt;text-align:justify;"><font style="font-size:12pt;">You are not allowed to set the recommended retail price of a stock item below price 1. (Mainly just to eliminate silly mistakes)</font></p>
+</li>
+</ol>
+<p style="text-align:justify;">&#160;</p>
+<ol start="7">
+<li>
+<p style="margin-top:0.00pt;text-align:justify;"><font style="font-size:12pt;">You are not able to change the creation date of a stock item if the creation date already exists (For users on the software prior to version 6)</font></p>
+</li>
+</ol>
+<p style="margin-top:0.00pt;text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">To Create a New Batch or to Revise an Existing Batch</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When you enter the Stock Data Tool screen you have the option to either create a</font> <font style="font-size:12pt; font-weight:bold;">New batch</font> <font style="font-size:12pt;">or to revise an existing batch. To create a New batch you must first click on the</font> <font style="font-size:12pt; font-weight:bold;">New</font> <font style="font-size:12pt;">button at the top left of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">New Button -</font> <font style="font-size:12pt;">When the</font> <font style="font-size:12pt; font-weight:bold;">New</font> <font style="font-size:12pt;">button is selected the next available batch number is automatically assigned. You should then enter the Batch Description which can later be used to assist you in revising the correct batch for the job you want to do. The description is required before you can save or process a batch.</font></p>
+<p style="margin-top:0.00pt;text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Stock Class -</font> <font style="font-size:12pt;">Allows you to select from all items, Stock items, Non-Stock items, and revenue, trade-in or consignment stock items. Using this filter you can determine what stock class you wish to create the batch from.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Sort By</font> <font style="font-size:12pt;">- Allows you to select the default sort criteria for the items to be placed in the batch list area. You can sort the list by Stock Code, Bin location, Group, Sub Group, Bin / Stock code, Description or preferred supplier.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Now you have set the Stock Class and Default sort criteria you can choose to either generate your stock batch using the</font> <font style="font-size:12pt; font-weight:bold;">Single</font><font style="font-size:12pt;">,</font> <font style="font-size:12pt; font-weight:bold;">Multi</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">Orphan</font> <font style="font-size:12pt;">tab options.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Single Filter Tab</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">Single</font> <font style="font-size:12pt; font-weight:bold;">Filter</font> <font style="font-size:12pt;">tab allows you to use a variety of record filters to generate your batch of parts.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Filter by All Items</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">All Items</font> <font style="font-size:12pt;"> This option allows you to select a range of stock by part number for all items available within the selected stock class you have chosen. Once you have selected the ALL option you then must choose the From Part item. If you wish to select the entire list of items then simply select from the first item and to the last item. This will create a batch containing every item in your stock file that matches the selected stock class.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:bold; font-style:italic;">NOTE</font><font style="font-size:12pt; color:red; font-style:italic;">: Some changes to such a potentially large batch may take considerable time to process so you may be better served to process several smaller batches rather than a single huge batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">From Part</font> <font style="font-size:12pt;">- Click on the</font> <font style="font-size:12pt; font-weight:bold;">From</font> <font style="font-size:12pt;">part button and select the item to begin the batch with. You are able to use the usual locator and search options to find the item required.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">To Part</font> <font style="font-size:12pt;">- Click on the</font> <font style="font-size:12pt; font-weight:bold;">To</font> <font style="font-size:12pt;">part button and select the item to finish the batch with. You are able to use the usual locator and search options to find the item required.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the</font> <font style="font-size:12pt; font-weight:bold;">From</font> <font style="font-size:12pt;">and</font> <font style="font-size:12pt; font-weight:bold;">To</font> <font style="font-size:12pt;">parts are selected you can then click on the Generate</font> <font style="font-size:12pt; font-weight:bold;">Button</font> <font style="font-size:12pt;">to bring that list of items into the batch. Those items are then placed into the list box to be worked on. You can then either add further to the batch by using the</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font> <font style="font-size:12pt;">or you can set your</font> <font style="font-size:12pt; font-weight:bold;">Data Change</font> <font style="font-size:12pt;">on the right of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">To Filter by BIN Location</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The by Bin Location filter allows you to generate the batch between bin locations. Firstly click on the Bin Location option. You may notice a delay which can last from moments to several seconds depending on the size of your stock file. This is the time the system requires to build a list of bin locations for you to select from. Once the From and To Bin fields are available you can select tour choices.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">From Bin</font> <font style="font-size:12pt;">- Allows you to select the bin location to begin the batch from.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To Bin - then allows you to select the bin to finish the batch at. The To Bin will only show bin locations which are alphanumerically after the From Bin.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the</font> <font style="font-size:12pt; font-weight:bold;">From</font> <font style="font-size:12pt;">and</font> <font style="font-size:12pt; font-weight:bold;">To</font> <font style="font-size:12pt;">bins are selected you can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Generate</font> <font style="font-size:12pt;">Button to build the batch based on your selections. You can then either add further to the batch by using the</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font> <font style="font-size:12pt;">or you can set your</font> <font style="font-size:12pt; font-weight:bold;">Data Change Options</font> <font style="font-size:12pt;">on the right of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">To Filter by Group</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The by Group filter allows you to generate the batch between groups. Firstly click on the</font> <font style="font-size:12pt; font-weight:bold;">Group</font> <font style="font-size:12pt;">option.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">From Group</font> <font style="font-size:12pt;">- Allows you to select the group to begin the batch from.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">To Group</font> <font style="font-size:12pt;">- Then allows you to select the group to finish the batch at. The</font> <font style="font-size:12pt; font-weight:bold;">To</font> <font style="font-size:12pt;">Group will only show groups which are alphanumerically after the</font> <font style="font-size:12pt; font-weight:bold;">From</font> <font style="font-size:12pt;">Group.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the</font> <font style="font-size:12pt; font-weight:bold;">From</font> <font style="font-size:12pt;">and</font> <font style="font-size:12pt; font-weight:bold;">To</font> <font style="font-size:12pt;">groups are selected you can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Generate</font> <font style="font-size:12pt;">button to build the batch based on your selections. You can then either add further to the batch by using other filter options</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font> <font style="font-size:12pt;">or you can set your</font> <font style="font-size:12pt; font-weight:bold;">Data Change Options</font> <font style="font-size:12pt;">on the right of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">To Filter by Preferred Supplier</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The by Supplier filter allows you to generate the batch based on the preferred supplier. Firstly click on the</font> <font style="font-size:12pt; font-weight:bold;">Supplier</font> <font style="font-size:12pt;">option.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Supplier Code</font> <font style="font-size:12pt;">- Click on the</font> <font style="font-size:12pt; font-weight:bold;">Supplier code</font> <font style="font-size:12pt;">button and select the supplier to be used.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the Supplier has been selected you can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Generate</font> <font style="font-size:12pt;">button to build the batch based on your selection. You can then either add further to the batch by using the</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font> <font style="font-size:12pt;">or you can set your</font> <font style="font-size:12pt; font-weight:bold;">Data Change Options</font> <font style="font-size:12pt;">on the right of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Multi Filter Tab</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Multi filter tab allows you to filter the required stock batch by using the Preferred Supplier, Group, and Subgroup and Bin location range in combination with each other. You are able to select any of these options on their own as well. For instance if you only select the subgroup then only the subgroup will be used to filter the item. However if you select a combination of say the group and subgroup then only items where both selections match will be generated in the batch. This means you can limit the range within the batch to parts only with a specific supplier and group and subgroup and even then only if they fall in a certain bin location range.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once you have selected your range of filters, click on the</font> <font style="font-size:12pt; font-weight:bold;">Generate</font> <font style="font-size:12pt;">button to build the batch based on your selection. You can then either add further to the batch by using the</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font> <font style="font-size:12pt;">or you can set your Data Change Options on the right of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Orphan Filter Tab</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The orphan filter tab allows you to select a range of stock items which currently are considered by the system as orphaned. This means they either have no group, no subgroup, no preferred supplier or no Bin location or a combination of any of these.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This allows you to locate and adjust items that have escaped your usually allocation for them. You may wish to select all items that do not have a group and group then as NOGRP. This no group, group can then be utilised as a group of items without a group. As such they can then be used in the multipliers, discount matrixes and other group functions within AM-Win. Alternatively you may wish to choose only a section of the batch generated and then put those items into a specific group and then others to another group etc. To do this you must first delete the items from the batch that you do not want effected when you process the batch changes.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Tick the boxes next to the orphan selections you want included and then click on the</font> <font style="font-size:12pt; font-weight:bold;">Generate Button</font> <font style="font-size:12pt;">to build the batch based on your selections. You can then either add further to the batch by using the</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font> <font style="font-size:12pt;">or you can set your</font> <font style="font-size:12pt; font-weight:bold;">Data Change Options</font> <font style="font-size:12pt;">on the right of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Operator</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The operator records the name of the user who processed the batch changes. These details are stored in the log file so that stock data changes can be tracked.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Batch Process Option</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You have a choice to select</font> <font style="font-size:12pt; font-weight:bold;">Batch Only,</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">Batch</font> <font style="font-size:12pt; font-weight:bold;">and</font> <font style="font-size:12pt; font-weight:bold;">Process</font><font style="font-size:12pt;">. The only difference is that the change</font> <font style="font-size:12pt; font-weight:bold;">Options</font> <font style="font-size:12pt;">area is not available if you choose the batch only option. This allows you to generate stock batches with the need to have the options area of the screen open making the screen less crowded and easier to operate.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Ignore Zero Stock Option</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">If the Ignore Zero stock option is ticked then when the</font> <font style="font-size:12pt; font-weight:bold;">Generate</font> <font style="font-size:12pt;">button is selected, the system will only generate the list for items with stock on hand.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Active Stock Option</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">If the Active stock option is ticked then when the</font> <font style="font-size:12pt; font-weight:bold;">Generate</font> <font style="font-size:12pt;">button is selected, the system will only generate the list for items with a stock status of </font><font style="font-size:12pt; font-weight:bold;">Active</font><font style="font-size:12pt;">.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Generate Button</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the filter criteria have been set using the</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font><font style="font-size:12pt;">, you can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Generate</font> <font style="font-size:12pt;">button which generates the batch list based on the selected filters. You can then either add further to the batch by using the</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font> <font style="font-size:12pt;">or you can set your</font> <font style="font-size:12pt; font-weight:bold;">Data Change Options</font> <font style="font-size:12pt;">on the right of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Records Field</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">Records</font> <font style="font-size:12pt;">field displays the number of records that are currently in the batch. While there is no limit to how many records can be placed into a batch, we recommend a few hundred or so as being a manageable batch size. This of course widely varies depending on the task you wish to perform on this batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Insert Part</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">Insert Part</font> <font style="font-size:12pt;">button allows you to insert parts by manually selecting the parts to be included in the batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Firstly click on the</font> <font style="font-size:12pt; font-weight:bold;">Insert Parts</font> <font style="font-size:12pt;">button. This will display a stock lookup screen whereby you are able to locate parts either by part number or by description. You can also manually scroll through and select the required parts. Once you have located the part required you can either press the</font> <font style="font-size:12pt; font-weight:bold;">Enter</font> <font style="font-size:12pt;">Key or click on the</font> <font style="font-size:12pt; font-weight:bold;">Toggle</font> <font style="font-size:12pt;">button to select the item. You can then locate and select other multiple items as well. The selected items will be highlighted in red. Once all of the required items have been highlighted you can then press the</font> <font style="font-size:12pt; font-weight:bold;">F12</font> <font style="font-size:12pt;">key or click on the</font> <font style="font-size:12pt; font-weight:bold;">Select</font> <font style="font-size:12pt;">button to select the required items.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The items are then added into the stock batch. You can then either add further to the batch by using</font> <font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font> <font style="font-size:12pt;">or you can set your</font> <font style="font-size:12pt; font-weight:bold;">Data Change Options</font> <font style="font-size:12pt;">on the right of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Delete Items</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The delete button allows you to delete the highlighted line from the batch. You may have used one of the filter options to bring a range of items into the batch and then want to delete several items within that range that you do not want to change. You can also use the</font> <font style="font-size:12pt; font-weight:bold;">Ctrl-Del</font> <font style="font-size:12pt;">keys to delete the highlighted item.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Locator</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Locator Button allows you to search for and locate a specific stock item within the batch. You can also type the first character of the part number whilst in the batch list to locate a part starting with that first character.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the Locator button has been pressed you can search for the part number in the usual way. You are able to search by part number, description, x-ref, bin location, barcode and also by using the intelligent search function. Help on these search facilities is available within the AM-Win help.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the item required is found then you can select it and you will be taken to the selected item in the stock batch. If the selected item is not in the batch then a message stating this will be displayed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Inside the Batch List</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Whist highlighting records within the batch you have a variety of options available to you. The list displays the Part Number, Description, On Hand qty, Group, Bin location and Preferred Supplier. Sometimes these fields will not all fit on the screen at once. In this case you can narrow or widen the columns in the batch list by the usual windows method. Move the mouse between the columns until left and right arrows appear where the mouse cursor is usually shown. You can then hold the left mouse button down and move the mouse left or right to narrow or widen the columns. You are also able to access the columns by clicking on the horizontal scroll bar at the bottom of the batch list so that the columns move over to the left or right.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The screen also displays the Selling prices, Sub group, Cost prices and Preferred Supplier of the selected item at the bottom of the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">If you highlight a line within the batch you can click on the</font> <font style="font-size:12pt; font-weight:bold;">Delete</font> <font style="font-size:12pt;">button or the</font> <font style="font-size:12pt; font-weight:bold;">Ctrl-Del</font> <font style="font-size:12pt;">keys to delete the selected item. You can also sort the items into part number or Description order or reverse order by clicking on either the part number or description heading.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You are also able to tag and un-tag multiple items within the batch by entering on them or right clicking on the item and selecting the toggle option. Once tagged you can then right click on the batch list and delete all of the tagged items by clicking on</font> <font style="font-size:12pt; font-weight:bold;">the Delete all selected</font> <font style="font-size:12pt;">option.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When you right click inside the batch list you can also tag or un-tag all items within the batch list. When you process option changes you can then choose to process only tagged records or the entire batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Save Button</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the batch has been generated, you can then save the batch by clicking on the</font> <font style="font-size:12pt; font-weight:bold;">Save</font> <font style="font-size:12pt;">button. You can then retrieve that batch at a later stage using the</font> <font style="font-size:12pt; font-weight:bold;">Revise</font> <font style="font-size:12pt;">Button.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">If you have not selected the operator then you will be prompted to do so prior to the batch being saved.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Clear Button</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">Clear</font> <font style="font-size:12pt;">button will clear the current batch list and reset the</font> <font style="font-size:12pt; font-weight:bold;">New</font> <font style="font-size:12pt;">and</font> <font style="font-size:12pt; font-weight:bold;">Revise</font> <font style="font-size:12pt;">buttons to active ready for the next transaction. Any unsaved changes will be lost if you clear the batch list.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Save/Print Button</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">New Mode</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">Save-Print</font> <font style="font-size:12pt;">button (or Print Batch button in revise mode) will save and print the current batch. This allows you to visually see the batch on paper before processing mass update changes to the batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Revise Mode</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This button is labelled </font><font style="font-size:12pt; font-weight:bold;">Print Batch</font><font style="font-size:12pt;"> when in revise mode but effectively performs the same process as above.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Revise a Batch</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once a batch has been saved you can then revise the batch using the Revise Button. After clicking on the revise button a list of available batches will be displayed. You can then click on the required batch which brings that batch into the batch list. Once the batch is displayed in the list you can then add additional items into the batch using the Batch Filter options (</font><font style="font-size:12pt; font-weight:bold;">Single Filter Tab</font><font style="font-size:12pt;">) or you can print (</font><font style="font-size:12pt; font-weight:bold;">Save Print Button</font><font style="font-size:12pt;">) or even delete (</font><font style="font-size:12pt; font-weight:bold;">Delete Batch</font><font style="font-size:12pt;">) a batch. The batch can also be used to process batch option changes.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Delete a Batch</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once a batch has been saved or a saved batch has been revised you then have the option to delete the batch. Select the batch you wish to delete and it will be loaded into the screen. You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Delete</font> <font style="font-size:12pt;">Batch button to delete the displayed batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Options</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Before you are able to utilise the many functions available in the</font> <font style="font-size:12pt; font-weight:bold;">Data Change</font> <font style="font-size:12pt;">options you must be aware of certain rules and limitations (</font><font style="font-size:12pt; font-weight:bold;">Rules</font><font style="font-size:12pt;">) required ensuring the integrity of your data. You then must have generated a New batch (</font><font style="font-size:12pt; font-weight:bold;">New Batch</font><font style="font-size:12pt;">) or be Revising (</font><font style="font-size:12pt; font-weight:bold;">Revise a Batch</font><font style="font-size:12pt;">) an existing batch which will be amended by the</font> <font style="font-size:12pt; font-weight:bold;">Stock Data</font> <font style="font-size:12pt;">Tool.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Now that a batch is selected you can make the following changes.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">New Description</font> <font style="font-size:12pt;"> This option allows you to set the entire list of items in the chosen batch to have the same description. You may want to have a batch of spark plugs with different names and make them standard to read Spark Plugs. Previously they may have had names like Bosch plugs, NGK Plugs, Champion Plugs and now you just want to call them all Spark Plugs.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">GST</font> <font style="font-size:12pt;"> The GST option allows you to change the status of the GST for selected items. Note that the GST change will only affect parts in the list which has a zero stock on hand value. The cost ex and Inc GST fields will also be made the same with the Inc GST field being made equal to the current ex GST price. If left blank then the option is not changed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Stock Class</font> <font style="font-size:12pt;">- this option allows you to change the stock class of all items within the batch to the class chosen. Note that the Stock Class change will only affect parts in the list which has a zero stock on hand value.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Created on</font> <font style="font-size:12pt;">- This option allows you to set the created date for stock items which currently have no created date on file. This is used for those customers who created stock in AM-Win prior to version 6. The created date can then be useful when running redundant stock reports.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Bin Location</font> <font style="font-size:12pt;">- This allows you to set the same bin location for all of the items within the batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Preferred Supplier</font> <font style="font-size:12pt;">- This allows you to set the same preferred supplier for all of the items within the batch. You may now purchase a particular group or groups of parts from a different supplier. This will allow you to change the supplier and from now on the Auto orders and other functions will work for those items from the new supplier.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Cost Ex and Cost Including GST</font><font style="font-size:12pt;">. - This allows you to set the same preferred supplier for all of the items within the batch. You may find that all spark plugs for example of a certain</font> <font style="font-size:12pt;">type have the same price. This will allow you to set the price without manually going through each individual item.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Group</font> <font style="font-size:12pt;">- This allows you to allocate all of the parts within the batch to a specific group. These might be previously orphaned parts which had no group or they might be a combination of groups that you now wish to merge into a single group. You may also wish to split a group into several groups by generating a batch by group, deleting the unwanted items from the batch and then creating a new group with the remaining batch items.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Sub Group</font> <font style="font-size:12pt;">- This allows you to allocate all of the parts within the batch to a specific Sub group. These might be previously orphaned parts which had no Sub group or they might be a combination of groups, suppliers or other filters that you now wish to merge into a single Sub group. You may also wish to split a group into several sub groups by generating a batch by group, deleting the unwanted items from the batch and then creating a new sub group within the chosen group using the remaining batch items.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Cross Reference (X-ref)</font> <font style="font-size:12pt;">- This allows you to allocate all of the parts within the batch to a specific cross reference. This allows you to select similar parts with something in common and then cross reference them together for invoice, purchase or lookup options in AM-Win.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Auto Orders -</font> <font style="font-size:12pt;">This allows you to allocate all of the parts within the batch to a specific Auto Order status.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Status</font> <font style="font-size:12pt;">- This allows you to allocate all of the parts within the batch to a specific status of inactive or active. You may wish to make a whole group or stock based on group, subgroup or supplier inactive because you no longer use those items.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Category</font> <font style="font-size:12pt;">- This allows you to allocate all of the parts within the batch to a specific stock category.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Usual Qty</font> <font style="font-size:12pt;">- This allows you to allocate all of the parts within the batch to a specific quantity.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Code Has Prefix</font> <font style="font-size:12pt;">- This option allows you to change the status to Yes or No (Ticked or Unticked). If left blank then the status will remain unchanged.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Is Serialised</font> <font style="font-size:12pt;">- This option allows you to change the status to Yes or No (Ticked or Unticked). If left blank then the status will remain unchanged. Note that this change will only take place for items with zero stock on hand.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Sell By Volume -</font> <font style="font-size:12pt;">This option allows you to change the status to</font> <font style="font-size:12pt; font-weight:bold;">Yes</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">No</font> <font style="font-size:12pt;">(Ticked or Un ticked). If left blank then the status will remain unchanged.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Use Additional Description</font> <font style="font-size:12pt;">- This option allows you to change the status to</font> <font style="font-size:12pt; font-weight:bold;">Yes</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">No</font> <font style="font-size:12pt;">(Ticked or Un ticked). If left blank then the status will remain unchanged.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Ignore Stk Multiplier</font> <font style="font-size:12pt;">- This option allows you to change the status to</font> <font style="font-size:12pt; font-weight:bold;">Yes</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">No</font> <font style="font-size:12pt;">(Ticked or Un ticked). If left blank then the status will remain unchanged.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">DonPrint Barcode</font> <font style="font-size:12pt;">- This option allows you to change the status to</font> <font style="font-size:12pt; font-weight:bold;">Yes</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">No</font> <font style="font-size:12pt;">(Ticked or Un ticked). If left blank then the status will remain unchanged.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">No Discount</font> <font style="font-size:12pt;">- This option allows you to change the status to</font> <font style="font-size:12pt; font-weight:bold;">Yes</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">No</font> <font style="font-size:12pt;">(Ticked or Un ticked). If left blank then the status will remain unchanged.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Is Core Stock</font> <font style="font-size:12pt;">- This option allows you to change the status to</font> <font style="font-size:12pt; font-weight:bold;">Yes</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">No</font> <font style="font-size:12pt;">(Ticked or Un ticked). If left blank then the status will remain unchanged.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Minimum Stock Level</font> <font style="font-size:12pt;">- This option allows you to change the Minimum stock level for all items within the selected batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Maximum Stock Level</font> <font style="font-size:12pt;">- This option allows you to change the Maximum stock level for all items within the selected batch.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Maintain Level</font> <font style="font-size:12pt;">- This option allows you to change the maintain level for all items within the selected batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Bulk Rate</font> <font style="font-size:12pt;">- This option allows you to change the Bulk rate for all items within the selected batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Qty On Hand</font> <font style="font-size:12pt;">- This option allows you to change the Qty on hand for all items within the selected batch. Note that the Qty change will only affect parts in the list which has a zero stock on hand value.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Asset GL Code</font> <font style="font-size:12pt;">- This option allows you to change the Asset code for all items within the selected batch. Note that the Stock Class change will only affect parts in the list which has a zero stock on hand value.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Revenue Code</font> <font style="font-size:12pt;">- This option allows you to change the Revenue code for all items within the selected batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Expense Code</font> <font style="font-size:12pt;">- This option allows you to change the Expense code for all items within the selected batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Rounding</font> <font style="font-size:12pt;">- This option allows you to round the selling prices in the stock file to the nearest 1c, 5c or $1 for all items within the selected batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Unit Per</font> <font style="font-size:12pt;">- This option allows you to change the unit per type for all items within the selected batch. You can type the unit per or select a default option from the list.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Selling Prices</font> <font style="font-size:12pt;">- This allows you to set specific selling prices to all of the selling prices. If a selling price is left at zero then no changes will be made. Because of this you are currently not able to make a price equal to zero.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Process Button</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">button allows you to process the selected batch and make all of the option changes that have been set in the options area.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When you click on the</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">Button, if you have records tagged in the batch list then you will be given the option to process tagged records only or all records within the batch. If you select tagged records only then only those items in the batch list that are tagged will be updated. Remember that any change options selected, which break the rules will not be updated.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Code Change Option</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Code Change option allows you to change the code of all or selected items within the batch list. This can be done in several ways. Firstly you are able to add in a prefix (</font><font style="font-size:12pt; font-weight:bold;">Add Prefix Suffix</font><font style="font-size:12pt;">) at the beginning of the part number or in fact from any position within 10 characters of the beginning of the part number. You can also add in a suffix (</font><font style="font-size:12pt; font-weight:bold;">Add Prefix Suffix</font><font style="font-size:12pt;">) at the end of the part number or in fact from any position within 10 characters of the end of the part number. You are also able to add in a space after or before any character of the part number including at the beginning of the part.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Apart from adding characters you can also remove (</font><font style="font-size:12pt; font-weight:bold;">Remove Prefix Suffix</font><font style="font-size:12pt;">) up to 10 characters from anywhere in the part number.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Add a Prefix or a Suffix</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When the Change Code tab is selected you have the choice to either add or remove. Select the Add option which is the default.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You then need to select either the</font> <font style="font-size:12pt; font-weight:bold;">Prefix</font> <font style="font-size:12pt;">or the</font> <font style="font-size:12pt; font-weight:bold;">Suffix</font> <font style="font-size:12pt;">option. Prefix means that the change will occur from left to right whereas suffix means the changes will occur from right to left.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You are then required to enter the</font> <font style="font-size:12pt; font-weight:bold;">position</font> <font style="font-size:12pt;">which the changes will start after. If the position is left at zero then the prefix will be added to the beginning of the code. If the position is left at zero and the suffix option is chosen then the suffix will be added at the end of the code. If the prefix is selected and the position is set to 2 then the prefix will be added after the second character in the part number where as it will be added before the second last character if the suffix option is chosen. The position has a maximum of 10.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">prefix / suffix character</font> <font style="font-size:12pt;">allows you to enter up to 5 characters to be added into the existing part number.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can also tick the option which allows you to</font> <font style="font-size:12pt; font-weight:bold;">add a space</font> <font style="font-size:12pt;">at a given position in the part number. If you select Prefix and tick the space option and then select the space tick box the system will insert a space in the part number at the position selected in the</font> <font style="font-size:12pt; font-weight:bold;">space position.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">TEST BUTTON</font> <font style="font-size:12pt;">to test that the changes you have requested or that you understand to have requested are what you are actually going to get. This will show you a sample of the first record in the batch list and how it will be affected by your requested changes. If you are happy with the requested changes you can then press the</font> <font style="font-size:12pt; font-weight:bold;">PROCESS</font> <font style="font-size:12pt;">button to update the changes. The changes made will be reflected in your sales, purchases, history and other areas of the software.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:bold; font-style:italic;">NOTE</font><font style="font-size:12pt; color:red; font-style:italic;">: This type of change done on a large batch of parts may take considerable time to process.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Removing a Prefix or a Suffix</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When the Change Code tab is selected you have the choice to either add or remove. Select the Remove option.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You then need to select either the</font> <font style="font-size:12pt; font-weight:bold;">Prefix</font> <font style="font-size:12pt;">or the</font> <font style="font-size:12pt; font-weight:bold;">Suffix</font> <font style="font-size:12pt;">option. Prefix means that the change will occur from left to right whereas suffix means the changes will occur from right to left.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You are then required to enter the</font> <font style="font-size:12pt; font-weight:bold;">position</font> <font style="font-size:12pt;">which the changes will start after. If the position is left at zero then the removal will be started at the beginning of the code. If the position is left at zero and the suffix option is chosen then the removal will be taken from the end of the code. You are then required to enter the number of characters to remove. If you select position zero and characters 1 and the prefix option then the system will remove the first character from the part number. It will remove the last character (first from the right) if suffix is chosen. If you chose position 1 and then 2 characters and prefix the system will remove the 2</font><font style="font-size:12pt; vertical-align:super;">nd</font> <font style="font-size:12pt;">and 3</font><font style="font-size:12pt; vertical-align:super;">rd</font> <font style="font-size:12pt;">character from the part number. This being 2 characters after position 1. Simple huh?</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">TEST BUTTON</font> <font style="font-size:12pt;">to test that the changes you have requested or that you understand to have requested are what you are actually going to get.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This will show you a sample of the first record in the batch list and how it will be affected by your requested changes. If you are happy with the requested changes you can then press the</font> <font style="font-size:12pt; font-weight:bold;">PROCESS</font> <font style="font-size:12pt;">button to update the changes. The changes made will be reflected in your sales, purchases, history and other areas of the software.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:bold; font-style:italic;">NOTE</font><font style="font-size:12pt; color:red; font-style:italic;">: This type of change done on a large batch of parts may take considerable time to process.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Price Change Tab</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Stock Data Tools module allows you to change parts pricing based on a percentage, dollar amount or a value range within a selected stock batch.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You must first create a</font> <font style="font-size:12pt; font-weight:bold;">New Batch</font> <font style="font-size:12pt;">or revise an existing batch to be used and then you can make price changes based on the selected options</font> <font style="font-size:12pt; font-weight:bold;">Price Change Options</font> <font style="font-size:12pt;">from the</font> <font style="font-size:12pt; font-weight:bold;">Price Change</font> <font style="font-size:12pt;">tab.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Price change - Percentage</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Percentage</font> <font style="font-size:12pt;">- To change the price of the items in the batch by a percentage value click on the percentage option. You then are required to click on the</font> <font style="font-size:12pt; font-weight:bold;">Percentage</font> <font style="font-size:12pt;">Button to bring up the price increase window. You can then enter the percentage to be used for the price increase. Once this is done you can then select to increase either the cost or the selling prices by that percentage.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Increasing cost prices</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The cost price increase option will increase the ex and Inc GST cost prices and the selling prices only. The average cost price will not be altered. Once you have selected the cost price, you have 3 further options to choose from.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Retain Cost/Sell Margin -</font> <font style="font-size:12pt;">This option will retain the existing margin between costs and sell price of the items. This means that the cost and selling prices will increase by the same percentage.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Absorb Cost Increase -</font> <font style="font-size:12pt;">This option means that the selling prices will remain the same even though the cost price increases.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Recover Cost Increase -</font> <font style="font-size:12pt;">This option means that the selling price will increase by the same dollar value as the cost price increases regardless of the percentage of the increase.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click the</font> <font style="font-size:12pt; font-weight:bold;">OK</font> <font style="font-size:12pt;">Button to accept the options you have chosen. You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">button to process the selected options for the stock batch. You can also select to process only the tagged items inside the</font> <font style="font-size:12pt; font-weight:bold;">Batch</font> <font style="font-size:12pt;">list.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Increasing Selling Prices</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The selling price increase option will increase the selling prices only. Once you have selected the selling price, you can then click on the tick box next to the prices you wish to have increased. Only the ticked selling prices will be changed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click the</font> <font style="font-size:12pt; font-weight:bold;">OK</font> <font style="font-size:12pt;">Button to accept the options you have chosen. You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">button to process the selected options for the stock batch. You can also select to process only the tagged items inside the</font> <font style="font-size:12pt; font-weight:bold;">Batch</font> <font style="font-size:12pt;">list.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Price Change Amount</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Amount</font> <font style="font-size:12pt;">- To change the price of the items in the batch by a dollar value click on the amount option. You then are required to click on the Amount Button to bring up the price increase window. You can then enter the amount to be used for the price increase. Once this is done you can then select to increase either the cost or the selling prices by that percentage.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Increasing cost prices</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The cost price increase option will increase the ex and Inc GST cost prices and the selling prices only. The average cost price will not be altered. Once you have selected the cost price, you have 3 further options to choose from.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Retain Cost/Sell Margin -</font> <font style="font-size:12pt;">This option will retain the existing margin between costs and sell price of the items. This means that the cost and selling prices will increase by the same percentage.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Absorb Cost Increase -</font> <font style="font-size:12pt;">This option means that the selling prices will remain the same even though the cost price increases.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click the</font> <font style="font-size:12pt; font-weight:bold;">OK</font> <font style="font-size:12pt;">Button to accept the options you have chosen. You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">button to process the selected options for the stock batch. You can also select to process only the tagged items inside the</font> <font style="font-size:12pt; font-weight:bold;">Batch</font> <font style="font-size:12pt;">list.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Increasing Selling Prices</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The selling price increase option will increase the selling prices only. Once you have selected the selling price, you can then click on the tick box next to the prices you wish to have increased. Only the ticked selling prices will be changed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click the</font> <font style="font-size:12pt; font-weight:bold;">OK</font> <font style="font-size:12pt;">Button to accept the options you have chosen. You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">button to process the selected options for the stock batch. You can also select to process only the tagged items inside the</font> <font style="font-size:12pt; font-weight:bold;">Batch</font> <font style="font-size:12pt;">list.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Price</font> <font style="font-size:12pt; font-weight:bold; font-style:italic;">Change</font> <font style="font-size:12pt; font-weight:bold; font-style:italic;">Range</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Range</font> <font style="font-size:12pt;">- To change the price of the items in the batch by a range value click on the range option. You then are required to click on the Range Button to bring up the price increase window.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can then select a choice of either a percentage or value to be used for the price increase. Once this is done you can then select to increase either the cost or the selling prices by that percentage.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Increasing cost prices</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The cost price increase option will increase the ex and including GST cost prices and the selling prices only. The average cost price will not be altered. Once you have selected the cost price, you have 3 further options to choose from.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Retain Cost/Sell Margin -</font> <font style="font-size:12pt;">This option will retain the existing margin between costs and sell price of the items. This means that the cost and selling prices will increase by the same percentage.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Absorb Cost Increase -</font> <font style="font-size:12pt;">This option means that the selling prices will remain the same even though the cost price increases.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Recover Cost Increase -</font> <font style="font-size:12pt;">This option means that the selling price will increase by the same dollar value as the cost price increases regardless of the percentage of the increase.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">The Range</font> <font style="font-size:12pt;">- Must be set for a specific dollar amount range for the changes to apply to. This means that you can select the first of the 3 ranges to be for example $0.00 to $2.00 with an increase of 50% and then the second range from $2.01 to $50 with an increase of 40% and then a range of $50.01 to $999,999 as 30%. This means that you can apply a higher mark up to items that are in a lower price bracket. For example you may charge globes and fuses with a much larger mark up due to their low value than you would more expensive items where you can afford to sell them at a lower margin.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click the</font> <font style="font-size:12pt; font-weight:bold;">OK</font> <font style="font-size:12pt;">Button to accept the options you have chosen. You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">button to process the selected options for the stock batch. You can also select to process only the tagged items inside the</font> <font style="font-size:12pt; font-weight:bold;">Batch</font> <font style="font-size:12pt;">list.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Increasing Selling Prices</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The selling price increase option will increase the selling prices only. Once you have selected the selling price, you can then click on the tick box next to the prices you wish to have increased. Only the ticked selling prices will be changed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">The Range</font> <font style="font-size:12pt;">- Must be set for a specific dollar amount range for the changes to apply to. This means that you can select the first of the 3 ranges to be for example $0.00 to $2.00 with an increase of 50 cents and then the second range from $2.01 to $50 with an increase of $2 and then a range of $50.01 to $999,999 as $10.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This means that you can apply a different mark up to items that are in a different price bracket. For example you may charge globes and fuses at 50 cents more whereas more expensive items can be increased by a larger value.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click the</font> <font style="font-size:12pt; font-weight:bold;">OK</font> <font style="font-size:12pt;">Button to accept the options you have chosen. You can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">button to process the selected options for the stock batch. You can also select to process only the tagged items inside the</font> <font style="font-size:12pt; font-weight:bold;">Batch</font> <font style="font-size:12pt;">list.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Merging Stock Files</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">There may be times when you have data in another AM-Win stock file which you wish to have merged into your main stock file. This may be when you are merging 2 companies into one set of data, merging your practice stock file into your live file or obtaining parts from an associated companydata. For whatever reason, the Stock Data Tool will allow you to merge another stock file into your main one. To perform this function you must first select the File Merge TAB from within the Stock Data Tool Module.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; color:red; font-weight:bold;">Merge Rules</font></p>
+<p style="text-align:justify;">&#160;</p>
+<ol>
+<li>
+<p class="Block_Text" style="text-align:justify;"><font style="font-family:'Arial';">If a stock item exists in the other stock file but not your main file then the item will be added into your existing file. If you choose to add the quantity on hand then the new item will also show as in stock and a transaction will be processed to add the value of stock into your ledger as an opening balance record. This will be offset against the reserve account and the appropriate stock ledgers.</font></p>
+</li>
+</ol>
+<p class="Block_Text" style="margin-left:5.75pt;text-align:justify;">&#160;</p>
+<ol start="2">
+<li>
+<p class="Block_Text" style="text-align:justify;"><font style="font-family:'Arial';">If a stock item being merged exists in both the input file and your main stock file then the item will not be added a second time. However, if you choose to add the quantity on hand then the item stock on hand figures will be added together and a transaction will be processed to add the value of stock into your ledger. This will be offset against the reserve account and the appropriate stock ledgers.</font></p>
+</li>
+</ol>
+<p class="Block_Text" style="margin-left:5.75pt;text-align:justify;">&#160;</p>
+<ol start="3">
+<li>
+<p class="Block_Text" style="text-align:justify;"><font style="font-family:'Arial';">Only Stock items have a transaction added. Non Stock items do not add to the stock value.</font></p>
+</li>
+</ol>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Select Input File</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The input file is the other stock file you wish to merge with your existing main stock file. To select the input file, click on the Select Input File button. This will then open the usually Windows file selection window. Select the file you wish to use as the input file (Not your main stock file) and double click on it. The input file location is displayed on the top right hand side of the screen for reference purposes.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Previewing the input file.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can preview the first 100 records of the input file by clicking on the Preview tick box above the Input File button.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Previewing the</font> <font style="font-size:12pt; font-weight:bold; font-style:italic;">Main</font> <font style="font-size:12pt; font-weight:bold; font-style:italic;">(Output) file.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can preview the entire output file by clicking on the Preview tick box next to the Output File label.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Input File Options</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You have a choice of importing only stock items from the input file that belong to either a specific supplier or a specific stock group.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Filter by Supplier</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To import only records from the input file belonging to a specific supplier, click on the supplier tick box area and then select the supplier to be used. You can then preview the first 100 matching records from the input file by ticking on the preview button.</font></p>
+<p style="text-align:justify;"></p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Filter by Group</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To import only records from the input file belonging to a specific group, click on the group tick box area and then select the group to be used. You can then preview the first 100 matching records from the input file by ticking on the preview button.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Stock on Hand</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">There is a tick box option which allows you to update the stock on hand figures between the input and the main stock file. IF you tick the Update Stock on hand option then the stock on hand from the input file will be merged with the main stock file. Stock will be added together if the item exists in both files. A transaction will also be written to allow for the increase in stock between the reserve account and the stock ledgers.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Process Merge Button</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once you have selected the input file, select input file, selected your merge options input file options and chosen to either update or not update the stock, you can then start the merge process by clicking on the</font> <font style="font-size:12pt; font-weight:bold;">Merge</font> <font style="font-size:12pt;">Button.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:bold; font-style:italic;">NOTE</font><font style="font-size:12pt; color:red; font-style:italic;">: that if you are importing a large stock file then this process may take considerable time.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">The Undo Tab</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">Undo</font> <font style="font-size:12pt;">tab allows you to undo the last change that was processed</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">Button through the stock data tool. You may have just processed a change and then realised you made a mistake, had the wrong batch, updated the wrong group or prices etc.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can then undo the last process that was done but only the last process and not any before it.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click on the</font> <font style="font-size:12pt; font-weight:bold;">Undo</font> <font style="font-size:12pt;">Tab. You can then click on the </font><font style="font-size:12pt; font-weight:bold;">Load Undo File</font><font style="font-size:12pt;"> button to load the parts that will be undone. You can then click on the process button to make the changes. You can only choose to undo a whole process. In other words, you cannot partly undo something. Itall or nothing.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the undo file has been loaded you can then click on the</font> <font style="font-size:12pt; font-weight:bold;">Process</font> <font style="font-size:12pt;">button to process the undo request.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold; font-style:italic;">Process Limitations.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You are not able to undo a process that was done more than 5 days ago even if that process was the last one done. This is because to many changes may have already been done to effect those stock items in the normal course of running AM-Win for an undo to be considered safe.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">You can only undo the last process that was completed. You cannot undo the one before etc. This is because the last process may have already changed the process that went before it.</font></h1>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Customer Consignment Module</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "6.0_7";
+</script>
+ <meta name="brsprev" value="Version_6_Features/Customers/Consignment_Stock/Consignment_Stock_Out.htm">
+ <meta name="brsnext" value="REPORTS/Stock_Reports/Consignment_Field_Report.htm">
+ <meta name="topic-breadcrumbs" content="STOCK" />
+</head>
+<body>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<h1>Customer Consignment Module</h1>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Under the Parts menu within AM-Win you have a option called Customer Consignment Stock. This allows you to view, track, report and invoice the consignment stock for a customer. If you wish to increase or decrease the levels of stock held by a customer then you must use the</font> <a href="../Version_6_Features/Customers/Consignment_Stock/Consignment_Stock_Out.htm"><font style="font-family:'Times New Roman'; font-size:12pt;">Multi-Location consignment option</font></a><font style="font-family:'Times New Roman'; font-size:12pt;">.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Select the customer to view by clicking in the customer code button. Once a customer is selected, a list of parts on consignment to that customer along with the quantities will be displayed. The counted quantity will default to the consignment quantity unless this has been changed since the last time the process button was used for this customer. It will also not default back to the consignment quantity if the goods supplied were not adequate to bring the customers stock back to the appropriate consignment level.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">It is anticipated that you would usually be updating the consignment stock based on the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">Consignment Field report</font> <font style="font-family:'Times New Roman'; font-size:12pt;">that was completed by the salesperson when the stock was replenished. This report would then be used as a form of stocktake in essence.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:16pt; font-weight:bold;">Processing Consignment Stock</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Once the customer is selected and the consignment stock is displayed, you can highlight the line to be counted. Press the enter key and this will allow you to change the counted quantity and automatically calculate the supplied quantity. In some cases the supplied quantity is not always the difference and therefore you can change the supplied quantity as well. This will happen if the quantity required to maintain the consignment stock may not have been available at the time. A customer may have required 5 abc parts but the salesperson only had 3 in the van at the time. The additional 2 parts can then be invoice to the customer separately when they are supplied.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">The changes are automatically saved and therefore if you leave the screen and come back again later the count and supplied fields will be as you left them. This means that a count can be done over a period of time if required.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">When all of the count has been process you can then process the invoice. The system will then invoice the customer for the amount owing based on the parts being supplied at the customerusual or discounted rate. The invoice is then printed and the debtor and ledger accounts are updated. The counted quantity is then changed to be the Consignment quantity less the quantity that wasnbut should have been supplied at the time. If 5 parts were required to bring the consignment level to the correct state but only 3 were supplied then the new counted quantity would be 2 less than the consignment quantity and the supplied quantity would default to 2 so that they can be supplied later.</font></p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc version="1.0">
+	<properties windowstyles="8388647" exwindowstyles="256">
+	</properties>
+	<item name="WELCOME TO AM-WIN">
+		<item name="Welcome to AM-Win" link="WELCOME_TO_AM_WIN\AMWIN.htm">
+		</item>
+		<item name="Windows Functions" link="WELCOME_TO_AM_WIN\Windows_Functions.htm">
+		</item>
+	</item>
+	<item name="GETTING STARTED">
+		<item name="Read This First" link="GETTING_STARTED\Read_This_First.htm">
+		</item>
+		<item name="Software Defaults" link="GETTING_STARTED\Software_Defaults.htm">
+		</item>
+	</item>
+	<item name="Version 10 Features">
+		<item name="General Changes">
+			<item name="New Menu Toolbar" link="Version_10_Features\General_Changes\New_Menu_Toolbar.htm">
+			</item>
+		</item>
+	</item>
+</toc>

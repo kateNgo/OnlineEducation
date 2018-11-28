@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scheduler Module</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "20.4.0_13";
+</script>
+ <meta name="brsprev" value="Version_9_Features/New_Modules/Despatch_Module.htm">
+ <meta name="brsnext" value="Version_9_Features/New_Modules/Remote_Staff_Scheduler_Logon.htm">
+ <meta name="topic-breadcrumbs" content="Version 9 Features > New Modules" />
+</head>
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>Scheduler Module</h1>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:center;"><font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Scheduler Module</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Scheduler is an additional module to the main AM-WIN package and must be licensed. The best resolution for your monitor to use for this module would be 1280x1024.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p><font style="font-size:14pt; font-weight:bold;">Getting Started</font></p>
+<p class="Body_Text" style="margin-left:5.75pt;text-align:justify;"><font style="font-family:'Arial'; font-style:normal;">To open up the Scheduler Module, double click on the Scheduler shortcut Icon in your AMWIN shortcut folder saved on your desktop.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:5.75pt;text-align:justify;"><font style="font-family:'Arial'; font-style:normal;">The AMWIN Task Scheduler program will open with the diary screen showing automatically at todaydate.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p><font style="font-size:12pt;">Before you begin using the Diary screen to schedule your tasks, you must first go through a series of set up procedures through the Program menu.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p><font style="font-size:14pt; font-weight:bold;">Setting Up the Scheduler</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From the Program menu select</font> <font style="font-size:12pt; font-weight:bold;">Diary Colors</font><font style="font-size:12pt;">. This will bring up the Set Diary Colors screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This screen shows a list of statusto use in the scheduler.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:aqua; font-weight:bold;">Booked</font> <font style="font-size:12pt;">means that task has been booked into the diary.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:5.75pt;"><font style="font-family:'Arial'; color:blue; font-weight:bold;">Fixed Time</font> <font style="font-family:'Arial';">means that task has been booked for a particular time and flexibility is not negotiable.</font></p>
+<p class="Body_Text" style="margin-left:5.75pt;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:navy; font-weight:bold;">Task Issued</font> <font style="font-size:12pt;">means that the person allocated to that task has been advised of the task.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:#cc99ff; font-weight:bold;">In Progress</font> <font style="font-size:12pt;">means that the task is currently being done by the allocated person.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:#ff9900; font-weight:bold;">Task Done</font> <font style="font-size:12pt;">means that the task has been done but the job is not completed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:#339966; font-weight:bold;">Completed</font> <font style="font-size:12pt;">means all tasks allocated to this job and the job has been done and completed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:gray; font-weight:bold;">Out of hours</font> <font style="font-size:12pt;">means that the job has been booked out of the scheduled diary hours.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:bold;">Holiday</font> <font style="font-size:12pt;">means that the task has been booked on a scheduled public holiday, sick day, leave day etc.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:5.75pt;text-align:justify;"><font style="font-family:'Arial'; font-style:normal;">From this screen you can also insert new descriptions and work categories and customize the colours you wish to use for the new descriptions. There is no limit to the number of extra descriptions you can input. To do this you simply click on either the Normal Foreground, Normal Background, Selected Foreground and Selected Background buttons to select your customized colour for that particular description. Then when you have finished customizing the colours for that description, click on the</font> <font style="font-family:'Arial'; font-weight:bold; font-style:normal;">save button</font><font style="font-family:'Arial'; font-style:normal;">. You can do this for each description you want to add.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can also delete any description you have added by highlighting that particular description and then clicking on the</font> <font style="font-size:12pt; font-weight:bold;">Delete Button</font><font style="font-size:12pt;">.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From the Program menu select</font> <font style="font-size:12pt; font-weight:bold;">Employee Colors</font><font style="font-size:12pt;">. This will bring up the Set Employee Colors screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:5.75pt;text-align:justify;"><font style="font-style:normal;">This screen shows the list of Employees which are contained in the Employee Masterfile (except those that are flagged not to be shown in the Scheduler). You can click on each employee and then customize the colours you wish to use for that employee. To do this you simply click on the employee on the left hand side, then click on either the Normal Foreground, Normal Background, Selected Foreground and Selected Background buttons to select your customized colour scheme for that particular employee. Then click on the Group Style Button to select a colour category for that employee. Then when you have finished customizing the colours for that employee, click on the</font> <font style="font-weight:bold; font-style:normal;">save butt</font><font style="font-style:normal;">on and then</font> <font style="font-weight:bold; font-style:normal;">exit</font><font style="font-style:normal;">. You can do this for each employee you want to add.</font> <font style="font-style:normal;">From the Program menu select</font> <font style="font-weight:bold; font-style:normal;">Employee Masterfile</font><font style="font-style:normal;">. This will bring up the Employee/Contractor Masterfile screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This screen shows a list of Employees to use in the Scheduler.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To add an employee, click on the</font> <font style="font-size:12pt; font-weight:bold;">Insert Button</font> <font style="font-size:12pt;">and enter in the employeedetails on the right hand side of the screen using the relevant fields, eg Surname, First Name etc. You can select which type of employee they are, eg Technical, Admin or Sales. Click on the</font> <font style="font-size:12pt; font-weight:bold;">Ledger Button</font> <font style="font-size:12pt;">to select which labour ledger is allocated for that particular employee. Click on the</font> <font style="font-size:12pt; font-weight:bold;">Location Button</font> <font style="font-size:12pt;">to select which location they are assigned to. If you donhave multi locations then the location should be defaulted to Head Office. Insert the hours of work they do each day, eg 8 hours. You can also indicate with a tick, whether or not you wish this employee to be shown in the Scheduler Module or the Timesheet module (depending on which you have licenced to your program).</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When all the employeedetails have been entered, click on the</font> <font style="font-size:12pt; font-weight:bold;">Save Button</font> <font style="font-size:12pt;">and then</font> <font style="font-size:12pt; font-weight:bold;">Exit</font><font style="font-size:12pt;">.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From the Program menu select</font> <font style="font-size:12pt; font-weight:bold;">Employee Standard Hours</font><font style="font-size:12pt;">. This will bring up the Employee Standard Hours screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Enter into this screen the Normal standard hours your employees would work in</font> <font style="font-size:12pt; color:red; font-weight:bold;">24 HOUR TIME</font><font style="font-size:12pt;">. The system will automatically convert your 24 HOUR TIME to normal hours. Eg Lunch would be entered as 13.00 and the system will automatically convert the time to 1.00pm.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click on the</font> <font style="font-size:12pt; font-weight:bold;">OK button</font> <font style="font-size:12pt;">to save.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From the Program menu select</font> <font style="font-size:12pt; font-weight:bold;">Special Time Entry</font><font style="font-size:12pt;">. This will bring up the Fixed Leave/Holiday Entry screen.</font></p>
+<p class="Body_Text_Keep" style="margin-left:5.75pt;margin-bottom:0.00pt;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This screen allows you to enter batch entries for Annual leave, sick leave, Carers leave and other special leave for multiple dates in the Scheduler. This particular function relies on the</font> <font style="font-size:12pt; font-weight:bold;">STATE FIELD</font> <font style="font-size:12pt;">in the</font> <font style="font-size:12pt; font-weight:bold;">CONTROL FILE</font> <font style="font-size:12pt;">to work properly.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To enter these multiple entries into the scheduler, select the employee from the Employee Button. Then select the dates from the From and Unto Date buttons. Then select the Activitity, eg Annual leave, sick leave, Carers leave etc. Enter in the Start Work time eg 9.00am and enter the hours per day this employee usually works. Then select the days which are relevant to that employeeregular working schedule and the leave will be entered on those days between the From and Unto Dates. Then click on the</font> <font style="font-size:12pt; font-weight:bold;">Process Button</font> <font style="font-size:12pt;">and exit.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From the Program menu select</font> <font style="font-size:12pt; font-weight:bold;">Public Holidays</font><font style="font-size:12pt;">. This will bring up the Holiday Dates screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From this screen you can enter in all the public holidays for each state of</font> <font style="font-size:12pt;">Australia</font> <font style="font-size:12pt;">so the system knows when you enter a job on one of these dates it will know that it is a public holiday and will alert you of this conflict. To enter these dates, click on the Insert Button, Enter the State eg NSW. Click on the Date button to select the appropriate holiday date, then in the Name field, indicate what public holiday it is, eg New Years Day. Then click on the Save button. Once you have entered all of your public holidays into the system, click on the Exit button.</font></p>
+<p class="Body_Text_Keep" style="margin-left:5.75pt;margin-bottom:0.00pt;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From the Program menu select</font> <font style="font-size:12pt; font-weight:bold;">Task Categories</font><font style="font-size:12pt;">. This will bring up the Task Categories screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Task Categories is like a kit of tasks and it includes all tasks involved with a particular job category. You can enter a new job category by clicking on the Insert button and typing in your description. Then hit the Save button. (You can auto assign all tasks included in that category when a job is created. Click on the</font> <font style="font-size:12pt; font-weight:bold;">Auto Assign</font> <font style="font-size:12pt;">option.)</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To see a more detailed list of the tasks involved with a job cataegory, we highlight the category of Solar Power and click on the</font> <font style="font-size:12pt; font-weight:bold;">Detail button.</font> <font style="font-size:12pt;">You can then see that this particular kit of Solar Power is made up of other tasks, eg Installation; Send application.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">If we highlight the task in the description column you can either modify that task or insert a new task which would be applicable to that job category. For example, you can change the duration of this task from 1 hour to 3 hours or change the days to start this particular task from the beginning of the job to another day, or change the default time to start this particular task to a later or earlier time, to allocate an employee to this task or to write any notes relevant to the job by filling in the relevant fields with the amended information. When you are finished, click on the Save button and then Finished to exit from the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To insert a new task, click on the Insert Button and enter the relevant information into the Description, Duration, Days from Start, Default Time and Employee fields and then click on the Save Button to save and then the Finished button to exit.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p><font style="font-size:14pt; font-weight:bold;">Using the Open Diary Scheduler</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From the Program menu select</font> <font style="font-size:12pt; font-weight:bold;">Open Diary</font><font style="font-size:12pt;">. This will bring up the Employee List Diary screen for that day. The diary is run based on a day starting from 6.00am until 6.00pm. You will note that all public holidays will be greyed out along with all sick leave, annual leave and other leave. Sundays have an alert message upon clicking on that date or when entering a task on a Sunday.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You have several different views to choose from. You have a daily, weekly and monthly view of your employees and all the tasks included in the scheduler along with a view for 5, 6, 7, 8, 9, 10 or single employees at any one time.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Daily View</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The daily view shows all scheduled tasks allocated to each employee for between 5 and 10 employees shown on the scheduler screen at any one time. If you have more than 10 employees, then to see their scheduled tasks in the diary, use the</font> <font style="font-size:12pt; font-weight:bold;">Previous Employee</font> <font style="font-size:12pt;">and the</font> <font style="font-size:12pt; font-weight:bold;">Next Employee Buttons</font> <font style="font-size:12pt;">to advance along. There is also an option to see a single view of any one employee. This view shows the scheduled tasks for that particular employee in more detail.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Weekly View</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The weekly view shows all scheduled tasks allocated to each single employee over a particular weekly period. You can choose which employee you wish to view from the Employee dropdown menu located on the left hand side of the screen and you can choose your weekly view from the weekly view dropdown menu located on the right hand side of the screen. From this Weekly view dropdown menu, you have the choice to view the diary on a 5 day, 6 day or 7 day basis. You can use the Arrow Buttons to advance along the dates of any week. There is also the option to see a single day view of any one employee.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This view shows the scheduled tasks for that particular employee on a particular day in more detail.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Monthly View</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The monthly view shows all scheduled tasks allocated to all employees over a particular monthly period. You can filter the information down by ticking whichever employee and their related tasks you wish to view on the screen. You can select more or less options depending on what information you wish to see at any one time. You can also view which tasks are scheduled in that monthly period by Groups.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click on the</font> <font style="font-size:12pt; font-weight:bold;">Group Employees option</font> <font style="font-size:12pt;">at the top right hand side of the monthly view screen and you can then select to see all tasks relating to any job category listed there. You can use the Arrow Buttons to advance along the dates of any month.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Scheduler Display View and Refresh Button</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can change the way the tasks are viewed in the scheduler by what you consider to be the most important information to be viewed. You can choose to view your tasks by Desc/Address, Contact/Address, Address, Times/Addresses or Names/Addresses. After you have made your selection from the drop down Display menu, click on the Refresh button to refresh the view according to your preference.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Task Allocations Tab</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This is a list of all unallocated tasks entered into the scheduler which currently have not been allocated to an employee or to a job.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To allocate these tasks, click and drag the appropriate task to the chosen employee and drop the task onto the allocated time slot. You will the be asked to choose a status for this task of either Booked, Fixed Time, In progress or Completed. Make your selection and then the task will be placed into the scheduler. To place a current job in the diary into unallocated you can either click on the heading of the task and drag into the unallocated list box or you can open the task and change the status to Unallocated.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Warnings and Conflicts list box shows a list of tasks that are in conflict such as when bookings are made on an unavailable day or when a double booking occurs.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The ** which appear on the scheduler indicates a conflict with any of the bookings and these details are shown under the Warnings Tab.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">To Do/Warnings Tab</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can sort your employees into a special order in the diary screen depending on who is working with whom. For example, if you wish to view in the diary all the people who work together, you can manually sort them into that order. Eg, If one person has an apprentice, then you would place them side by side on the scheduler so that it is easy to see what tasks have been allocated to both of them. To sort the employees, highlight the employee you wish to move and use your</font> <font style="font-size:12pt; font-weight:bold;">Control + Arrow keys</font> <font style="font-size:12pt;">to select the position in the scheduler. You can also sort your employees by Surname (will sort alphabetically), by Employee number (will sort by employee number in masterfiles) or by time available (will show who has task availability from least to most).</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The TO DO list is a list of tasks to be done which may not necessarily be allocated to a job. You could enter into this TO DO list, reminders, appointments and the like. To view the TO DO list for an individual employee, click on the TO DO List for Button and select the employee and then the list box will show all of the TO DO item tasks for that employee. If you click on the Expand List button, you will see a more detailed list of the TO DO tasks for that employee.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Temporary Hold Tab</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">This list box shows a list of all tasks modified, moved, status changed or the like JUST FOR THAT DAY. This is a quick and easy listbox reference to find jobs that have been dealt with that day without the need to scroll down many jobs in the Jobs Tab or the Unallocated Tab.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text_3" style="margin-left:5.75pt;text-align:justify;"><font style="font-family:'Arial'; color:red; font-style:italic;">PLEASE NOTE: This listbox is cleared when the system is logged off and only holds information for that day. This is a temporary memory hold.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Job Tab</font></p>
+<p class="Body_Text_3" style="margin-left:5.75pt;text-align:justify;"><font style="font-family:'Arial';">This listbox shows a list of all jobs which have been created. You can see the details of each job by highlighting the job and right clicking on the job to either Insert or Change. This will open up the job. If you click on Change, you can view, change, add or delete things from the job (except the posted entries). If you click on the insert option, you can still view, change, add or delete things from the job invoice but you are also given the option to insert a new task for that job into the scheduler.</font></p>
+<p class="Body_Text_3" style="margin-left:5.75pt;text-align:justify;"><font style="font-family:'Arial';">You can sort the listbox by two options. All will give you all jobs created in Amwin which have been approved but are still waiting for something. Unallocated will give you the unallocated jobs only.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;"><font style="font-family:'Arial'; font-size:14pt; font-weight:bold;">Scheduler Buttons</font></p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;"><font style="font-family:'Arial'; color:fuchsia;">The Legend Button</font> <font style="font-family:'Arial';">brings up the Set Diary Colour Screen.</font></p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;"><font style="font-family:'Arial'; color:fuchsia;">The Task List Button</font> <font style="font-family:'Arial';">brings up a summary of all the tasks that have been entered into the scheduler. You can choose which date you require and this screen will give you a list of the tasks for that particular date. You can also select a job and this screen will show you a list of all tasks relevant to that job. There is also a filter dropdown box together with individual buttons where you can sort through the tasks either by All, Unallocated, Estimate, Booked, Fixed Time, Task Issued, In progress, Task Done, Completed, Out of hours or Overdue.</font></p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;"><font style="font-family:'Arial'; color:fuchsia;">The Job List Button</font> <font style="font-family:'Arial';">brings up a listbox with all of the jobs that have been entered into the scheduler. You can sort this job list and filter the list down by using the dropdown box together with individual buttons to sort through the jobs either by Estimates, Approved, Unallocated, urgent, To finalise, Maintenance and Project.</font></p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;"><font style="font-family:'Arial'; color:fuchsia;">On Hold Waiting For Button</font> <font style="font-family:'Arial';">brings up a listbox with all of the jobs that have been entered into the scheduler that are currently on hold waiting for something to happen. You can sort this job list and filter the list down by using the dropdown box together with the individual buttons to sort through the jobs either by All, Ok, Customer, Parts, Information or Estimate.</font></p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;"><font style="font-family:'Arial'; color:fuchsia;">Required for Tasks Button</font> <font style="font-family:'Arial';">brings up a listbox with all of the parts that are currently outstanding to be delivered for each of the tasks due to be done for a particular job. You can sort this parts list and filter the list down by using the dropdown box together with the individual buttons to sort through the parts list to get a list of either All Parts Outstanding, All parts Due to be delivered today, All parts Due to be delivered Soon or parts that are now Overdue.</font></p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;"><font style="font-family:'Arial'; color:fuchsia;">Customer File Button</font> <font style="font-family:'Arial';">is a quick access from the scheduler screen to the Customer Masterfiles. This allows you to do standard functions such as job invoicing, sales orders, check enquiries, make a payment, do payment enquiries, look at job items, check sales reports on stock, check history for that customer and do simple reports for aged balances without having to swap to the main Amwin module.</font></p>
+<p class="Body_Text_3" style="margin-left:7.10pt;text-align:justify;"><font style="font-family:'Arial'; color:fuchsia;">Supplier File Button</font> <font style="font-family:'Arial';">is a quick access from the scheduler screen to the Supplier Masterfiles. This allows you to do standard functions such as check purchase history for that supplier, check enquiries, make a payment, check payment enquiries, do a product report, do a credit return and do simple reports for aged balances without having to swap to the main Amwin module.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Managing Tasks in the Diary</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once you have gone through all the set up procedures, you can then start adding tasks to the diary.</font></p>
+<p class="Body_Text_Keep" style="margin-left:5.75pt;margin-bottom:0.00pt;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To do this you right click on a timeslot under the employee that you need to add a task to and a menu will appear. You will get the choice to Insert, Change, Delete, Send to, On hold, Cut, Paste, Clone to, SMS or Email a task.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Inserting a Task</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When you right click your mouse anywhere on the diary screen you get the option to Insert. Left click on the Insert option and you get a further menu to choose either a Task, a job, an estimate, a purchase order or a To do item.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To insert a Task left click on the Task menu and the Insert New Task screen will appear.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:5.75pt;text-align:justify;"><font style="font-family:'Arial'; font-style:normal;">From this screen you can select the employee you wish to allocate t</font><font style="font-family:'Arial'; font-style:normal;">his particular task to by clicki</font><font style="font-family:'Arial'; font-style:normal;">ng on the employee button and making your selection. You can allocate this task to a particular job by clicking on the Job/Est Button. You can then fill in all the relevant fields such as contact numbers, addresses and allocating this task a particular date, time, duration and description. Choose a status from the drop down status field. You have several choices.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:black; font-weight:bold;">Unallocated</font> <font style="font-size:12pt; color:black;">means that the task has not been allocated to an employee or has not been allocated a time or a day.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:yellow; font-weight:bold;">Estimate</font> <font style="font-size:12pt; color:black;">means that the task will be an estimate.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:aqua; font-weight:bold;">Booked</font> <font style="font-size:12pt;">means that task has been booked into the diary.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:5.75pt;"><font style="font-family:'Arial'; color:blue; font-weight:bold; font-style:normal;">Fixed Time</font> <font style="font-family:'Arial'; font-style:normal;">means that task has been booked for a particular time and day and flexibility is not negotiable. To move a fixed time appointment you would need to answer an alert message to make sure you were aware that the time and date were specially agreed to.</font></p>
+<p class="Body_Text" style="margin-left:5.75pt;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:navy; font-weight:bold;">Task Issued</font> <font style="font-size:12pt;">means that the person allocated to that task has been advised of the task.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:#cc99ff; font-weight:bold;">In Progress</font> <font style="font-size:12pt;">means that the task is currently being done by the allocated person.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:#ff9900; font-weight:bold;">Task Done</font> <font style="font-size:12pt;">means that the task has been done but the job is not completed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:#339966; font-weight:bold;">Completed</font> <font style="font-size:12pt;">means all tasks allocated to this job and the job has been done and completed.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can also set an alarm to go off to remind you of this particular task. Click on the Active Alarm option to activate this feature.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once you have filled in all the relevant information for this task you can click on the</font> <font style="font-size:12pt; font-weight:bold;">OK button</font> <font style="font-size:12pt;">to save your information and it will drop this task into the diary screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Inserting a Job</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To insert a Job left click on the Insert Job menu and the Job Invoicing screen will appear.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From here you can enter additional details, change, edit or modify any job details to this particular job, save and close. At this point you will be able to Insert a new task into the scheduler for that new job you have created. Once you have entered in your details, click on the Ok button to save and drop the task into the diary screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Inserting an Estimate</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To insert an estimate left click on the Insert Estimate menu and the Estimate screen will appear.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From here you can enter a new estimate with additional details, change, edit or modify any job details in the estimate, save and close. At this point you will be able to Insert a new task into the scheduler for that new estimate you have created. Once you have entered in your details, click on the Ok button to save and drop the task into the diary screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Inserting a Purchase Order</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To insert a purchase order left click on the Insert Purchase Order menu and the Purchase Order screen will appear.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From here you can enter a new purchase order, change, edit or modify any details in the purchase order, save and close.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Inserting a To Do</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To insert a To Do left click on the Insert To Do menu and the To Do screen will appear.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">From this screen you can enter the relevant details such as the To Do reference number, select the date the To Do must be completed by, activate an alarm if necessary, allocate the To Do to an employee and write a brief description of what the To Do task entails.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can see a list of the To Dofrom the To Do/Warnings Tab.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Changing a Task, Job or Estimate</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To change a Task, Job or Estimate left click on the Task you wish to change and from there you can select to change either a task, job or estimate</font>.</p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once you have selected what you wish to change, then either the Change Task screen, job invoicing or estimate screen will appear. Make your changes and modify as desired. Then click on the save/exit button to save your changes.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">To delete a Task</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To delete a Task left click on the Task you wish to delete and from there you can select to delete a task. You will be asked to confirm that you wish to delete this highlighted task. You can then answer yes or no.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">There is no provision in the scheduler to delete jobs. Jobs must be deleted from the main AMWIN module.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Task Grouping to a Job List</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You have the option to send a task to Unallocated, Urgent Job, To Finalise, Maintenance or Project job lists.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; color:black; font-weight:bold;">Unallocated</font> <font style="font-size:12pt; color:black;">means that the task has not been allocated to an employee or has not been allocated a time or a day.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Urgent Job</font> <font style="font-size:12pt;">means that this task has now become part of an urgent job that needs to be done as soon as possible.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">To Finalise</font> <font style="font-size:12pt;">means that this job is now ready to be finalized.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Maintenance</font> <font style="font-size:12pt;">means work that is regular but is not necessary to be booked for a particular day or time.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Project</font> <font style="font-size:12pt;">means that this particular job is a very huge job, which may take a lengthy period of time to complete and will entail a large amount of tasks to be allocated to particular employees as part of that particular job.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To allocate a task and a job to a particular job group, right click on the task, select Send to and then choose which particular job list you wish to allocate that task and job to.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can then see these jobs in each group by clicking on the relevant buttons under the Job List section of the scheduler.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Placing a Task on hold</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can place a job on hold if you are waiting on a particular event to happen. The job and task may need feedback from a customer, or may need parts to be ordered or delivered, perhaps you need more information to complete the task or an estimate has been given and is awaiting acceptance.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To place a job or task on hold, right click on the task, select On Hold and then choose which group you wish to allocate this task to. For example; you could allocate the task to either Customer, Parts, Information or Estimate.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Cut and Paste a Task</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can cut and paste tasks to and from different parts of the scheduler. Right click on the task you wish to move, select Cut and then right click on the time and date you wish to move the task to and select paste.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Cloning a Task</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You can clone a task quickly and easily to other employees or to another date. Right click on the task and select Clone To and then select either Employees or Dates.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You could clone certain tasks to other employees. For example if you have an apprentice working with a tradesman. You could clone the task to both employees as it would be assumed that they would be working together on the same job.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Another example would be if an employee was off sick you could quickly and easily move all tasks allocated to that sick employee to another employee for that day.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You could clone certain tasks to different dates. For example if you had a big project that was to be done over a period of time, you could clone that same task for a certain period eg a week.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Sending SMS</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To send an SMS message, right click on the task and select SMS. You can choose to send an SMS message either to the Customer, Bill To, Task Contact or Employee giving them urgent details in relation to that task.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When you select the SMS option, the SMS screen will appear. Simply type in your message and click on the Send SMS button. The other details such as phone number and customer details, Bill to details, Task Contact or Employee details are already populated in the screen for you.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:14pt; font-weight:bold;">Sending Email</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">To send an Email message, right click on the task and then select Email. You can choose to send an Email message either to the Customer or to the Bill to giving them urgent details in relation to that task.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When you select the Email option and choose whom you wish to email, the Enter Email address box appears.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text_Keep" style="margin-left:5.75pt;margin-bottom:0.00pt;"><font style="font-family:'Arial';">You enter in your email address and click on the Ok button, the system will open up an email with that address in your email program. Just enter in the details of your email and click on the send button.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text_Keep" style="margin-left:5.75pt;margin-bottom:0.00pt;"><font style="font-family:'Arial'; font-size:14pt; font-weight:bold;">General</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Red Bar that you see on the diary screen indicates the time that has passed and where the time is right now. As the time goes by each day the bar progresses down the screen.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:5.75pt;"><font style="font-family:'Arial'; font-style:normal;">Once you have entered in the tasks into the scheduler screen you are also able to click and drag and drop each task around the scheduler screen as much as you like.</font></p>
+</body>
+</html>

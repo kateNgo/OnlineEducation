@@ -10,6 +10,9 @@ namespace OnlineEducation.Controllers
 {
     public class AdminAccountController : Controller
     {
+        /** 
+         * Password of account is sent to DB with a raw value
+         */
         AccountDB accountDB = new AccountDB();
 
         // GET: AdminAccount/Login
@@ -23,7 +26,7 @@ namespace OnlineEducation.Controllers
         {
             if (ModelState.IsValid)
             {
-                Account theAccount = accountDB.Login(account.Email, account.Password);
+                Account theAccount = accountDB.Login(account.Email,account.Password);
                 if (theAccount == null)
                 {
                     ViewBag.ErrorMessage = "Invalid username or password";
@@ -31,8 +34,7 @@ namespace OnlineEducation.Controllers
                 }
                 else
                 {
-                    Session["Account"] = theAccount;
-                    Session["IsAdmin"] = true;
+                    SetSessionAfterLogin(theAccount);
                     return RedirectToAction("../HelpOnline/AdminLevel1/Index");
                 }
             }
@@ -64,8 +66,8 @@ namespace OnlineEducation.Controllers
                 else
                 {
                     string newPassword = accountDB.RandomPassword();
-                    theAccount.Password = accountDB.EncodePasswordToBase64(newPassword);
-                    //accountDB.SendEmailViaGoogle(theAccount.Email, newPassword);
+                    theAccount.Password = newPassword;
+                    accountDB.SendEmailViaGoogle(theAccount.Email, newPassword);
                     accountDB.ChangePassword(theAccount.Email, theAccount.Password);
                     ViewBag.Message = "New password has been sent to email " + id;
                     return RedirectToAction("ResetPasswordSuccess");
@@ -76,50 +78,63 @@ namespace OnlineEducation.Controllers
         [HttpGet]
         public ActionResult ResetPasswordSuccess()
         {
+            
             return View();
         }
 
         [HttpGet]
-        public ActionResult Details(string id)
+        public ActionResult Details()
         {
-            Account account = accountDB.getAccountByEmail(id);
+            if (!IsAdminLogin())
+            {
+                return RedirectToAction("Login");
+            }
+            Account account = (Account)Session["user"];
             if (account == null)
             {
                 return HttpNotFound();
             }
             return View(account);
         }
-        public ActionResult Edit(string id)
+        public ActionResult Edit()
         {
-            if (string.IsNullOrEmpty(id))
+            if (!IsAdminLogin())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return RedirectToAction("Login");
             }
-            Account account = accountDB.getAccountByEmail(id);
+           
+            Account account = (Account)Session["user"];
             if (account == null)
             {
                 return HttpNotFound();
             }
-            return View(account);
+            return View();
         }
         [HttpPost]
-        public ActionResult Edit(Account account)
+        public ActionResult Edit(string name)
         {
+            if (!IsAdminLogin())
+            {
+                return RedirectToAction("Login");
+            }
             if (ModelState.IsValid)
             {
-                accountDB.UpdateAccount(account, account.Name);
-                return RedirectToAction("Details?id=" + account.Email);
+                Account account = (Account)Session["user"];
+                accountDB.UpdateAccount(account, name);
+                account.Name = name;
+                Session["user"] = account;
+                return RedirectToAction("Details");
             }
-            return View(account);
+            return View();
         }
         [HttpGet]
-        public ActionResult ChangePassword(string id)
+        public ActionResult ChangePassword()
         {
-            if (string.IsNullOrEmpty(id))
+            if (!IsAdminLogin())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return RedirectToAction("Login");
             }
-            Account account = accountDB.getAccountByEmail(id);
+            Account account = (Account)Session["user"]; // accountDB.getAccountByEmail(id);
             if (account == null)
             {
                 return HttpNotFound();
@@ -129,9 +144,14 @@ namespace OnlineEducation.Controllers
         [HttpPost]
         public ActionResult ChangePassword(Account account)
         {
+            if (!IsAdminLogin())
+            {
+                return RedirectToAction("Login");
+            }
             if (ModelState.IsValid)
             {
                 accountDB.ChangePassword(account, account.NewPassword);
+
                 return RedirectToAction("ChangePasswordSuccess");
             }
             return View();
@@ -139,20 +159,32 @@ namespace OnlineEducation.Controllers
         [HttpGet]
         public ActionResult ChangePasswordSuccess()
         {
+            if (!IsAdminLogin())
+            {
+                return RedirectToAction("Login");
+            }
             return View();
         }
         [HttpGet]
         public ActionResult Create()
         {
+            if (!IsAdminLogin())
+            {
+                return RedirectToAction("Login");
+            }
             return View();
         }
         [HttpPost]
-        public ActionResult Create(Account account)
+        public ActionResult Create(NewAccount newAccount)
         {
+            if (!IsAdminLogin())
+            {
+                return RedirectToAction("Login");
+            }
             if (ModelState.IsValid)
             {
                 // check email existed
-                accountDB.Register(account.Email, account.Password, account.Name);
+                accountDB.Register(newAccount.Email, newAccount.NewPassword, newAccount.Name);
                 return RedirectToAction("CreateAccountSuccess");
             }
             return View();
@@ -160,8 +192,26 @@ namespace OnlineEducation.Controllers
         [HttpGet]
         public ActionResult CreateAccountSuccess()
         {
+            if (!IsAdminLogin())
+            {
+                return RedirectToAction("Login");
+            }
             return View();
         }
-
+        
+        private void SetSessionAfterLogin(Account account)
+        {
+            Session["user"] = account;
+            Session["email"] = account.Email;
+            Session["IsAdmin"] = Convert.ToBoolean(true);
+        }
+        public bool IsAdminLogin()
+        {
+            if ((Session["user"] == null) || (Session["IsAdmin"] == null) || (Convert.ToBoolean(Session["IsAdmin"]) != true))
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

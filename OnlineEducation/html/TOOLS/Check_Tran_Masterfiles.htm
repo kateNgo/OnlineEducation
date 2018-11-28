@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Check Tran Masterfiles</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "13.0_4";
+</script>
+ <meta name="brsprev" value="TOOLS/Convert_Stock_To_Ascii.htm">
+ <meta name="brsnext" value="TOOLS/Modify_System_Labels.htm">
+ <meta name="topic-breadcrumbs" content="TOOLS" />
+</head>
+<body>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<h6 class="Heading7">Check Tran Masterfiles</h6>
+<p><font style="font-family:'Times New Roman'; font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Check Tran Masteriles</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">This option is a data validity check for your Customers, suppliers and also your ledger items. The system checks the balance of your customer, supplier and ledger accounts compared to the opening balance for the financial year plus all transactions for the current year. If the carried forward balance plus the transactions do not match the balance of the customer, ledger or supplier then a list of out of balance accounts will be displayed for you.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:14pt; color:fuchsia; font-weight:bold;">Customers</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Click on the customer radio button and then click on the Process Button. This may take a while to process all of the records and across a network could take several minutes.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Once completed if you get a message saying No Records found then this means all of your customer balances reconcile to the transactions. This is what you want to see. Alternatively a list of out of balance customers will be displayed. This list shows the Customer Code, Name, Balance Fwd, Balance Fwd + Transactions, Balance Fwd + Current year balances, Transaction balance, Masterfile balance and the Difference amount. The difference amount is what the customer is out of balance by. You must then print an enquiry for the customer from the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">Enquiries option</font> <font style="font-family:'Times New Roman'; font-size:12pt;">and research why the customer is not balanced. Once you know this you can then fix the error by an invoice, credit etc.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:14pt; color:fuchsia; font-weight:bold;">Suppliers&#160;-&#160;</font></p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">(Same as Customers above but for suppliers)</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:14pt; color:fuchsia; font-weight:bold;">Ledger</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Click on the Ledger radio button and then click on the Process Button. This may take a while to process all of the records and across a network could take several minutes.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Once completed if you get a message saying No Records found then this means all of your customer balances reconcile to the transactions. You will also get a message saying If your trial balance does not balance then click the Fix Button now. Alternatively a list of out of balance customers will be displayed. This list shows the Ledger Code, Name, Balance Fwd, Balance Fwd + Transactions, Balance Fwd + Current year balances, Transaction balance, Masterfile balance and the Difference amount. The difference amount is what the ledger is out of balance by.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">If out of balance entries exist or your trial balance does not balance then click on the FIX button. The system will then adjust the ledger balance to agree with the transaction balance and post any discrepancy in the trial balance to the 3020 ledger account. You can then use</font> <font style="font-family:'Times New Roman'; font-size:12pt;">Journal Entries</font> <font style="font-family:'Times New Roman'; font-size:12pt;">to move this amount to an appropriate account of your choice.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">NOTE: Prior to pressing the FIX button you may wish to print the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">Transaction Audit</font> <font style="font-family:'Times New Roman'; font-size:12pt;">report in an attempt to find out why the transactions are out of balance.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:14pt; color:fuchsia; font-weight:bold;">Print</font></p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">You may also choose to print a list of the out of balance accounts for your reference by clicking on the Print Button once the customer, supplier or ledger option has been selected.</font></p>
+</body>
+</html>

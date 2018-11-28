@@ -151,6 +151,10 @@ input[type="file"]{
      margin-right:30px;
      word-break: break-word;
 }
+.floatRight{
+    float:right;
+
+}
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input,
 select,

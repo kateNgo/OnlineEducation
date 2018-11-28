@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Supplier Payments using Bank EFT ABA Files</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "20.2.0_1";
+</script>
+ <meta name="brsprev" value="Version_9_Features/Customers/SMTP_Email.htm">
+ <meta name="brsnext" value="Version_9_Features/Suppliers/Balancing_Option_in_ABA_file.htm">
+ <meta name="topic-breadcrumbs" content="Version 9 Features > Suppliers" />
+</head>
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>Supplier Payments using Bank EFT ABA Files</h1>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:center;"><font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Supplier Payments using Bank EFT</font> <font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">ABA</font> <font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Files</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">The Supplier Payment Bank EFT file is a standard CSV file used by all major and most minor Australian banks whereby bank transactions can be imported from this file and processed automatically rather than manually processing each bank transfer. When you pay your suppliers by EFT (electronic funds transfer) you can import this file and have the bank process the payments.</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">Firstly, you need to set up an EFT Transfer ledger. This ledger can be anywhere in the range of 1011 1029 and is used to record all EFT entries. Lets say you use the account 1019 as your EFT ledger. Call this ledger EFT Payments and enter it into the system through the</font> <font style="font-family:'Arial'; font-weight:bold;">General Ledger Master Files</font><font style="font-family:'Arial';">.</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">In order for this to work correctly you need to set up another two other pieces of the puzzle.</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">First, you must go into the General Ledger Master Files (and using the</font> <font style="font-family:'Arial'; font-weight:bold;">Update BKREC button)</font> <font style="font-family:'Arial';">you must make sure you have updated your BSB and Account details for the bank account you are using to make the payments (not the 1019 account, but your bank account which is usually the 1020 account). Choose your</font> <font style="font-family:'Arial'; font-weight:bold;">EFT Code</font> <font style="font-family:'Arial';">Eg your bank, CBA. You will also need to set up your</font> <font style="font-family:'Arial'; font-weight:bold;">User ID</font> <font style="font-family:'Arial';">in this section so it can be attached to the EFT file. This User ID is your EFT membership number the bank supplies to you.</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">You can also set up your bank details from the Bank Rec Module, through the</font> <font style="font-family:'Arial'; font-weight:bold;">Bank&gt;Maintenance</font> <font style="font-family:'Arial';">menu option.</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">Secondly, you must set up the Suppliers Bank Account Details such as the BSB and Account number through the</font> <font style="font-family:'Arial'; font-weight:bold;">Supplier Masterfile&gt;Bank Details</font> <font style="font-family:'Arial';">tab.</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">Just click on the</font> <font style="font-family:'Arial'; font-weight:bold;">Insert button</font> <font style="font-family:'Arial';">to add an account to a supplier record. The</font> <font style="font-family:'Arial'; font-weight:bold;">Account Details File screen</font> <font style="font-family:'Arial';">will appear. Simply fill in the rest of the details such as the Account name, choose your method either bank or cash payments and select the relevant bank general ledger account (eg 1020) and enter in the bank name and choose your EFT code which will be the EFT ledger that you have already set up, so select that ledger (eg 1019).</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">Click on the</font> <font style="font-family:'Arial'; font-weight:bold;">OK button</font> <font style="font-family:'Arial';">to</font> <font style="font-family:'Arial';">save these details in your supplier masterfile.</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">The system will automatically use the first account listed in this supplier masterfile bank detail area, so it is best to only have one listed to avoid any confusion when making your payments.</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">&#160;</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial'; font-size:14pt; font-weight:bold;">You are now ready to create the EFT file using the EFT Payments option.</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">After making your supplier payments in the usual manner using the Supplier Open Item or Batch Payment Process (using the 1019 - EFT Payments method), a list of these payments after processing, will then be held in the 1019 General ledger.</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">&#160;</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">To use the Supplier Payments EFT option, choose the</font> <font style="font-family:'Arial'; font-weight:bold;">Suppliers&gt;Payments&gt;EFT Payments</font> <font style="font-family:'Arial';">menu option. The EFT screen will appear giving you the option to select your EFT account.</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">Select the EFT account you wish to use (eg 1019) and the unposted EFT records will be displayed on the screen. You can then select the date for the payment process and the location for the EFT output file (which usually defaults to the data 1 export folder with the filename of</font> <font style="font-family:'Arial'; font-weight:bold;">EFTAscii.txt)</font><font style="font-family:'Arial';">.</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">&#160;</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial'; color:red; font-weight:bold; font-style:italic;">NOTE:</font> <font style="font-family:'Arial'; color:red; font-style:italic;">This file is overridden each time a new file is created for safety reasons so that the same file is not sent twice for payment.</font></p>
+<p class="Body_Text_Indent" style="margin-top:0;margin-bottom:0">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">At this stage you should then select the bank account that the payments will be taken from. You can then select all or tag some of the records to be processed by double clicking on the required payment. The tagged items will have a tick beside them.</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">&#160;</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial'; color:red; font-weight:bold; font-style:italic;">NOTE:</font> <font style="font-family:'Arial'; color:red; font-style:italic;">All the payments that are selected are placed into the same output file for processing. If you are processing from two different bank accounts then you must process and use the separate output file for each bank account.</font> <font style="font-family:'Arial'; color:red; font-weight:bold; font-style:italic;">REMEMBER</font> <font style="font-family:'Arial'; color:red; font-style:italic;">- the file is deleted the next time a new one is created so you must use the file in a bank transfer before making the next file!!</font></p>
+<p style="margin-top:5.00pt;margin-bottom:5.00pt;text-align:justify;">&#160;</p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">Then click the</font> <font style="font-family:'Arial'; font-weight:bold;">Process</font> <font style="font-family:'Arial'; font-weight:bold;">button</font> <font style="font-family:'Arial';">to create the output file. You can then use your internet bank software or internet access to import the file from your output location and transfer the funds to the appropriate accounts.</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">&#160;</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">You can also print a copy of the transfer transactions (which is done by default anyway), which shows all of the data to be transferred.</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">&#160;</font></p>
+<p class="Body_Text_Indent" style="text-align:justify;"><font style="font-family:'Arial';">If you have manually created a journal payment or mistakenly entered an entry as an EFT payment, you can tag the record and use the</font> <font style="font-family:'Arial'; font-weight:bold;">Mark as Posted button</font> <font style="font-family:'Arial';">to post the entry without actually updating your ledger figures or creating an EFT file.</font></p>
+</body>
+</html>

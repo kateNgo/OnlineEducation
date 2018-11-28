@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Stocktake Module</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "20.4.0_9";
+</script>
+ <meta name="brsprev" value="Version_9_Features/New_Modules/The_Bucket.htm">
+ <meta name="brsnext" value="Version_9_Features/New_Modules/Stock_Data_Tools.htm">
+ <meta name="topic-breadcrumbs" content="Version 9 Features > New Modules" />
+</head>
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>Stocktake Module</h1>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:center;"><font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Stocktake Module</font></p>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Introduction</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">The new Stocktake Module allows you to process stocktaking by batches. This means that you can process a stocktake using a large criteria of filters such as bin location, supplier, group etc. You can also do a stocktake for a range of</font> <font style="font-size:12pt; font-weight:normal;">parts by location and between two</font> <font style="font-size:12pt; font-weight:normal;">parts numbers alphanumerically.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Once the report is processed you can then print batch stocktake reports and count the actual stock on hand. Once the stock is counted you are then able to enter the discrepancies and process the stocktake. One of the main features of the stocktake module is that once the stock is counted you can take as long as you like to update the batch on the computer and the AM-Win will account for any sales or purchases that have been done since the items were counted.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Creating a New Batch.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:normal; font-style:italic;">NOTE</font><font style="font-size:12pt; color:red; font-weight:normal; font-style:italic; font-weight:normal;">: If you wish to process a stocktake for serialised stock then you must use the serialised stock stocktake (*Serialised Batch Stocktake Module*).</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">The first step in the stocktake process is to begin a new batch. This allows you to create a batch, which can then be printed, counted and processed. To create a new batch click on the </font><font style="font-size:12pt;">NEW</font><font style="font-size:12pt; font-weight:normal;"> button and the next batch number will be allocated. You are then able to process a stocktake by a single filter or by multiple filters. Firstly, we will start with a single filter.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Select the type of filter you want out of All, Bin, Group or Supplier.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">You can then select the stock class to be included either by All, Stock, Consign or Trade-in</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">You may then select the sort order to list entries by either part number, bin location or group. However, the report is printed in Bin location followed by part number order.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Type All</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">If type all is chosen then you can select a range of parts to be in the batch by part number. Firstly select the From Part button and select the first part in the batch. Then select the To Part button and select the last part in the batch. Now click on the Generate button and the screen will be filled with all parts within the range chosen unless those parts are already in another batch.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Type Bin</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">If type Bin is chosen then you can select a range of parts to be in the batch by bin location. The system will then load the bin location list which may take a few seconds. Firstly select the From Bin list and select the first Bin in the batch.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Then select the To Bin list and select the last Bin location in the batch. Now click on the Generate button and the screen will be filled with all parts within the range chosen unless those parts are already in another batch.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Type Group</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">If type Group is chosen then you can select a range of parts to be in the batch by the Group. Firstly select the Group button and select the group. Now click on the Generate button and the screen will be filled with all parts within the group chosen unless those parts are already in another batch.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Type Supplier</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">If type Supplier is chosen then you can select a range of parts to be in the batch by the Supplier. Firstly select the Supplier button and select the supplier. Now click on the Generate button and the screen will be filled with all parts where the selected supplier is the preferred supplier for that part, unless those parts are already in another batch.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Multi TAB</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">You may wish to generate a batch under the options available in the Multi-TAB. Click on the Multi TAB which then changes your filter options. You are now able to select a range of parts to be included in the stocktake by a combination of filters.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">You are able to select within a certain supplier and within a group and also within a sub group as well as within a certain bin location range. If left blank then this means all of that type will be used. Eg, if supplier is left blank then the system ignores who the supplier is when generating the batch.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">If you use all filters then only parts for the selected supplier, within the selected group and sub group and also within the bin location range will be placed in the batch. This can generate rather small and very specific stocktake batches. Remember that when you click the Generate button to generate the report, only parts that are within the filter ranges and also that are not already on another batch will be added to the batch.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Multi-Generate</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Multiple types can be used to generate a single batch. For example you may choose a specific supplier and then Generate and then also choose a certain Group and then generate the report. Both Generates will be on the same batch. You may generate a 2 or more groups on the same batch or even several bin or part number ranges.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Inserting Single Items</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">The system will also allow you to insert single items into the batch as long as these items do not already appear on other batches or in fact are already on the existing batch. Click on the </font><font style="font-size:12pt;">Insert Part</font><font style="font-size:12pt; font-weight:normal;"> button and select the part to be added. This will then include the selected item into the batch.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Batch Report</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Once the batch is generated you can save and print the batch report by clicking on the</font> <font style="font-size:12pt;">Sav</font><font style="font-size:12pt;">-Print Button</font><font style="font-size:12pt; font-weight:normal;">. This will save the batch and generate a batch stocktake report.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:normal; font-style:italic;">NOTE</font><font style="font-size:12pt; color:red; font-weight:normal; font-style:italic; font-weight:normal;">: Once the batch is saved the system will record the batch number and date of the batch in the Stock Masterfiles. If a batch number exists on the item then the system knows that item is allocated to a batch and will not be placed on another batch. When a batch is deleted or an item on the batch is finalised, the batch number is removed from that item and it can then be used in another batch.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Revising a Batch</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Once a New Stocktake</font> <font style="font-size:12pt; font-weight:normal;">Batch</font> <font style="font-size:12pt; font-weight:normal;">has been generated, you can then revise the batch to view or update it.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">To revise a batch go into the</font> <font style="font-size:12pt;">Stocktake</font> <font style="font-size:12pt;">Batch screen</font> <font style="font-size:12pt; font-weight:normal;">under the</font> <font style="font-size:12pt;">Stock&gt; Stocktake &gt;Stocktake</font> <font style="font-size:12pt; font-weight:normal;">men</font><font style="font-size:12pt; font-weight:normal;">u option and then click on the</font> <font style="font-size:12pt;">Revise button</font><font style="font-size:12pt; font-weight:normal;">. You are then provided with a list of batches to choose from. Normally the batch number would be located on the report you printed for that batch. Once the batch is selected the parts on that batch will be displayed in the screen.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">There are 4 different revise types which filter the information to be displayed. These include </font><font style="font-size:12pt;">All, Active, Completed and Tagged</font><font style="font-size:12pt; font-weight:normal;">. The default when revising a batch is </font><font style="font-size:12pt;">Active</font><font style="font-size:12pt; font-weight:normal;">.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Revise Type </font><font style="font-size:12pt;">All</font><font style="font-size:12pt; font-weight:normal;"> revises all items in the batch regardless of the status of the items.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;"></font><font style="font-size:12pt;">Active</font><font style="font-size:12pt; font-weight:normal;"> displays only the items which are on the batch and have not yet been processed.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;"></font><font style="font-size:12pt;">Completed</font><font style="font-size:12pt; font-weight:normal;"> displays only those records in the batch that have been counted and processed.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;"></font><font style="font-size:12pt;">Tagged</font><font style="font-size:12pt; font-weight:normal;"> displays all records in the batch that are currently tagged ready for processing.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Updating the Records.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Now that the batch details are on the screen you are able to update the </font><font style="font-size:12pt;">Active</font><font style="font-size:12pt; font-weight:normal;"> items and process the stocktake. Firstly click on the </font><font style="font-size:12pt;">Entered Operator button</font> <font style="font-size:12pt; font-weight:normal;">and select the person who is updating the records. Then select the </font><font style="font-size:12pt;">Counted Operator</font><font style="font-size:12pt; font-weight:normal;"> button and select the staff member who counted the items.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Highlight the record to be changed and press the</font> <font style="font-size:12pt;">Enter Key</font><font style="font-size:12pt; font-weight:normal;">. Press the Enter key again and this will allow you to change the quantity on hand for that item. Change the quantity and then press the Enter again. The item will be changed and the next item will be automatically selected ready for that item to be process by again using the Enter key. These items are then tagged with a green tick ready to be processed. If an item is tagged and you wish to untag it you can do so by right mouse clicking on the selected item and then selecting the option to untag the record. You can also delete, tag all or untag all items when right clicking the mouse.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Items that are manually added onto the stocktake report which were not included in the batch can be manually inserted using the</font> <font style="font-size:12pt;">Insert Part Button</font><font style="font-size:12pt; font-weight:normal;">. Click on the button and select the item required and this item will be added to the batch as long as this item is not already active on another batch.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Now that you have changed and tagged the records to be processed, you can then click on the </font><font style="font-size:12pt;">Tag All button</font> <font style="font-size:12pt; font-weight:normal;">to tag the remaining unchanged records. This is because there may be say 200 items in the batch but only 20 of them need to be changed.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Firstly</font><font style="font-size:12pt; font-weight:normal;">,</font> <font style="font-size:12pt; font-weight:normal;">you update/tag the 20 records that are changed and then the Tag All button will tag the remaining unchanged records for processing. Even unchanged records need to be processed so that they can be marked as completed and then be available in the future for NEW stocktake</font> <font style="font-size:12pt; font-weight:normal;">batches.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">At any time you can click on the </font><font style="font-size:12pt;">Save</font><font style="font-size:12pt; font-weight:normal;"> button to save a batch in the middle of processing the stocktake. Remember that although the physical count should be done immediately after the stocktake has been processed, the data entry to update the records can be done later as the system recognises sales and purchases that have been done since the stocktake batch was generated.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Printing the Variance Report.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Once you have updated the records to be processed you can then print a variance report by clicking on the </font><font style="font-size:12pt;">Print Variance</font><font style="font-size:12pt; font-weight:normal;"> print button. This will print a report showing the $ value and percentage variance for each item. This report can be done before or after the records have been processed. You can then use this report to quickly scan for any large discrepancies which you may wish to investigate further.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:normal; font-style:italic;">NOTE</font><font style="font-size:12pt; color:red; font-weight:normal; font-style:italic; font-weight:normal;">: You can also print all items, only tagged items or only completed items by changing the report type.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Processing the Batch</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">You should ensure that the process date is set to the date you wish to use first. Once the records have been tagged and they are ready to be processed you can then click on the </font><font style="font-size:12pt;">Process</font><font style="font-size:12pt; font-weight:normal;"> button to process the stocktake. This is when the stock on hand and accounting functions are actually recorded. The stock is updated, the ledgers for stock and the discrepancy is adjusted and the stock movement is recorded against the items. This stock movement can be accessed under the stock</font> <font style="font-size:12pt; font-weight:normal;">sales enquiries</font> <font style="font-size:12pt; font-weight:normal;">screen.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">Once the records have been processed they are marked as completed and the batch number is removed from the stock masterfile so that the item can be used in future batches.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; color:red; font-weight:normal; font-style:italic;">NOTE</font><font style="font-size:12pt; color:red; font-weight:normal; font-style:italic; font-weight:normal;">: that if a part number has been deleted from the masterfiles and is on a batch then the item will never be able to be completed as the stock no longer exists in the system.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Deleting a Batch</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">A batch can be deleted only if none of the items on that back have been already completed / processed. Otherwise you must tag and process the items on the batch in order to release those items for future stocktake batches. Click the </font><font style="font-size:12pt;">Revise</font><font style="font-size:12pt; font-weight:normal;"> button and select the batch to be deleted. Once selected you can then click on the </font><font style="font-size:12pt;">Delete</font><font style="font-size:12pt; font-weight:normal;"> Button and the system will delete the selected batch and remove the batch numbers from the stock masterfiles for each item.</font></h1>
+<p style="text-align:justify;">&#160;</p>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Clear Button</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">The </font><font style="font-size:12pt;">Clear</font><font style="font-size:12pt; font-weight:normal;"> Button clears the screen and allows you to begin a new batch or to revise an existing batch.</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal; font-style:italic;">Close Button</font></h1>
+<h1 style="text-align:justify;"><font style="font-size:12pt; font-weight:normal;">The </font><font style="font-size:12pt;">Close</font><font style="font-size:12pt; font-weight:normal;"> Button allows you to close the stocktake module. The X button at the top right corner of the screen will also do this.</font></h1>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unallocated Payments</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "16.0_7";
+</script>
+ <meta name="brsprev" value="Common_Topics/Groups_Browsing.htm">
+ <meta name="brsnext" value="Common_Topics/Select_Stock_or_Alternate_Stock_Window.htm">
+ <meta name="topic-breadcrumbs" content="Common Topics" />
+</head>
+<body>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<h6 class="Heading7">Unallocated Payments</h6>
+<h2>Ability to process payments through Cust. Payments without allocating to outstanding invoices</h2>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">You are now able to process a payment from a Customer without allocating it to an outstanding invoice</font></p>
+<p style="margin-left:18.00pt;">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">Open Customer Payments, and fill out the required fields as usual. However once you press the Accept button, instead of tagging invoices, simply press the Process button straight afterwards.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">The payment amount will be taken from the balance on the customers account, and will be displayed in the Enquiries screen under Unallocated Balance</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<h2>Reallocating an unallocated amount</h2>
+<p style="text-align:center;">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">If you have processed a payment and not allocated it to an invoice, and then decide that you do want the amount to come off an invoice, you must firstly set up a new payment method called Alloc.</font></p>
+<p style="margin-left:18.00pt;"></p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">Go to the</font> <font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Others</font> <font style="font-family:'Times New Roman'; font-size:12pt;">menu, to</font> <font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Maintenance</font> <font style="font-family:'Times New Roman'; font-size:12pt;">and then choose</font> <font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Method</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">In the Method File window which appears, click on the Insert button. The </font><font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Adding Method File record</font><font style="font-family:'Times New Roman'; font-size:12pt;"> window appears.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">In the Method field type ALLOC. In the Method Code field choose General Ledger account 1010. Choose a Type for this account as well. Then click onto the OK button to save it.</font></p>
+<p style="margin-left:18.00pt;"></p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">Go into your payments window and bring up the customer whose payment you want to reallocate.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">In the </font><font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Method</font><font style="font-family:'Times New Roman'; font-size:12pt;"> field choose the ALLOC. Method. Type in a reference number and the amount which was previously unallocated that you want to allocate.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">Press </font><font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Accept</font><font style="font-family:'Times New Roman'; font-size:12pt;"> and tag the invoice you want the amount to be allocated to, and then click on </font><font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Process</font><font style="font-family:'Times New Roman'; font-size:12pt;"></font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="margin-left:18.00pt;"><font style="font-family:'Times New Roman'; font-size:12pt;">Within Enquiries you will now notice that the Unallocated balance should be zero (if you reallocated the whole amount) and the amount in the terms field should have changed. The total balance should remain the same.</font></p>
+</body>
+</html>

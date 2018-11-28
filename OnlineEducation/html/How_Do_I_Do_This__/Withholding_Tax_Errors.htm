@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Withholding Tax Errors</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "19.0_12";
+</script>
+ <meta name="brsprev" value="How_Do_I_Do_This__/Ledger_Departments.htm">
+ <meta name="brsnext" value="How_Do_I_Do_This__/Processing_Bad_Debts.htm">
+ <meta name="topic-breadcrumbs" content="How Do I Do This ?" />
+</head>
+<body>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<h1>Local Supplier with no ABN</h1>
+<p class="Title" style="margin-left:9.00pt;text-align:left;">&#160;</p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;"><font style="font-family:'Times New Roman'; font-size:12pt;">When a supplier payment is processed and the supplier did not have an ABN number the system will deduct 48.5% of the payment and place that part of the payment into the 2030 withholding account and this amount will then show on the bas as beeing owed to the tax office (unless the supplier is ticked as an overseas supplier). This process takes the full amount off the suppliers balance, processing 51.5% off the bank balance and the remaining 48.5% to 2030.</font></p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;">&#160;</p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;"><font style="font-family:'Times New Roman'; font-size:12pt;">If this was done by mistake and the supplier does actually have an ABN then you can fix this error by</font> <font style="font-family:'Times New Roman'; font-size:12pt;">Journalling</font> <font style="font-family:'Times New Roman'; font-size:12pt;">the 48.5% amount from the bank (credit) and against the 2030 account (debit) to correct these entries. However, this means your</font> <font style="font-family:'Times New Roman'; font-size:12pt;">bankrec</font> <font style="font-family:'Times New Roman'; font-size:12pt;">will have to amounts which add up to the 100% payment which must both be marked as presented when reconciling your bank accounts.</font></p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;">&#160;</p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;"><font style="font-family:'Times New Roman'; font-size:12pt;">Alternatively, if the error was noticed and is an error in the current month, you can process a reverse payment for the error and then process the payment again. Make sure the reverse payment is done with no ABN in the masterfiles, but the payment needs to be done after the ABN has been added in.</font></p>
+</body>
+</html>

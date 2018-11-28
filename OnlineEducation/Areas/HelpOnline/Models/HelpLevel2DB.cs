@@ -252,6 +252,37 @@ namespace OnlineEducation.Areas.HelpOnline.Models
             }
 
         }
-        
+        public HelpLevel2 GetHelpLevel2ByTitleAndParentId(string title, int parentId)
+        {
+            string query = "SELECT * FROM HelpOnlineLevel2 WHERE title = '" + title + "' AND parentId = " + parentId;
+            using (SqlConnection con = SQLConnect())
+            {
+                using (SqlDataAdapter sda = new SqlDataAdapter(query, con))
+                {
+                    using (DataTable dt = new DataTable())
+                    {
+                        con.Open();
+                        sda.Fill(dt);
+                        if (dt.Rows.Count > 0)
+                        {
+                            DataRow row = dt.Rows[0];
+                            HelpLevel2 obj = new HelpLevel2();
+                            obj.Id = Convert.ToInt32(row["Id"]);
+                            obj.Title = row["Title"].ToString();
+                            obj.ImageFile = row["ImageFile"].ToString();
+                            obj.ParentId = Convert.ToInt32(row["ParentId"]);
+                            obj.Index = Convert.ToInt32(row["IndexTopic"]);
+                            return obj;
+                        }
+                        else
+                        {
+                            return null;
+                        }
+
+                    }
+                }
+            }
+
+        }
     }
 }

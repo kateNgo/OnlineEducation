@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc version="1.0">
+	<properties windowstyles="8388647" exwindowstyles="256">
+	</properties>
+	<item name="WELCOME TO AM-WIN">
+		<item name="Welcome to AM-Win" link="WELCOME_TO_AM_WIN\AMWIN.htm">
+		</item>
+		<item name="Windows Functions" link="WELCOME_TO_AM_WIN\Windows_Functions.htm">
+		</item>
+	</item>
+	<item name="GETTING STARTED">
+		<item name="Read This First" link="GETTING_STARTED\Read_This_First.htm">
+		</item>
+		<item name="Software Defaults" link="GETTING_STARTED\Software_Defaults.htm">
+		</item>
+	</item>
+	<item name="FILE/EDIT">
+		<item name="Location" link="FILE_EDIT\Location.htm">
+		</item>
+		<item name="Hide / Unhide Toolbar" link="FILE_EDIT\Hide_Toolbar.htm">
+		</item>
+		<item name="Printer Setup" link="FILE_EDIT\Printer_Setup.htm">
+		</item>
+		<item name="Screen Font Size" link="FILE_EDIT\Screen_Font_Size.htm">
+		</item>
+		<item name="Text Font Size" link="FILE_EDIT\Text_Font_Size.htm">
+		</item>
+		<item name="ListBox Line Height" link="FILE_EDIT\ListBox_Line_Height.htm">
+		</item>
+		<item name="Colour Settings" link="FILE_EDIT\Colour_Settings.htm">
+		</item>
+		<item name="Edit Menu" link="FILE_EDIT\Edit_Menu.htm">
+		</item>
+		<item name="Changing Users" link="FILE_EDIT\Changing_Users.htm">
+		</item>
+		<item name="Change Password" link="Change_Password.htm">
+		</item>
+	</item>
+	<item name="CUSTOMERS">
+		<item name="CUSTOMER MASTERFILE">
+			<item name="Customer Masterfile" link="CUSTOMERS\Customer_Masterfiles.htm">
+			</item>
+			<item name="Finding A Customer" link="CUSTOMERS\Finding_A_Customer.htm">
+			</item>
+			<item name="Create New Customer" link="CUSTOMERS\Create_New_Customer.htm">
+			</item>
+			<item name="Customer Masterfile Buttons" link="CUSTOMERS\Customer_Masterfile_buttons.htm">
+			</item>
+		</item>
+		<item name="JOB INVOICING">
+			<item name="Merge Quotes &amp; Invoices" link="JOB_INVOICING\Merge_Quotes_Invoices.htm">
+			</item>
+			<item name="Job Invoicing" link="JOB_INVOICING\Job_Invoicing.htm">
+			</item>
+			<item name="Invoice Buttons" link="JOB_INVOICING\Invoice_Buttons.htm">
+			</item>
+			<item name="Starting an Invoice" link="JOB_INVOICING\Starting_an_Invoice.htm">
+			</item>
+			<item name="Job Header" link="JOB_INVOICING\Job_Header.htm">
+			</item>
+			<item name="Insert Detail" link="JOB_INVOICING\Detail_.htm">
+			</item>
+			<item name="Insert Parts" link="JOB_INVOICING\Insert_Parts.htm">
+			</item>
+			<item name="Serialised Stock" link="JOB_INVOICING\Serialised_Stock.htm">
+			</item>
+			<item name="Insert Labour" link="JOB_INVOICING\Insert_Labour.htm">
+			</item>
+			<item name="Insert Revenue" link="JOB_INVOICING\Insert_Revenue.htm">
+			</item>
+			<item name="Insert Consignment" link="JOB_INVOICING\Insert_Consignment.htm">
+			</item>
+			<item name="Parts Link to Vehicle" link="JOB_INVOICING\Parts_Link_to_Vehicle.htm">
+			</item>
+			<item name="Changing Detail/Parts/Labour/Revenue" link="JOB_INVOICING\Changing_Detail_Parts_Labour_Revenue.htm">
+			</item>
+			<item name="Deleting Detail/Parts/Labour/Revenue" link="JOB_INVOICING\Deleting_Detail_Parts_Labour_Revenue.htm">
+			</item>
+			<item name="Cut &amp; Paste" link="JOB_INVOICING\Cut_Paste.htm">
+			</item>
+			<item name="Sub-Total" link="JOB_INVOICING\Sub_Total.htm">
+			</item>
+			<item name="ASM Button" link="JOB_INVOICING\ASM_Button.htm">
+			</item>
+			<item name="Insert Text - Alt_T" link="JOB_INVOICING\Insert_Text_F2.htm">
+			</item>
+			<item name="Customer Detail Change - Alt_C" link="JOB_INVOICING\Customer_Detail_Change.htm">
+			</item>
+			<item name="Quote Importing - Alt_Q" link="JOB_INVOICING\Quote_Importing.htm">
+			</item>
+			<item name="Kits Importing / Making - Alt_K" link="JOB_INVOICING\Kits_Importing_Making.htm">
+			</item>
+			<item name="Job Statistics - F7" link="JOB_INVOICING\Job_Statistics.htm">
+			</item>
+			<item name="History - F8" link="JOB_INVOICING\History_F8.htm">
+			</item>
+			<item name="Invoicing History Button" link="JOB_INVOICING\Workshop_Invoicing_History_Tab.htm">
+			</item>
+			<item name="Save Job" link="JOB_INVOICING\Save_Job.htm">
+			</item>
+			<item name="Print Job Card" link="JOB_INVOICING\Print_Job_Card.htm">
+			</item>
+			<item name="Proforma Invoice" link="JOB_INVOICING\Proforma_Invoice.htm">
+			</item>
+			<item name="Revising a Job" link="JOB_INVOICING\Revising_a_Job.htm">
+			</item>
+			<item name="Delete a Job" link="JOB_INVOICING\Delete_a_Job.htm">
+			</item>
+			<item name="Finalising a Job" link="JOB_INVOICING\Finalising_a_Job.htm">
+			</item>
+			<item name="Service Log Screen" link="JOB_INVOICING\Service_Log_Screen.htm">
+			</item>
+			<item name="Invoice Payments" link="JOB_INVOICING\Invoice_Payments.htm">
+			</item>
+			<item name="Invoice Print Options" link="WORKSHOP_INVOICING\Invoice_Print_Options.htm">
+			</item>
+			<item name="Suppress Printing" link="JOB_INVOICING\Suppress_Printing.htm">
+			</item>
+			<item name="Standard Job Descriptions" link="JOB_INVOICING\Standard_Job_Descriptions.htm">
+			</item>
+			<item name="Reprice Invoice" link="JOB_INVOICING\Reprice_Invoice.htm">
+			</item>
+			<item name="Invoice Total Change" link="JOB_INVOICING\Invoice_Total.htm">
+			</item>
+			<item name="Details - Quill Button" link="JOB_INVOICING\Details_Quill_Button.htm">
+			</item>
+			<item name="Invoice Layouts" link="JOB_INVOICING\Invoice_Layouts.htm">
+			</item>
+			<item name="Progressive Invoicing" link="JOB_INVOICING\Progressive_Invoicing.htm">
+			</item>
+			<item name="Customer Back Orders" link="JOB_INVOICING\Customer_Back_Orders.htm">
+			</item>
+			<item name="New Quill Function" link="JOB_INVOICING\New_Quill_Function.htm">
+			</item>
+			<item name="Ctrl Up/Down Arrow" link="JOB_INVOICING\Job_and_Workshop_Invoice_Ctrl_Up_Down_Arrow.htm">
+			</item>
+			<item name="Capricorn Charges" link="JOB_INVOICING\Capricorn_Charges.htm">
+			</item>
+		</item>
+		<item name="Labour Allocation" link="CUSTOMERS\Labour_Allocation.htm">
+		</item>
+		<item name="Customer Orders" link="CUSTOMERS\P_O_S_Invoicing.htm">
+		</item>
+		<item name="Batch Invoice" link="CUSTOMERS\Batch_Invoice.htm">
+		</item>
+		<item name="Credit Returns" link="CUSTOMERS\Credit_Returns.htm">
+		</item>
+		<item name="Customer Payments" link="CUSTOMERS\Customer_Payments.htm">
+		</item>
+		<item name="Batch Payments" link="CUSTOMERS\Batch_Payments.htm">
+		</item>
+		<item name="Reverse Payments" link="CUSTOMERS\Reverse_Payments.htm">
+		</item>
+		<item name="Job Item Files" link="CUSTOMERS\Job_Item_Files.htm">
+		</item>
+		<item name="Invoice &amp; Payments at a Glance" link="CUSTOMERS\A_Day_at_a_Glance.htm">
+		</item>
+		<item name="Estimates / Quotes" link="CUSTOMERS\Estimates_Quotes.htm">
+		</item>
+		<item name="Workshop Diary" link="CUSTOMERS\Workshop_Diary.htm">
+		</item>
+	</item>
+	<item name="SUPPLIERS">
+		<item name="Supplier Masterfiles" link="SUPPLIERS\Supplier_Masterfiles.htm">
+		</item>
+		<item name="Supplier Payments" link="SUPPLIERS\Supplier_Payments.htm">
+		</item>
+		<item name="Batch Payments" link="SUPPLIERS\Batch_Payments_2.htm">
+		</item>
+		<item name="Reverse Payment - Supplier" link="SUPPLIERS\Reverse_Payment_Supplier.htm">
+		</item>
+		<item name="Purchase Orders" link="SUPPLIERS\Purchase_Orders.htm">
+		</item>
+		<item name="Purchase Order Buttons" link="SUPPLIERS\Purchase_Order_Buttons.htm">
+		</item>
+		<item name="Overseas Imports" link="SUPPLIERS\Overseas_Imports.htm">
+		</item>
+		<item name="Purchases" link="SUPPLIERS\Purchase_Credits.htm">
+		</item>
+		<item name="Supplier Credits" link="SUPPLIERS\Supplier_Credits.htm">
+		</item>
+		<item name="Change or Delete a Purchase/Credit" link="SUPPLIERS\Change_or_Delete_a_Purchase_Credit.htm">
+		</item>
+		<item name="Price Update Window" link="SUPPLIERS\Price_Update_Window.htm">
+		</item>
+		<item name="Purchase History" link="SUPPLIERS\Purchase_History.htm">
+		</item>
+	</item>
+	<item name="STOCK">
+		<item name="Stock Masterfiles" link="STOCK\Stock_Masterfiles.htm">
+		</item>
+		<item name="Customer Stock Price" link="STOCK\Customer_Stock_Price.htm">
+		</item>
+		<item name="Stock Multipliers" link="STOCK\Stock_Masterfiles.htm">
+		</item>
+		<item name="Discount Matrix includes sub-group" link="STOCK\Discount_Matrix_includes_sub_group.htm">
+		</item>
+		<item name="Price Change By Group" link="STOCK\Price_Change_By_Group.htm">
+		</item>
+		<item name="Stock Take Sheets" link="STOCK\Stock_Take_Sheets.htm">
+		</item>
+		<item name="Customer Consignment Module" link="STOCK\Customer_Consignment_Module.htm">
+		</item>
+		<item name="Stock Take / Transfer" link="STOCK\Stock_Take_Transfer.htm">
+		</item>
+		<item name="Price Change by Percentage" link="STOCK\Price_Change_by_Percentage.htm">
+		</item>
+		<item name="Sales Enquiries" link="STOCK\Sales_Enquiries.htm">
+		</item>
+		<item name="Alternative Stock Enquiry" link="STOCK\Alternative_Stock_Enquiry.htm">
+		</item>
+		<item name="Stock Code Change" link="STOCK\Stock_Code_Change.htm">
+		</item>
+		<item name="Manufactured Items" link="STOCK\Manufactured_Items.htm">
+		</item>
+		<item name="Make Model &amp; Related Stock Item" link="STOCK\Make_Model_Related_Stock_Item.htm">
+		</item>
+	</item>
+	<item name="LEDGER">
+		<item name="General Ledger Masterfiles" link="LEDGER\General_Ledger_Masterfiles.htm">
+		</item>
+		<item name="General Ledger Setup" link="LEDGER\General_Ledger_Setup.htm">
+		</item>
+		<item name="General Ledger Export" link="LEDGER\General_Ledger_Export.htm">
+		</item>
+		<item name="Journal Entries" link="LEDGER\Journal_Entries.htm">
+		</item>
+		<item name="Cheque Entry" link="LEDGER\Cheque_Entry.htm">
+		</item>
+		<item name="BAS Payments" link="LEDGER\BAS_Payments_v3.htm">
+		</item>
+		<item name="Wage Entry" link="LEDGER\Wages_Version_3.htm">
+		</item>
+		<item name="Employee File" link="LEDGER\Employee_File.htm">
+		</item>
+		<item name="Deposit Reconciliation" link="LEDGER\Deposit_Reconciliation.htm">
+		</item>
+		<item name="Standing Journals" link="LEDGER\Standing_Journals.htm">
+		</item>
+		<item name="Vital Statistics" link="LEDGER\Vital_Statistics.htm">
+		</item>
+		<item name="Cash Drawer" link="LEDGER\Cash_Drawer.htm">
+		</item>
+		<item name="Account Keeping Fees" link="LEDGER\Account_Keeping_Fees.htm">
+		</item>
+		<item name="End of Month" link="LEDGER\End_of_Month.htm">
+		</item>
+		<item name="End of year" link="LEDGER\End_of_Month_year_1.htm">
+		</item>
+		<item name="End of GST Period" link="LEDGER\End_of_GST_Period.htm">
+		</item>
+	</item>
+	<item name="REPORTS">
+		<item name="Reports" link="REPORTS\Reports.htm">
+		</item>
+		<item name="Accounting Reports">
+			<item name="Activity Report" link="REPORTS\Accounting_Reports\Activity_Report.htm">
+			</item>
+			<item name="Aged Analysis" link="REPORTS\Accounting_Reports\Aged_Analysis.htm">
+			</item>
+			<item name="Wage Report" link="REPORTS\Accounting_Reports\Wage_Report.htm">
+			</item>
+			<item name="GST Sales and Purchases" link="REPORTS\Accounting_Reports\GST_Sales_and_Purchases.htm">
+			</item>
+			<item name="Gst Sales / Purchases History" link="REPORTS\Accounting_Reports\Gst_Sales_Purchases_History.htm">
+			</item>
+			<item name="BAS History" link="m.chm::/Business_Activity_Statement.htm">
+			</item>
+			<item name="BAS Preview" link="REPORTS\Accounting_Reports\BAS_Preview.htm">
+			</item>
+			<item name="Trial Balance" link="REPORTS\Accounting_Reports\Trial_Balance.htm">
+			</item>
+			<item name="Remittance Advice Slips" link="REPORTS\Accounting_Reports\Remittance_Advice_Slips.htm">
+			</item>
+			<item name="Income Statement" link="REPORTS\Accounting_Reports\Income_Statement.htm">
+			</item>
+			<item name="Balance Sheet" link="REPORTS\Accounting_Reports\Balance_Sheet.htm">
+			</item>
+			<item name="Chart of Accounts" link="REPORTS\Accounting_Reports\Chart_of_Accounts.htm">
+			</item>
+			<item name="Invoice Register" link="REPORTS\Accounting_Reports\Invoice_Register.htm">
+			</item>
+			<item name="Cash/Bank Activity" link="REPORTS\Accounting_Reports\Cash_Bank_Activity.htm">
+			</item>
+			<item name="Bank Deposit Slip" link="REPORTS\Accounting_Reports\Bank_Deposit_Slip.htm">
+			</item>
+			<item name="Transaction Audit" link="REPORTS\Accounting_Reports\Transaction_Audit.htm">
+			</item>
+			<item name="Audit Trail" link="REPORTS\Accounting_Reports\Audit_Trail.htm">
+			</item>
+		</item>
+		<item name="Stock Reports">
+			<item name="Reorder Reports" link="REPORTS\Stock_Reports\Reorder_Reports.htm">
+			</item>
+			<item name="Consignment Stock Report" link="REPORTS\Stock_Reports\Consignment_Stock_Report1.htm">
+			</item>
+			<item name="Consignment Field Report" link="REPORTS\Stock_Reports\Consignment_Field_Report.htm">
+			</item>
+			<item name="Consignment Back Order" link="REPORTS\Stock_Reports\Consignment_Back_Order.htm">
+			</item>
+			<item name="Supplier Report" link="REPORTS\Stock_Reports\Supplier_Report.htm">
+			</item>
+			<item name="Valuation Report" link="REPORTS\Stock_Reports\Valuation_Report.htm">
+			</item>
+			<item name="Sales Reorder Report" link="REPORTS\Stock_Reports\Sales_Reorder_Report.htm">
+			</item>
+			<item name="Top Sales" link="REPORTS\Stock_Reports\Top_Sales.htm">
+			</item>
+			<item name="Stock Activity Report" link="REPORTS\Stock_Reports\Stock_Activity_Report.htm">
+			</item>
+			<item name="Order_Deliveries" link="REPORTS\Stock_Reports\Order_Deliveries.htm">
+			</item>
+			<item name="Price List" link="REPORTS\Stock_Reports\Price_List.htm">
+			</item>
+			<item name="Superseded Stock" link="REPORTS\Stock_Reports\Superseded_Stock.htm">
+			</item>
+			<item name="Consignment Stock" link="REPORTS\Stock_Reports\Consignment_Stock_Report.htm">
+			</item>
+			<item name="Stock Sales by Group" link="REPORTS\Stock_Reports\Stock_Sales_by_Group.htm">
+			</item>
+			<item name="Stock Movement" link="REPORTS\Stock_Reports\Stock_Movement.htm">
+			</item>
+			<item name="Stock Auto Order- Supp" link="REPORTS\Stock_Reports\Stock_Auto_Order_Supp.htm">
+			</item>
+			<item name="Shelf Labels" link="REPORTS\Stock_Reports\Shelf_Labels.htm">
+			</item>
+			<item name="Group Listings" link="REPORTS\Stock_Reports\Group_Listings.htm">
+			</item>
+			<item name="Redundant Stock" link="REPORTS\Stock_Reports\Redundant_Stock.htm">
+			</item>
+			<item name="Daily Stock Usage" link="REPORTS\Stock_Reports\Daily_Stock_Usage.htm">
+			</item>
+		</item>
+		<item name="Workshop Reports">
+			<item name="Service Due Letters/Labels/Reports" link="REPORTS\Workshop_Reports\Service_Due_Letters_Labels_Reports.htm">
+			</item>
+			<item name="History by Customer/Vehicle" link="REPORTS\Workshop_Reports\History_by_Customer_Vehicle.htm">
+			</item>
+			<item name="Jobs in Progress" link="REPORTS\Workshop_Reports\Jobs_in_Progress.htm">
+			</item>
+			<item name="Job Items by Customer" link="REPORTS\Workshop_Reports\Job_Items_by_Customer.htm">
+			</item>
+			<item name="Staff Performance" link="REPORTS\Workshop_Reports\Staff_Performance.htm">
+			</item>
+			<item name="Kits on File" link="REPORTS\Workshop_Reports\Kits_on_File.htm">
+			</item>
+			<item name="Comments Library Report" link="REPORTS\Workshop_Reports\Comments_Library.htm">
+			</item>
+			<item name="Quotes on File" link="REPORTS\Workshop_Reports\Quotes_on_File.htm">
+			</item>
+		</item>
+		<item name="Customer/Supplier Reports">
+			<item name="Customer Listing" link="REPORTS\Customer_Supplier_Reports\Customer_Listing.htm">
+			</item>
+			<item name="Customers Report" link="REPORTS\Customer_Supplier_Reports\Customers_Report.htm">
+			</item>
+			<item name="Suppliers Report" link="REPORTS\Customer_Supplier_Reports\Suppliers_Report.htm">
+			</item>
+			<item name="Customer Turnover" link="REPORTS\Customer_Supplier_Reports\Customer_Turnover.htm">
+			</item>
+			<item name="Customer Payments Reports" link="REPORTS\Customer_Supplier_Reports\Customer_Payments_Reports.htm">
+			</item>
+			<item name="Customer Overdues" link="REPORTS\Customer_Supplier_Reports\Customer_Overdues.htm">
+			</item>
+			<item name="Salespersons Sheet" link="REPORTS\Customer_Supplier_Reports\Salespersons_Sheet.htm">
+			</item>
+		</item>
+		<item name="Batch Reports">
+			<item name="Batch Reports" link="REPORTS\Batch_Reports\Batch_Reports.htm">
+			</item>
+		</item>
+		<item name="Batch Invoice">
+			<item name="Batch Invoice report" link="REPORTS\Batch_Invoice\Batch_Invoice_report.htm">
+			</item>
+		</item>
+	</item>
+	<item name="ENQUIRY">
+		<item name="Enquiries" link="ENQUIRY\Enquiries.htm">
+		</item>
+		<item name="Payment Register" link="ENQUIRY\Payment_Register.htm">
+		</item>
+		<item name="Labour Transactions" link="ENQUIRY\Labour_Transactions.htm">
+		</item>
+	</item>
+	<item name="HOTBOX">
+		<item name="Hot Box" link="HOTBOX\Hot_Box.htm">
+		</item>
+	</item>
+	<item name="FLOOR PLAN">
+		<item name="Consignment Stock" link="FLOOR_PLAN\Consignment_Stock.htm">
+		</item>
+		<item name="Consignment Invoicing" link="FLOOR_PLAN\Consignment_Invoicing.htm">
+		</item>
+		<item name="Consignment Reports" link="FLOOR_PLAN\Consignment_Reports.htm">
+		</item>
+	</item>
+	<item name="OTHERS">
+		<item name="Control System" link="OTHERS\Control_System.htm">
+		</item>
+		<item name="Passwords" link="OTHERS\Passwords.htm">
+		</item>
+		<item name="Invoice / Statements Message" link="OTHERS\Invoice_Statements_Message.htm">
+		</item>
+		<item name="Kit Library" link="OTHERS\Kit_Library.htm">
+		</item>
+		<item name="Quoting From Kits" link="OTHERS\Quoting_From_Kits.htm">
+		</item>
+		<item name="Comment Library" link="OTHERS\Comment_Library.htm">
+		</item>
+		<item name="Letter Maintenance" link="OTHERS\Letter_Maintenance.htm">
+		</item>
+		<item name="History Code Change" link="OTHERS\History_Code_Change.htm">
+		</item>
+		<item name="Transaction Date" link="OTHERS\Transaction_Date.htm">
+		</item>
+		<item name="Discount Matrix" link="OTHERS\Discount_Matrix.htm">
+		</item>
+		<item name="Log File on Delete" link="OTHERS\Log_File_on_Delete.htm">
+		</item>
+		<item name="Lost Stock Sales" link="OTHERS\Lost_Stock_Sales.htm">
+		</item>
+		<item name="Merge Job Item History" link="OTHERS\Merge_Job_Item_History.htm">
+		</item>
+		<item name="Job Item Specs Database" link="OTHERS\Vehicle_Specs_Database.htm">
+		</item>
+		<item name="Maintenance">
+			<item name="Attributes" link="OTHERS\Maintenance\Attributes.htm">
+			</item>
+			<item name="Product Search by Supplier" link="OTHERS\Maintenance\Product_Search_by_Supplier.htm">
+			</item>
+			<item name="Group Maintenance" link="OTHERS\Maintenance\Group_Maintenance.htm">
+			</item>
+			<item name="Payment Methods" link="OTHERS\Maintenance\Payment_Methods.htm">
+			</item>
+			<item name="Postcode File" link="OTHERS\Maintenance\Browse_Postcode_File.htm">
+			</item>
+			<item name="Salesmans File" link="OTHERS\Maintenance\Salesmans_File.htm">
+			</item>
+		</item>
+	</item>
+	<item name="TOOLS">
+		<item name="Create Make &amp; Models" link="TOOLS\Create_Make_Models.htm">
+		</item>
+		<item name="General Ledger Masks" link="TOOLS\General_Ledger_Masks.htm">
+		</item>
+		<item name="Convert Stock To Ascii" link="TOOLS\Convert_Stock_To_Ascii.htm">
+		</item>
+		<item name="Check Tran Masterfiles" link="TOOLS\Check_Tran_Masterfiles.htm">
+		</item>
+		<item name="Modify System Labels" link="TOOLS\Modify_System_Labels.htm">
+		</item>
+		<item name="Meter Reading" link="TOOLS\Meter_Reading.htm">
+		</item>
+		<item name="Vehicle Specs Database" link="OTHERS\Vehicle_Specs_Database.htm">
+		</item>
+		<item name="Changing Prefered Supplier by Group" link="TOOLS\Changing_Prefered_Supply_by_Group.htm">
+		</item>
+	</item>
+	<item name="WINDOW">
+		<item name="Licence" link="WINDOW\Licence.htm">
+		</item>
+		<item name="Accessories" link="WINDOW\Accessories.htm">
+		</item>
+		<item name="Calculator" link="WINDOW\Using_The_Calculator.htm">
+		</item>
+		<item name="Calender" link="WINDOW\Calender.htm">
+		</item>
+		<item name="NotePad" link="WINDOW\Using_The_NotePad.htm">
+		</item>
+	</item>
+	<item name="ADDITIONAL MODULES">
+		<item name="History Module" link="ADDITIONAL_MODULES\History_Module.htm">
+		</item>
+		<item name="Item Register">
+			<item name="Item Register Outline" link="ADDITIONAL_MODULES\Item_Register\Item_Register_Outline.htm">
+			</item>
+			<item name="Item Register Setup" link="ADDITIONAL_MODULES\Item_Register\Item_Register_Setup.htm">
+			</item>
+			<item name="Transferring Current Floorplan to Item Register" link="ADDITIONAL_MODULES\Item_Register\Transferring_Current_Floorplan_to_Item_Register.htm">
+			</item>
+			<item name="Inserting/Changing an Item in Register" link="ADDITIONAL_MODULES\Item_Register\Inserting_Changing_an_Item_in_Register.htm">
+			</item>
+			<item name="Item Register Buttons" link="ADDITIONAL_MODULES\Item_Register\Item_Register_Buttons.htm">
+			</item>
+			<item name="Adding Item Register Details" link="ADDITIONAL_MODULES\Item_Register\Adding_Item_Register_Details.htm">
+			</item>
+			<item name="Extra Item Register Buttons" link="ADDITIONAL_MODULES\Item_Register\Extra_Item_Register_Buttons.htm">
+			</item>
+		</item>
+		<item name="Hire Module">
+			<item name="Hire Module Oveview" link="ADDITIONAL_MODULES\Hire_Module\Hire_Module_Oveview.htm">
+			</item>
+			<item name="Hire Module Setup" link="ADDITIONAL_MODULES\Hire_Module\Hire_Module_Setup.htm">
+			</item>
+			<item name="Inserting/Changing an Item" link="ADDITIONAL_MODULES\Hire_Module\Inserting_Changing_an_Item.htm">
+			</item>
+			<item name="Item Buttons" link="ADDITIONAL_MODULES\Hire_Module\Item_Buttons.htm">
+			</item>
+			<item name="Adding Item Details" link="ADDITIONAL_MODULES\Hire_Module\Adding_Item_Details.htm">
+			</item>
+			<item name="Creating A Hire" link="ADDITIONAL_MODULES\Hire_Module\Creating_A_Hire.htm">
+			</item>
+		</item>
+		<item name="Sales Module">
+			<item name="Creating a New Sales Order" link="ADDITIONAL_MODULES\Sales_Module\Creating_a_New_Sales_Order.htm">
+			</item>
+			<item name="Package Details" link="ADDITIONAL_MODULES\Sales_Module\Package_Details.htm">
+			</item>
+			<item name="Item Accessories" link="ADDITIONAL_MODULES\Sales_Module\Item_Accessories.htm">
+			</item>
+			<item name="On Costs" link="ADDITIONAL_MODULES\Sales_Module\On_Costs.htm">
+			</item>
+			<item name="Trade In Details" link="ADDITIONAL_MODULES\Sales_Module\Trade_In_Details.htm">
+			</item>
+			<item name="Summary Button" link="ADDITIONAL_MODULES\Sales_Module\Summary_Button.htm">
+			</item>
+			<item name="Sales Module Payments Button" link="ADDITIONAL_MODULES\Sales_Module\Sales_Module_Payments_Button.htm">
+			</item>
+			<item name="Print Invoice Completed Buttons" link="ADDITIONAL_MODULES\Sales_Module\Print_Invoice_Completed_Buttons.htm">
+			</item>
+			<item name="Finance Button" link="ADDITIONAL_MODULES\Sales_Module\Finance_Button.htm">
+			</item>
+			<item name="Prospect Masterfiles" link="ADDITIONAL_MODULES\Sales_Module\Prospect_Masterfiles.htm">
+			</item>
+		</item>
+	</item>
+	<item name="Common Topics">
+		<item name="GST Types" link="Common_Topics\GST_Types.htm">
+		</item>
+		<item name="Select Customer" link="Common_Topics\Select_Customer.htm">
+		</item>
+		<item name="Select Job Item" link="Common_Topics\Select_Job_Item.htm">
+		</item>
+		<item name="Postcode File" link="ed-Buttons.chm::/Browse_Postcode_File.htm">
+		</item>
+		<item name="Groups Browsing" link="Common_Topics\Groups_Browsing.htm">
+		</item>
+		<item name="Select Stock or Alternate Stock Window" link="Common_Topics\Select_Stock_or_Alternate_Stock_Window.htm">
+		</item>
+		<item name="Unallocated Payments" link="Common_Topics\Unallocated_Payments.htm">
+		</item>
+		<item name="Insert Customer and Job item" link="ck-Window.chm::/Insert_Customer_and_Job_item.htm">
+		</item>
+		<item name="Fax Printing" link="er-and-Job-item.chm::/Fax_Printing.htm">
+		</item>
+		<item name="Stock Types" link="Common_Topics\Stock_Types.htm">
+		</item>
+	</item>
+	<item name="Common Buttons">
+		<item name="Insert Button" link="Common_Buttons\Insert_Button.htm">
+		</item>
+		<item name="Delete Button" link="Common_Buttons\Delete_Button.htm">
+		</item>
+		<item name="Save Button" link="Common_Buttons\Save_Button.htm">
+		</item>
+		<item name="Close Button" link="Common_Buttons\Close_Button.htm">
+		</item>
+		<item name="Clear Button" link="Common_Buttons\Clear_Button.htm">
+		</item>
+		<item name="Find Button" link="Common_Buttons\Find_Button.htm">
+		</item>
+		<item name="Stock Sales Button" link="Common_Buttons\Stock_Sales_Button.htm">
+		</item>
+		<item name="Job Item Button" link="Common_Buttons\Job_Item_Button.htm">
+		</item>
+		<item name="Enquiries Button" link="Common_Buttons\Enquiries_Button.htm">
+		</item>
+		<item name="Job Invoice Button" link="Common_Buttons\Job_Invoice_Button.htm">
+		</item>
+		<item name="Payments Button" link="Common_Buttons\Payments_Button.htm">
+		</item>
+		<item name="Report Button" link="Common_Buttons\Report_Button.htm">
+		</item>
+		<item name="History F8 Button" link="Common_Buttons\History_F8_Button.htm">
+		</item>
+		<item name="Aged Analysis Button" link="Common_Buttons\Aged_Analysis_Button.htm">
+		</item>
+		<item name="Purchase History Button" link="Common_Buttons\Purchase_History_Button.htm">
+		</item>
+		<item name="Lost Sales Button" link="Common_Buttons\Lost_Sales_Button.htm">
+		</item>
+		<item name="Stock Customer Button" link="Common_Buttons\Stock_Customer_Button.htm">
+		</item>
+		<item name="Stock Purchases Button" link="Common_Buttons\Stock_Purchases_Button.htm">
+		</item>
+		<item name="Serial Stock Button" link="Common_Buttons\Serial_Stock_Button.htm">
+		</item>
+		<item name="Alternate Stock Button" link="Common_Buttons\Alternate_Stock_Button.htm">
+		</item>
+		<item name="Maintain Stock Button" link="Common_Buttons\Maintain_Stock_Button.htm">
+		</item>
+	</item>
+	<item name="Did You Know That?">
+		<item name="Introduction" link="Did_You_Know_That_\Introduction_2.htm">
+		</item>
+		<item name="Asterisk" link="ction-2.chm::/Astrix.htm">
+		</item>
+		<item name="Full Stop" link="Did_You_Know_That_\Full_Stop.htm">
+		</item>
+		<item name="Sorting Information" link="Did_You_Know_That_\Sorting_Information.htm">
+		</item>
+		<item name="Customer - Supplier Lists / Letters" link="Did_You_Know_That_\Customer_Lists.htm">
+		</item>
+		<item name="Cut and Paste" link="Did_You_Know_That_\Cut_and_Paste.htm">
+		</item>
+		<item name="Colour Printing" link="Did_You_Know_That_\Colour_Printing.htm">
+		</item>
+		<item name="Intellisearch parts" link="Did_You_Know_That_\Intellisearch_parts.htm">
+		</item>
+		<item name="Parts Allocation" link="Did_You_Know_That_\Parts_Allocation.htm">
+		</item>
+		<item name="Customer Update" link="Did_You_Know_That_\Customer_Update.htm">
+		</item>
+		<item name="Re-Order Stock" link="Did_You_Know_That_\Re_Order_Stock.htm">
+		</item>
+		<item name="Profit Departments" link="Did_You_Know_That_\Profit_Departments.htm">
+		</item>
+		<item name="Headings and Labels" link="Did_You_Know_That_\Headings_and_Labels.htm">
+		</item>
+	</item>
+	<item name="How Do I Do This ?">
+		<item name="Introduction" link="How_Do_I_Do_This__\How_do_i_do_this_.htm">
+		</item>
+		<item name="Amex / Diners Payments" link="How_Do_I_Do_This__\Amex_Payments.htm">
+		</item>
+		<item name="Overseas Purchases" link="How_Do_I_Do_This__\Overseas_Purchases.htm">
+		</item>
+		<item name="Internal Work" link="How_Do_I_Do_This__\Internal_Work.htm">
+		</item>
+		<item name="Contra Payments" link="How_Do_I_Do_This__\Contra_Payments.htm">
+		</item>
+		<item name="Yellow Pages - Gst not 1/11th" link="How_Do_I_Do_This__\Yellow_Pages.htm">
+		</item>
+		<item name="Reversing a wage entry" link="How_Do_I_Do_This__\Reversing_a_wage_entry.htm">
+		</item>
+		<item name="Journaling Wages" link="How_Do_I_Do_This__\Journaling_Wages.htm">
+		</item>
+		<item name="Refunds &amp; Misc Payments" link="How_Do_I_Do_This__\Refunds_Misc_Payments.htm">
+		</item>
+		<item name="Petty Cash" link="How_Do_I_Do_This__\Petty_Cash.htm">
+		</item>
+		<item name="Ledger Departments" link="How_Do_I_Do_This__\Ledger_Departments.htm">
+		</item>
+		<item name="Local Supplier with no ABN" link="How_Do_I_Do_This__\Withholding_Tax_Errors.htm">
+		</item>
+		<item name="Processing Bad Debts" link="How_Do_I_Do_This__\Processing_Bad_Debts.htm">
+		</item>
+		<item name="Moving Groups of Parts" link="How_Do_I_Do_This__\Moving_Groups_of_Parts.htm">
+		</item>
+		<item name="Capricorn Charges" link="arts.chm::/Capricorn_Charges.htm">
+		</item>
+		<item name="Salary Sacrifice Super" link="How_Do_I_Do_This__\Salary_Sacrifice_Super.htm">
+		</item>
+	</item>
+	<item name="Version 9 Features">
+		<item name="Customers">
+			<item name="SMS Function" link="Version_9_Features\Customers\SMS_Function.htm">
+			</item>
+			<item name="Alternate Customer Code Searching" link="Version_9_Features\Customers\Alternate_Customer_Code_Searching.htm">
+			</item>
+			<item name="Salesperson filtering" link="Version_9_Features\Customers\Salesperson_filtering.htm">
+			</item>
+			<item name="Additional Delivery Details" link="Version_9_Features\Customers\Additional_Delivery_Details.htm">
+			</item>
+			<item name="WIP Tab" link="Version_9_Features\Customers\WIP_Tab.htm">
+			</item>
+			<item name="Correspondence Tab" link="Version_9_Features\Customers\Correspondence_Tab.htm">
+			</item>
+			<item name="Google Maps" link="Version_9_Features\Customers\Google_Maps.htm">
+			</item>
+			<item name="Don’t Send SMS Tickbox Option" link="Version_9_Features\Customers\Don_t_Send_SMS_Tickbox_Option.htm">
+			</item>
+			<item name="Customer Intellisearch" link="Version_9_Features\Customers\Customer_Intellisearch.htm">
+			</item>
+			<item name="Internal Customers" link="Version_9_Features\Customers\Internal_Customers.htm">
+			</item>
+			<item name="Disable prices in Customer History" link="Version_9_Features\Customers\Disable_prices_in_Customer_History.htm">
+			</item>
+			<item name="Receipt Docket Printing" link="Version_9_Features\Customers\Receipt_Docket_Printing.htm">
+			</item>
+			<item name="Customer Membership Details" link="Version_9_Features\Customers\Customer_Membership_Details.htm">
+			</item>
+			<item name="Job Item Labels" link="Version_9_Features\Customers\Job_Item_Labels.htm">
+			</item>
+			<item name="Statements" link="Version_9_Features\Customers\Statements.htm">
+			</item>
+			<item name="Bank Deposits" link="Version_9_Features\Customers\Bank_Deposits.htm">
+			</item>
+			<item name="Standing Journal" link="Version_9_Features\Customers\Standing_Journal.htm">
+			</item>
+			<item name="Batch Journals" link="Version_9_Features\Customers\Batch_Journals.htm">
+			</item>
+			<item name="Cheque Entry Dissection" link="Version_9_Features\Customers\Cheque_Entry_Dissection.htm">
+			</item>
+			<item name="GST Payments" link="Version_9_Features\Customers\GST_Payments.htm">
+			</item>
+			<item name="V 9 Enquiries" link="Version_9_Features\Customers\V_9_Enquiries.htm">
+			</item>
+			<item name="Ledger Masks" link="Version_9_Features\Customers\Ledger_Masks.htm">
+			</item>
+			<item name="SMTP Email" link="Version_9_Features\Customers\SMTP_Email.htm">
+			</item>
+		</item>
+		<item name="Suppliers">
+			<item name="Supplier Payments using Bank EFT ABA Files" link="Version_9_Features\Suppliers\Supplier_Payments_using_Bank_EFT_ABA_Files.htm">
+			</item>
+			<item name="Balancing Option in ABA file" link="Version_9_Features\Suppliers\Balancing_Option_in_ABA_file.htm">
+			</item>
+			<item name="Settlement Discounts" link="Version_9_Features\Suppliers\Settlement_Discounts.htm">
+			</item>
+			<item name="Purchase / Credits Multiple Purchases in a batch" link="Version_9_Features\Suppliers\Purchase_Credits_Multiple_Purchases_in_a_batch.htm">
+			</item>
+			<item name="Bank Reconciliation Module" link="Version_9_Features\Suppliers\Bank_Reconciliation_Module.htm">
+			</item>
+		</item>
+		<item name="Job Invoicing &amp; Estimates">
+			<item name="Job filtering" link="le.chm::/Job_Invoicing_Estimates.htm">
+			</item>
+			<item name="Invoice Line Tracking" link="Version_9_Features\Job_Invoicing___Estimates\Invoice_Line_Tracking_.htm">
+			</item>
+			<item name="Fax Printer" link="Version_9_Features\Job_Invoicing___Estimates\Fax_Printer.htm">
+			</item>
+			<item name="Invoice Emailing" link="Version_9_Features\Job_Invoicing___Estimates\Invoice_Emailing.htm">
+			</item>
+			<item name="GST Exempt option" link="Version_9_Features\Job_Invoicing___Estimates\GST_Exempt_option.htm">
+			</item>
+			<item name="Buy In Button" link="ion.chm::/Buy_In_Button.htm">
+			</item>
+			<item name="Parts Link" link="Version_9_Features\Job_Invoicing___Estimates\Parts_Link.htm">
+			</item>
+			<item name="Cut and Paste Function" link="Version_9_Features\Job_Invoicing___Estimates\Cut_and_Paste_Function.htm">
+			</item>
+			<item name="Subtotal Feature" link="Version_9_Features\Job_Invoicing___Estimates\Subtotal_Feature.htm">
+			</item>
+			<item name="More Printer Options" link="Version_9_Features\Job_Invoicing___Estimates\More_Printer_Options.htm">
+			</item>
+			<item name="Job Authorisation Option" link="Version_9_Features\Job_Invoicing___Estimates\Job_Authorisation_Option.htm">
+			</item>
+			<item name="Progressive Invoice Option" link="Version_9_Features\Job_Invoicing___Estimates\Progressive_Invoice_Option_.htm">
+			</item>
+			<item name="Credit hold / terms and customer notes window" link="Version_9_Features\Job_Invoicing___Estimates\Credit_hold_terms_and_customer_notes_window.htm">
+			</item>
+			<item name="Job Stats – F7 Button" link="Version_9_Features\Job_Invoicing___Estimates\Job_Stats_F7_Button.htm">
+			</item>
+			<item name="Fonts Button" link="Version_9_Features\Job_Invoicing___Estimates\Fonts_Button.htm">
+			</item>
+			<item name="Levy Button" link="Version_9_Features\Job_Invoicing___Estimates\Levy_Button.htm">
+			</item>
+			<item name="Job Status Feature" link="Version_9_Features\Job_Invoicing___Estimates\Job_Status_Feature_.htm">
+			</item>
+			<item name="Lock Feature" link="Version_9_Features\Job_Invoicing___Estimates\Lock_Feature_.htm">
+			</item>
+			<item name="Random Delivery Address" link="Version_9_Features\Job_Invoicing___Estimates\Random_Delivery_Address.htm">
+			</item>
+			<item name="Invoice Date Message" link="Version_9_Features\Job_Invoicing___Estimates\Invoice_Date_Message.htm">
+			</item>
+			<item name="Warranty Date Warning" link="Version_9_Features\Job_Invoicing___Estimates\Warranty_Date_Warning.htm">
+			</item>
+			<item name="ENQ Button" link="Version_9_Features\Job_Invoicing___Estimates\ENQ_Button.htm">
+			</item>
+		</item>
+		<item name="New Modules">
+			<item name="Security &amp; Passwords" link="Version_9_Features\New_Modules\Security_Passwords.htm">
+			</item>
+			<item name="Marketing Module" link="Version_9_Features\New_Modules\Marketing_Module.htm">
+			</item>
+			<item name="Service Due Module" link="Version_9_Features\New_Modules\Service_Due_Module.htm">
+			</item>
+			<item name="New Stock Options" link="e-Due-Module.chm::/Stock.htm">
+			</item>
+			<item name="Discounts" link="Version_9_Features\New_Modules\Discounts.htm">
+			</item>
+			<item name="Transaction Server" link="Version_9_Features\New_Modules\Transaction_Server.htm">
+			</item>
+			<item name="Goods In Screen" link="Version_9_Features\New_Modules\Goods_In_Screen.htm">
+			</item>
+			<item name="The Bucket" link="Version_9_Features\New_Modules\The_Bucket.htm">
+			</item>
+			<item name="Stocktake Module" link="Version_9_Features\New_Modules\Stocktake_Module.htm">
+			</item>
+			<item name="Stock Data Tools" link="Version_9_Features\New_Modules\Stock_Data_Tools.htm">
+			</item>
+			<item name="Customer Orders" link="Version_9_Features\New_Modules\Customer_Orders.htm">
+			</item>
+			<item name="Despatch Module" link="Version_9_Features\New_Modules\Despatch_Module.htm">
+			</item>
+			<item name="Scheduler Module" link="Version_9_Features\New_Modules\Scheduler_Module.htm">
+			</item>
+			<item name="Remote Staff Scheduler Logon" link="Version_9_Features\New_Modules\Remote_Staff_Scheduler_Logon.htm">
+			</item>
+		</item>
+	</item>
+	<item name="Version 10 Features">
+		<item name="General Changes">
+			<item name="New Menu Toolbar" link="Version_10_Features\General_Changes\New_Menu_Toolbar.htm">
+			</item>
+		</item>
+	</item>
+</toc>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Amex Payments</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "19.0_2";
+</script>
+ <meta name="brsprev" value="How_Do_I_Do_This__/How_do_i_do_this_.htm">
+ <meta name="brsnext" value="How_Do_I_Do_This__/Overseas_Purchases.htm">
+ <meta name="topic-breadcrumbs" content="How Do I Do This ?" />
+</head>
+<body>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+<h1>Amex / Diners Payments</h1>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Cards such as American express, Diners and others deduct fees from the payment prior to the money arriving in your bank account. When the card payment is made the customer has paid, but the money may not arrive in your account for several days. When it does, its not for the full amount, but an amount less a percentage fees which the card provider withholds.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">So how do we process these payments?</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Setting Up</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Firstly setup a withholding account to hold the payment until it arrives in your bank account. This holding account should be an account range between 1011 and 1019 (the payment accounts). Lets called it 1015 for now. This account would be setup using the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">General Ledger Masterfiles</font><font style="font-family:'Times New Roman'; font-size:12pt;">. You must also have a card fees account setup in the 9000 series account. Say 9150 Card Fees.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Receiving Payment</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Now we must go to the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">payment methods</font> <font style="font-family:'Times New Roman'; font-size:12pt;">area under the Others &gt; Maintenance menu and create a payment method called Amex or Diner or another appropriate name for the card. You then link the 1015 account to the new payment method as detailed in the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">payment methods</font> <font style="font-family:'Times New Roman'; font-size:12pt;">area.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">Now when the customer pays their account using the card, you are able to receive the payment using the new payment method you have created. Payment details can be found in the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">Customer Payment</font> <font style="font-family:'Times New Roman'; font-size:12pt;">or the</font> <a href="../JOB_INVOICING/Invoice_Payments.htm"><font style="font-family:'Times New Roman'; font-size:12pt;">Job Invoice Payment</font></a> <font style="font-family:'Times New Roman'; font-size:12pt;">help.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Banking the money</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt;">The payment now sits in the 1015 (or other account 1011  1019) ready for it to arrive in your bank account. When the money the arrives in your account, go to the</font> <a href="../LEDGER/Journal_Entries.htm"><font style="font-family:'Times New Roman'; font-size:12pt;">Journal Entry</font></a> <font style="font-family:'Times New Roman'; font-size:12pt;">Screen and journal the amount actually received from 1015 to 1020 (or your alternative bank account). To do this we Credit 1015 and Debit 1020. This leaves the card fee still in the 1015 account.</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p><font style="font-family:'Times New Roman'; font-size:12pt; color:red;">NOTE: Do not Journal the card fees from the 1015 account as they have a GST component which will not be accounted for when doing a journal.</font></p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;">&#160;</p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;"><font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">Processing the fees</font></p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;">&#160;</p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;"><font style="font-family:'Times New Roman'; font-size:12pt;">To process the fees, go to the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">cheque entry</font> <font style="font-family:'Times New Roman'; font-size:12pt;">screen. Select the 1015 account as the Method of payment and then select the Amex / Diners fees account (in the 9000 admin expense series) as the expense account. Enter the amount of the fee including GST. The GST will automatically be calculated. This will transfer the fee to the fees account, out of the 1015 account and at the same time account for the GST.</font></p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;">&#160;</p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;">&#160;</p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;"><font style="font-family:'Times New Roman'; font-size:12pt;">Now for the</font> <font style="font-family:'Times New Roman'; font-size:12pt; font-weight:bold;">AM-Win EASY WAY</font><font style="font-family:'Times New Roman'; font-size:12pt;">.</font></p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;">&#160;</p>
+<p class="Title" style="margin-left:9.00pt;text-align:left;"><font style="font-family:'Times New Roman'; font-size:12pt;">Go into the</font> <font style="font-family:'Times New Roman'; font-size:12pt;">Deposits</font> <font style="font-family:'Times New Roman'; font-size:12pt;">screen. Select the bank account associated to the card charges (1015). Tag the records to be processed. Select the bank account to deposit the money in. Now at the bottom of the screen, enter the amount of the card fees and then select the ledger account to process the fees into. Process the deposit and the fees will be automatically accounted for including the GST component and the bank account will get the deposit amount less the fees.</font></p>
+</body>
+</html>

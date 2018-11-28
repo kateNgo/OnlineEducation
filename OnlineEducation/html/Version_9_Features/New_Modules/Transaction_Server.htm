@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Transaction Server</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "20.4.0_6";
+</script>
+ <meta name="brsprev" value="Version_9_Features/New_Modules/Discounts.htm">
+ <meta name="brsnext" value="Version_9_Features/New_Modules/Goods_In_Screen.htm">
+ <meta name="topic-breadcrumbs" content="Version 9 Features > New Modules" />
+</head>
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>Transaction Server</h1>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:center;"><font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Transaction Server</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">One of the issues of any database management software, is the inability to update a database when a record is held by another user. In AMWIN, there are a number of processes that update a job or manufactured item externally. The most common example of this is when items are allocated from a purchase order to a job. If a part is allocated to a job from an order the item is placed onto the job at the time the order is either received or received and finalised. However, if the job is currently held open by another user, the purchase order process is not able to update the job and you will be warned that the purchase order was unable to do so. This would require that you either wait until the other user exits from the job or continues to receive the order and manually add the parts to the job at a later stage.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When the Transaction server is activated, and the job is held open, while another process is trying to update it, AMWIN will automatically post these records into a temporary database file. The Transaction Server then automatically monitors this temporary file and will update the job or manufactured item as soon as it becomes available by the other user exiting from the job. The Transaction server will continue to monitor this process to ensure that all parts, labour and revenue items are allocated to a job, end up on the job. In the event that the user opening the job does not exit the job but in fact finalises it, the user will be notified that items being allocated to that job are not currently on the job, at which time these additional items will automatically be placed on the job ensuring they are not missed when the invoice is finalised.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Other processes that also automatically update the invoice via the Transaction server include the Timesheet Labour Module and the AM Parts Allocation module.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Transaction server is an essential program that has to be run together with all Timesheet, purchase order and AM-Parts transactions. The Transaction Server must be included in the scheduled programs to be run upon startup of the computer. It should be always running in the background.</font></p>
+</body>
+</html>

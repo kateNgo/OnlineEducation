@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Item Register Setup</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "15.1.0_2";
+</script>
+ <meta name="brsprev" value="ADDITIONAL_MODULES/Item_Register/Item_Register_Outline.htm">
+ <meta name="brsnext" value="ADDITIONAL_MODULES/Item_Register/Transferring_Current_Floorplan_to_Item_Register.htm">
+ <meta name="topic-breadcrumbs" content="ADDITIONAL MODULES > Item Register" />
+</head>
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>Item Register Setup</h1>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:center;"><font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Item Register Setup</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">When the Sales Module and Item Register are installed, there are certain settings which need to be configured.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The Item Register automatically has ledger numbers inserted into the program to allow the figures relating to sales and expenses to go to the correct ledgers. These ledger numbers will need to be checked in your General Ledger Masterfile. If any of these numbers are currently being used, you will need to create a new ledger for the pre existing code and journal the balance over to the new ledger code, then rename the ledger with the appropriate GST Type as listed below.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Alternatively, you could change the ledger code in the</font> <font style="font-size:12pt; font-weight:bold;">Item Register</font> <font style="font-size:12pt;">in the</font> <font style="font-size:12pt; font-weight:bold;">Ledger/Expenses</font> <font style="font-size:12pt;">tab, as long the ledger is still in the nominated ledger code series as shown below. To change the Plant and Equipment ledger from 1100 to another number will need to be done through the</font> <font style="font-size:12pt; font-weight:bold;">Supervisor</font> <font style="font-size:12pt;">button in the</font> <font style="font-size:12pt; font-weight:bold;">Item Register</font><font style="font-size:12pt;">. This is not advisable as the system will still continue to use the default numbers and as such generate a lot of extra work and also increase the chances of errors if you forget to change the codes. If the default codes do not currently exist then they will be automatically created when you open the AM-Win Version 7.6 or later program for the first time.</font></p>
+<p style="text-align:justify;"></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">These ledgers are:</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="margin-left:56.70pt;text-align:justify;"><font style="font-size:12pt; font-weight:bold;">1100  Plant and Equipment&#160;&#160;-&#160;Acquisition</font></p>
+<p style="margin-left:56.70pt;text-align:justify;"><font style="font-size:12pt; font-weight:bold;">1101  Provision for Depreciation &#160;-&#160;N/A</font></p>
+<p style="margin-left:56.70pt;text-align:justify;"><font style="font-size:12pt; font-weight:bold;">5900  Item Labour Offset&#160;&#160;-&#160;Gst</font></p>
+<p style="margin-left:56.70pt;text-align:justify;"><font style="font-size:12pt; font-weight:bold;">6100  Item Income&#160;&#160;&#160;-&#160;Gst</font></p>
+<p style="margin-left:56.70pt;text-align:justify;"><font style="font-size:12pt; font-weight:bold;">7100  Item</font> <font style="font-size:12pt; font-weight:bold;">Sale</font> <font style="font-size:12pt; font-weight:bold;">Cost&#160;&#160;&#160;-&#160;Gst</font></p>
+<p style="margin-left:56.70pt;text-align:justify;"><font style="font-size:12pt; font-weight:bold;">7900 - Item Maintenance Offset&#160;-&#160;Gst</font></p>
+<p style="margin-left:56.70pt;text-align:justify;"><font style="font-size:12pt; font-weight:bold;">8100  Insurance Recovery&#160;&#160;-&#160;Gst</font></p>
+<p style="margin-left:56.70pt;text-align:justify;"><font style="font-size:12pt; font-weight:bold;">9100  Depreciation Expenses&#160;-&#160;N/A</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">In the Control System you need to nominate a few options in the</font> <font style="font-size:12pt; font-weight:bold;">Security</font> <font style="font-size:12pt; font-weight:bold;">Tab</font> <font style="font-size:12pt;">and then</font> <font style="font-size:12pt; font-weight:bold;">Field Controls.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Management Control</font> <font style="font-size:12pt;"></font> <font style="font-size:12pt;">If you have Password Security turned on in Am⌀win, depending on the Password Level entered into this field, certain areas will be inaccessible to anyone with a Password Level lower than what is set, relating to invoicing and the Item Register, such as recosting jobs (total button), accessing cost and sell prices in customer invoice.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:7.10pt;text-align:justify;"><font style="font-style:normal;">You can also assign the next Item number or automatically assign item or numbers to your items. We recommend you start with an item number of 10,000. This is done under the Control System in the Invoice tab.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Item Register</font> <font style="font-size:12pt;">- Enter the Password Level required to gain access to the Item Register</font><font style="font-size:12pt; font-weight:bold;">.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Disable the Updates in the Item Register</font> <font style="font-size:12pt;"> If you have Password Security turned on in Am-win, enter the password level into this field to disable changes to be made in the Job Item masterfile for any items relating to the Item Register</font><font style="font-size:12pt; font-weight:bold;">.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Item Category</font> <font style="font-size:12pt;"> In the Item Register, choose the option which relates to how you are using the Item Register, whether you are using the Item Register</font> <font style="font-size:12pt;">or hiring, sales or for internal Item control only.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Sales Order Module</font> <font style="font-size:12pt;"> Choose which industry your business relates to, so that the labels showing in the Sales Module are showing the appropriate information.</font></p>
+<p style="margin-left:36.00pt;text-indent:-28.90pt;text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Insert Parts to Jobs from Sales Module</font> <font style="font-size:12pt;"> If this option is ticked and a jobcard is printed from the Sales Module the parts will automatically be inserted onto the jobcard when the jobcard is created. This would only be relevant in the case of the sale being done between internal departments within your own business, such as between the sales dept and workshop.</font></p>
+<p style="margin-left:36.00pt;text-indent:-28.90pt;text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">In the</font> <font style="font-size:12pt; font-weight:bold;">Sales Module</font><font style="font-size:12pt;">, under the heading of</font> <font style="font-size:12pt; font-weight:bold;">Programs&gt;Sales Order</font> <font style="font-size:12pt;">Options, you are required to enter the State you are in and your Dealer licence number. Fill in any other details on the screen, which would be applicable to your business.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You must also enter the internal customer that you wish the owner to be for all of your items. This default owner must be internal and is very important to ensure the item sales module works correctly.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Details such as stamp duty, luxury tax etc must also be entered if they are applicable to your state. These settings vary from state to state. An asset can also be marked as being exempt from these taxes depending on the industry and state you are in.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Also under the heading of</font> <font style="font-size:12pt; font-weight:bold;">Programs&gt;Industry</font><font style="font-size:12pt;">, if the required headings are not already set for your industry or if you wish to change any of the headings, it can be done from this screen. These headings will relate to the information on the Item, which will need to be maintained.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The marine industry settings are provided with the software and must be used in this format to allow easy and trouble free exporting of the items to our sales module website or to the trading post or other advertising option.</font></p>
+</body>
+</html>

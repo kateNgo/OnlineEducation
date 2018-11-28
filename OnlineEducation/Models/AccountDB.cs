@@ -26,14 +26,14 @@ namespace OnlineEducation.Models
         public Account Login(string email, string password)
         {
             Account theAccount = null;
-            string query = "SELECT * FROM Account WHERE Email=@email AND Password=@password";
+            string query = "SELECT * FROM Account WHERE Email=@email  AND Password=@password";
 
             using (SqlConnection con = SQLConnect())
             {
                 using (SqlCommand cmd = new SqlCommand(query))
                 {
                     cmd.Parameters.AddWithValue("@email", email);
-                    cmd.Parameters.AddWithValue("@password", EncodePasswordToBase64( password));
+                    cmd.Parameters.AddWithValue("@password", EncodePasswordToBase64(password));
                     cmd.Connection = con;
                     con.Open();
                     SqlDataReader sdr = cmd.ExecuteReader();
@@ -44,6 +44,11 @@ namespace OnlineEducation.Models
                         theAccount.Email = sdr.GetString(1);
                         theAccount.Password = sdr.GetString(2);
                         theAccount.Name = sdr.GetString(3);
+                        //string afterEncode = EncodePasswordToBase64(password);
+                        //if (!theAccount.Password.Equals(afterEncode))
+                        //{
+                        //    theAccount = null;
+                        //}
                     }
                     con.Close();
                 }
@@ -90,7 +95,7 @@ namespace OnlineEducation.Models
                 using (SqlCommand cmd = new SqlCommand(query))
                 {
                     cmd.Parameters.AddWithValue("@email", email);
-                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.Parameters.AddWithValue("@password", EncodePasswordToBase64(password));
                     cmd.Parameters.AddWithValue("@name", name);
                     cmd.Connection = con;
                     con.Open();
@@ -192,6 +197,24 @@ namespace OnlineEducation.Models
             return true;
 
         }
+        public bool EmailContentViaGoogle(string email, string content, string subject)
+        {
+            MailMessage mailMessage = new MailMessage();
+            mailMessage.To.Add(email);
+            mailMessage.From = new MailAddress("kateAsims2018@gmail.com");
+            mailMessage.Subject = subject;
+            mailMessage.IsBodyHtml = true;
+            mailMessage.Body = content;
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                EnableSsl = true,
+                Credentials = new NetworkCredential("kateAsims2018@gmail.com", "SupportId456")
+            };
+
+            smtpClient.Send(mailMessage);
+            return true;
+
+        }
         public bool IsValidEmail(string strIn)
         {
             invalid = false;
@@ -264,6 +287,7 @@ namespace OnlineEducation.Models
             return builder.ToString();
 
         }
+        
 
     }
 }

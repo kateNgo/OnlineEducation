@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Transferring Current Floorplan to Item Register</title>
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
+<meta name="copyright" value="©AM-Win Software Pty Ltd" />
+<link rel="StyleSheet" href="../../AMWIN.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "../..";
+gCommonRootRelPath = "../..";
+gTopicId = "15.1.0_3";
+</script>
+ <meta name="brsprev" value="ADDITIONAL_MODULES/Item_Register/Item_Register_Setup.htm">
+ <meta name="brsnext" value="ADDITIONAL_MODULES/Item_Register/Inserting_Changing_an_Item_in_Register.htm">
+ <meta name="topic-breadcrumbs" content="ADDITIONAL MODULES > Item Register" />
+</head>
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>Transferring Current Floorplan to Item Register</h1>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:center;"><font style="font-size:20pt; color:blue; font-weight:bold; text-decoration:underline;">Transferring Current Floorplan Items To Item Register</font></p>
+<p style="margin-top:0;margin-bottom:0">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The first step is to enter all of your current</font> <font style="font-size:12pt; font-weight:bold;">floorplan</font> <font style="font-size:12pt;">items into the Item Register. This process is only required as part of the initial setup.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">A few things which need to be set up first. Your ledgers are already setup, however, if you wish to split the sale and purchase of boats/motors/trailers, you could then used 6101 and 7101 for motors and 6102 and 7102 for trailers. You must remember then, that when you create the Item you will need to change the ledger number in the</font> <font style="font-size:12pt; font-weight:bold;">Ledger/Expenses</font> <font style="font-size:12pt;">tab from the default ledger which is already set.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Next you need to create a customer in the Customer Masterfile under your own business name. The status will need to be . In the Account Details tab you will need to set up the Offset Ledgers. The ledger in each field will be an expense account eg., 7150, and called, perhaps, Sales Workshop work. This ledger will get updated whenever a jobcard is created and finalised from the</font> <font style="font-size:12pt; font-weight:bold;">Sales Module</font><font style="font-size:12pt;">.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Your floorplan suppliers eg., GE, Capital Finance and Yamaha will need to be ticked as floorplan suppliers in the Supplier Masterfile, in the</font> <font style="font-size:12pt; font-weight:bold;">Options/Deliveries/Notes</font> <font style="font-size:12pt;">tab..</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">In the</font> <font style="font-size:12pt; font-weight:bold;">Control System &gt; Invoice Tab &gt; Last Assignment Nos</font><font style="font-size:12pt;">, change the number in the</font> <font style="font-size:12pt; font-weight:bold;">Item#</font> <font style="font-size:12pt;">field to 10,000 and</font> <font style="font-size:12pt; font-weight:bold;">Save.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You are now ready for the first stage of entering the</font> <font style="font-size:12pt; font-weight:bold;">Floorplan</font> <font style="font-size:12pt;">information.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Go to the</font> <font style="font-size:12pt; font-weight:bold;">Item Register</font><font style="font-size:12pt;">. Click on</font> <font style="font-size:12pt; font-weight:bold;">Insert</font><font style="font-size:12pt;">, and enter required data into the following fields. You will need to enter a catalogue item for each</font> <font style="font-size:12pt; font-weight:bold;">Make and Model</font> <font style="font-size:12pt;">of an item you have on floorplan, eg., if you have 6 boats which are 50hp Evinrude, you only need to enter the catalogue item once.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The</font> <font style="font-size:12pt; font-weight:bold;">Catalogue</font> <font style="font-size:12pt;">item is used as a template to access the information from purchase orders to bring the individual items into the</font> <font style="font-size:12pt; font-weight:bold;">Item Register</font> <font style="font-size:12pt;">under their own serial/chassis nos.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Item Category</font> <font style="font-size:12pt;"> Will automatically prompt to</font> <font style="font-size:12pt; font-weight:bold;">For</font> <font style="font-size:12pt; font-weight:bold;">Sale</font> <font style="font-size:12pt; font-weight:bold;">or for hire depending on your control file settings. .</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Item Type</font> <font style="font-size:12pt; font-weight:bold;">-</font> <font style="font-size:12pt;">Select with the item is a Boat, Motorcycle, Vehicle etc. If these options are not yet setup, then click on</font> <font style="font-size:12pt; font-weight:bold;">Insert</font><font style="font-size:12pt;">, type in</font> <font style="font-size:12pt; font-weight:bold;">Boat</font><font style="font-size:12pt;">, and</font> <font style="font-size:12pt; font-weight:bold;">Save.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Status </font> <font style="font-size:12pt;">Select Catalogue. The reason Catalogue is chosen, is that the item is not part of stock file at this stage.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Make/Model </font> <font style="font-size:12pt;">Click on this button and select the correct</font> <font style="font-size:12pt; font-weight:bold;">Make</font> <font style="font-size:12pt;">and</font> <font style="font-size:12pt; font-weight:bold;">Model.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt; font-weight:bold;">Owner </font> <font style="font-size:12pt;">When you click on the</font> <font style="font-size:12pt; font-weight:bold;">Owner</font> <font style="font-size:12pt;">button, select the customer you have created as the internal customer in your own business name.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Now click on</font> <font style="font-size:12pt; font-weight:bold;">Save</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The 2nd stage is to enter the</font> <font style="font-size:12pt; font-weight:bold;">floorplan</font> <font style="font-size:12pt;">items through the</font> <font style="font-size:12pt; font-weight:bold;">Purchase Order</font> <font style="font-size:12pt;">screen to receive the stock into the Item register and enable payment to be made when the item is sold. You need to create a purchase order for each floorplan item.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p class="Body_Text" style="margin-left:7.10pt;"><font style="font-style:normal;">If you have any current floorplan items on job invoices, do not enter these floorplan items as a purchase order. Simply finalise and handle the entries for that floorplan as you would have in the past until the last of the original floorplan items on current jobs have been finalised.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">In the</font> <font style="font-size:12pt; font-weight:bold;">Purchase Order</font> <font style="font-size:12pt;">screen, start a new order and choose the stock supplier eg., Mercury, Mitsubishi, Honda. Change the</font> <font style="font-size:12pt; font-weight:bold;">Bill To</font><font style="font-size:12pt;">, to be your floorplan supplier eg., GE or Capital Finance. Note that the purchase type will change to</font> <font style="font-size:12pt; font-weight:bold;">Floorplan.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click on the</font> <font style="font-size:12pt; font-weight:bold;">Catalogue</font> <font style="font-size:12pt;">button in the bottom left hand corner of the screen and select the</font> <font style="font-size:12pt; font-weight:bold;">Item</font> <font style="font-size:12pt;">or</font> <font style="font-size:12pt; font-weight:bold;">Attachment</font> <font style="font-size:12pt;">required.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Once the item is selected the</font> <font style="font-size:12pt; font-weight:bold;">Insert Item Record</font> <font style="font-size:12pt;">screen will appear. Additional information can be inserted into the screen at this point, if required.</font></p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click on the</font> <font style="font-size:12pt; font-weight:bold;">OK</font> <font style="font-size:12pt;">button and this item will be added to the purchase order.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click on</font> <font style="font-size:12pt; font-weight:bold;">Save</font> <font style="font-size:12pt;">and</font> <font style="font-size:12pt; font-weight:bold;">Receive</font><font style="font-size:12pt;">. The</font> <font style="font-size:12pt; font-weight:bold;">Trust Receipt Details</font> <font style="font-size:12pt;">screen will then appear. Fill in the relevant details. Please note, that the</font> <font style="font-size:12pt; font-weight:bold;">Interest Free Days</font> <font style="font-size:12pt;">field should display the number of days left from the date of entering the information onto the purchase order. Click on</font> <font style="font-size:12pt; font-weight:bold;">OK.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">A screen will then appear and you will be required to enter information in to at least the first field at the bottom of the screen eg., hull or chassis number.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Ignore the button at the bottom right hand corner. This will only be relevant when you are past the stage of entering your initial floorplan stock and are then selling through the</font> <font style="font-size:12pt; font-weight:bold;">Sales Module</font><font style="font-size:12pt;">.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Click on the</font> <font style="font-size:12pt; font-weight:bold;">Save</font> <font style="font-size:12pt;">button, then the</font> <font style="font-size:12pt; font-weight:bold;">Completed</font> <font style="font-size:12pt;">button.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">You will then be returned to the</font> <font style="font-size:12pt; font-weight:bold;">Purchase Order Screen.</font> <font style="font-size:12pt;">Click on the</font> <font style="font-size:12pt; font-weight:bold;">Save</font> <font style="font-size:12pt;">button The</font> <font style="font-size:12pt; font-weight:bold;">floorplan</font> <font style="font-size:12pt; font-weight:bold;">Purchase Order</font> <font style="font-size:12pt;">does not get finalised.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">The details of the</font> <font style="font-size:12pt; font-weight:bold;">floorplan</font> <font style="font-size:12pt;">items will now show in the</font> <font style="font-size:12pt; font-weight:bold;">Item Register</font><font style="font-size:12pt;">.</font></p>
+<p style="text-align:justify;">&#160;</p>
+<p style="text-align:justify;"><font style="font-size:12pt;">Payment of the</font> <font style="font-size:12pt; font-weight:bold;">floorplan</font> <font style="font-size:12pt;">items can then be made through the</font> <font style="font-size:12pt; font-weight:bold;">Sales Module.</font></p>
+</body>
+</html>

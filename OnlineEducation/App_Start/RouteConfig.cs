@@ -19,7 +19,7 @@ namespace OnlineEducation
             routes.MapRoute("HelpOnline/Level3", "HelpOnline/Level3/{name}", new { controller = "Level3", action = "Index", name = UrlParameter.Optional });
             routes.MapRoute("HelpOnline/AdminLevel1", "HelpOnline/AdminLevel1/{name}", new { controller = "AdminLevel1", action = "Index", name = UrlParameter.Optional });
             routes.MapRoute("HelpOnline/AdminLevel2", "HelpOnline/AdminLevel2/{name}", new { controller = "AdminLevel2", action = "Index", name = UrlParameter.Optional });
-            
+            routes.MapRoute("HelpOnline/UploadHelpOnlineXM", "HelpOnline/UploadHelpOnlineXM/{name}", new { controller = "UploadHelpOnlineXM", action = "Index", name = UrlParameter.Optional });
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

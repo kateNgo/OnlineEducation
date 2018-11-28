@@ -1,16 +1,63 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Adobe RoboHelp Classic 2019" />
+ <meta name="generator" content="Adobe RoboHelp Classic 2019" />
 <title>Create New Customer</title>
-<link rel="StyleSheet" href="..\AMWIN.css" type="text/css" />
+<link rel="StyleSheet" href="../AMWIN.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="../template/scripts/common.min.js"></script>
+<script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="../template/scripts/constants.js"></script>
+<script type="text/javascript" src="../template/scripts/utils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="../template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="../template/scripts/mhver.js"></script>
+<script type="text/javascript" src="../template/scripts/settings.js"></script>
+<script type="text/javascript" src="../template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="../template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="../template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="../template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="../template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="../template/styles/widgets.min.css">
+ <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = "..";
+gCommonRootRelPath = "..";
+gTopicId = "4.1.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="CUSTOMERS > CUSTOMER MASTERFILE" />
 </head>
 
 <body>
-<?rh-script_start ?><script src="../ehlpdhtm.js" type="text/javascript" 
-							 language="JavaScript1.2"></script><?rh-script_end ?>
+<script type="text/javascript" src="../ehlpdhtm.js"></script>
+
+
 <p class="Title" style="margin-left: 9.00pt; font-family: Arial, sans-serif; 
 	 font-size: 20pt; color: #0000ff; font-weight: bold; text-align: center; 
 	 text-decoration: underline; ">CREATING A CUSTOMER</p>
@@ -87,7 +134,7 @@
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
 	 font-size: 16pt;">&#160;</p>
 <p class="Title" style="margin-left: 11.35pt; text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; color: #ff00ff; font-weight: bold;">Status</p>
+	 font-size: 16pt; color: #FF00FF; font-weight: bold;">Status</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
 	 font-size: 16pt; margin-left: 95px;"><span style="color: #ff00ff; 
 												 font-weight: bold;">Active</span></p>
@@ -213,8 +260,7 @@
 												 color="#FF00FF">Address</font> 
   Enter the customer's address [Street, Suburb, State, Postcode]. The 
  Suburb, State and Postcode fields can be automatically inserted by <font 
-	 style="font-weight: bold;"><a href="javascript:BSSCPopup('../OTHERS/Maintenance/Browse_Postcode_File.htm');" 
-									 id="a1">Browsing the Postcode file</a>.</font> 
+	 style="font-weight: bold;"><a href="javascript:BSSCPopup('../OTHERS/Maintenance/Browse_Postcode_File.htm');" id="a1" onmouseover="if (parseInt(navigator.appVersion) >= 4 &amp;&amp; typeof(BSPSPopupOnMouseOver) == 'function') BSPSPopupOnMouseOver(event);" class="BSSCPopup">Browsing the Postcode file</a>.</font> 
  This is done by left clicking on the find button or pressing the <font 
 	 style="font-weight: bold;">ALT + F</font> keys and then searching 
  for the suburb.</p>
@@ -232,7 +278,7 @@
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
 	 font-size: 16pt; margin-left: 24px;">&#160;</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;"><span style="color: #ff00ff; 
+	 font-size: 16pt; margin-left: 24px;"><span style="color: #FF00FF; 
 												 font-weight: bold;">Mobile</span> 
  Enter the customer's mobile number. This number is primarily used to SMS 
  the customer through the SMS system and also will be printed at the bottom 
@@ -415,9 +461,11 @@
  on based on each customer group. The customer can be entered into a group 
  by left clicking on the <span style="font-weight: bold;">Group</span> 
  button to browse the <font style="font-weight: bold;">Customer</font> 
- <font><a href="../OTHERS/Maintenance/Group_Maintenance.htm" style="font-style: normal; 
-			 text-decoration: underline; ">GROUP</a></font> <font style="font-weight: bold;">File</font>, 
- then clicking on a group and then clicking <font style="font-weight: bold;">Select</font>.</p>
+ <font style="text-decoration: underline; "><a href="../OTHERS/Maintenance/Group_Maintenance.htm" 
+												 style="font-style: normal; 
+												 text-decoration: underline; ">GROUP</a></font> 
+ <font style="font-weight: bold;">File</font>, then clicking on a group 
+ and then clicking <font style="font-weight: bold;">Select</font>.</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
 	 font-size: 16pt; margin-left: 24px;">&#160;</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
@@ -437,86 +485,6 @@
  to a particular type of customer.</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
 	 font-size: 16pt; margin-left: 24px;">&#160;</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;"><span style="color: #FF00FF; 
-												 font-weight: bold;">Contact 
- By &#160;&#160;</span>Allows you to enter how you wish to contact a specific 
- customer. Some of the options you might choose could be by ‘SMS’, ‘Email’, 
- ‘Telephone’, ‘Letter’ etc. Before you are able to record the contact method, 
- you must first set up a standard list of contact methods. This can be 
- done under the <a href="../OTHERS/Maintenance/Attributes.htm">Attributes</a> 
- menu. You can then insert an attribute with a type ‘Contact Method’. </p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;">&#160;</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;"><font style="font-weight: bold;" 
-												 color="#FF00FF">Location</font> 
- <font style="font-weight: bold;" color="#008080"></font> This option 
- is only available to customers who are licenced for multiple locations. 
- The location button allows you to select the location that this customer 
- belongs to. If you want a customer to be available to all locations then 
- it should be set to location 0. However, if you want to limit a customer 
- only to be available to a particular location then select the location 
- this customer belongs to.</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;">&#160;</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;"><font style="font-weight: bold;" 
-												 color="#008080"><span 
-	 style="color: #FF00FF; font-weight: bold;">Salesperson</span></font> 
- The system allows you to attach a salesperson to a specific customer. 
- This salesperson will then default as the salesperson fot all sales generated 
- for this customer. You are able to change the salesperson for a specific 
- sale if required. You are then able to filter the customers for only customers 
- for a specified salesperson using the 'Sales Filter' button. You are also 
- able to provide statements and other reports specific to a salesperson 
- including only displaying debtors managed by a salesperson from the <a 
-	 href="../REPORTS/Accounting_Reports/Aged_Analysis.htm">Debtor Aged 
- Analysis</a> screen.</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;">&#160;</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;"><span style="font-family: Arial, sans-serif; 
-												 font-size: 16pt;"><font 
-	 style="font-weight: bold;" color="#FF00FF">Stock Price Rate</font> 
-  Enter the Stock Price Rate by clicking the drop-down menu and selecting 
- the appropriate price provided to this customer. If a price doesn't exist 
- in the Stock Masterfile under this rate, it will automatically refer to 
- the next rate up in the Stock Masterfile. You canthen apply several discount 
- levels relating to this price.</span></p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt;">&#160;</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;"><font style="font-weight: bold;" 
-												 color="#FF0000">Note</font><font 
-	 style="font-style: italic;">: In the Stock Master file, a particular 
- stock item can have 6 different selling prices (1,2,3,4,5,6). By selecting 
- a Stock Price, at the time of invoicing the customer, a particular set 
- price is selected from the Stocks Master file and applied to this customer.</font></p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;">&#160;</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;"><span style="color: #FF00FF; 
-												 font-weight: bold;">Source</span> 
- The Source allows you to nominate how the customer came to be a customer, 
- or how they found out about you. You may select options such as 'Google', 
- 'Word of Mouth', 'Referral', etc. You can then report on the success of 
- your advertising by nominating how the customer came to you and then using 
- the source reports available. You can set up a list of sources from <a 
-	 href="../OTHERS/Maintenance/Attributes.htm">Attributes</a> menu, under 
- Job Source.</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;">&#160;</p>
-<p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
-	 font-size: 16pt; margin-left: 24px;"><span style="color: #ff00ff; 
-												 font-weight: bold;">Sub 
- Source</span> A sub source allows you to break down a source into various 
- sub categories. For instance, you may have a source called “Advertising” 
- with a sub source of “Yellow Pages”, “Google”, “Newspaper”, “Radio” etc. 
- Alternatively, the source may be “Newspaper” and the sub source may be 
- a range of different newspaper types. You can set up a list of sub sources 
- from the <a href="../OTHERS/Maintenance/Attributes.htm">Attributes</a> 
- menu, under Sub Source.</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
 	 font-size: 16pt; margin-left: 24px;">&#160;</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
@@ -543,9 +511,9 @@
  next month</font> - the user cannot access this field. It is used to display 
  the value of invoices that were forward posted to next month and will 
  not appear on the customerbalance until the month is closed and rolled 
- over to the next month. See the help on <a href="᤿.chm::/Back_and_Forward_posting.htm"><font 
+ over to the next month. See the help on <font 
 	 style="font-family: Arial, sans-serif; font-size: 16pt;" face="Arial" 
-	 size="5">forward and back posting</font></a> for more details.</p>
+	 size="5">forward and back posting</font> for more details.</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
 	 font-size: 16pt; margin-left: 24px;">&#160;</p>
 <p class="Title" style="text-align: justify; font-family: Arial, sans-serif; 
@@ -577,9 +545,9 @@
 												 color="#FF00FF">Mtd Turnover</font> 
   This field provides the total sales to this customer for the current 
  month. <font style="font-style: italic;">(Automatically updated)</font></p>
-<?rh-script_start ?><script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
 	if( typeof( FilePopupInit ) != 'function' ) FilePopupInit = new Function();
 	FilePopupInit('a1');
-//]]></script><?rh-script_end ?>
+//]]></script>
 </body>
 </html>

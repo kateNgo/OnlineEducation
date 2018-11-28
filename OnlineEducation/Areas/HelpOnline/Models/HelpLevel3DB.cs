@@ -169,5 +169,78 @@ namespace OnlineEducation.Areas.HelpOnline.Models
                 }
             }
         }
+        public HelpLevel3 GetHelpLevel3ByTitleAndParentId(string title, int id)
+        {
+            string query = "SELECT * FROM HelpOnlineLevel3 WHERE title = '" + title + "' AND parentId = " + id;
+            using (SqlConnection con = SQLConnect())
+            {
+                using (SqlDataAdapter sda = new SqlDataAdapter(query, con))
+                {
+                    using (DataTable dt = new DataTable())
+                    {
+                        con.Open();
+                        sda.Fill(dt);
+                        if (dt.Rows.Count > 0)
+                        {
+                            DataRow row = dt.Rows[0];
+                            HelpLevel3 obj = new HelpLevel3();
+                            obj.Id = Convert.ToInt32(row["Id"]);
+                            obj.Title = row["Title"].ToString();
+                            obj.URL = row["URL"].ToString();
+                            obj.ParentId = Convert.ToInt32(row["ParentId"]);
+                            //ParentTopic = getHelpLevel2ById(ParentId),
+                            obj.Index = Convert.ToInt32(row["IndexTopic"]);
+                            return obj;
+                        }
+                        else
+                        {
+                            return null;
+                        }
+
+                    }
+                }
+            }
+        }
+        public void UpdateIndexTopicAndURLLevel3(HelpLevel3 level3)
+        {
+            string query = "UPDATE HelpOnlineLevel3 SET IndexTopic=@indexTopic, URL=@url WHERE Id=@Id";
+
+            using (SqlConnection con = SQLConnect())
+            {
+                using (SqlCommand cmd = new SqlCommand(query))
+                {
+
+                    cmd.Parameters.AddWithValue("@indexTopic", level3.Index);
+                    cmd.Parameters.AddWithValue("@url", level3.URL);
+                    cmd.Parameters.AddWithValue("@Id", level3.Id);
+                    cmd.Connection = con;
+                    con.Open();
+                    //int insertedID = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+
+                }
+            }
+        }
+        public void UpdateIndexTopicLevel3(HelpLevel3 level3)
+        {
+            string query = "UPDATE HelpOnlineLevel3 SET IndexTopic=@indexTopic WHERE Id=@Id";
+
+            using (SqlConnection con = SQLConnect())
+            {
+                using (SqlCommand cmd = new SqlCommand(query))
+                {
+
+                    cmd.Parameters.AddWithValue("@indexTopic", level3.Index);
+                    cmd.Parameters.AddWithValue("@Id", level3.Id);
+                    cmd.Connection = con;
+                    con.Open();
+                    //int insertedID = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+
+                }
+            }
+        }
     }
 }

@@ -14,10 +14,11 @@ namespace OnlineEducation.Models
         [Required]
         [DisplayName("Email")]
         public string Email { get; set; }
-        [Required]
+        [Required]   
         public string Password { get; set; }
         public string Name { get; set; }
         [DisplayName("Retype password")]
+        [Compare("NewPassword")]
         public string AgainPassword { get; set; }
         public string NewPassword { get; set; }
     }
